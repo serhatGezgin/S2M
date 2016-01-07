@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.yazgel.regex.s2m
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.yazgel.regex.s2m; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext;visibility:=reexport,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.common,
+ org.antlr.runtime,
+ org.eclipse.xtext.xbase.lib,
+ org.eclipse.xtext.common.types,
+ org.objectweb.asm;bundle-version="[5.0.1,6.0.0)";resolution:=optional
+Import-Package: org.apache.log4j
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: org.yazgel.regex.s2m,
+ org.yazgel.regex.s2m.services,
+ org.yazgel.regex.s2m.s2M,
+ org.yazgel.regex.s2m.s2M.impl,
+ org.yazgel.regex.s2m.s2M.util,
+ org.yazgel.regex.s2m.serializer,
+ org.yazgel.regex.s2m.parser.antlr,
+ org.yazgel.regex.s2m.parser.antlr.internal,
+ org.yazgel.regex.s2m.validation,
+ org.yazgel.regex.s2m.scoping,
+ org.yazgel.regex.s2m.generator,
+ org.yazgel.regex.s2m.formatting

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.yazgel.regex.s2m/src-gen" editDirectory="/org.yazgel.regex.s2m.edit/src"
+    editorDirectory="/org.yazgel.regex.s2m.editor/src" modelPluginID="org.yazgel.regex.s2m"
+    forceOverwrite="true" modelName="S2M" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="6.0" copyrightFields="false" editPluginID="org.yazgel.regex.s2m.edit"
+    editorPluginID="org.yazgel.regex.s2m.editor" runtimeVersion="2.11" usedGenPackages="platform:/resource/org.eclipse.xtext.common.types/model/JavaVMTypes.genmodel#//types">
+  <genPackages prefix="S2M" basePackage="org.yazgel.regex.s2m" disposableProviderFactory="true"
+      fileExtensions="s2m" ecorePackage="S2M.ecore#/">
+    <genClasses ecoreClass="S2M.ecore#//Model">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//Model/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference S2M.ecore#//Model/attributes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference S2M.ecore#//Model/rules"/>
+    </genClasses>
+    <genClasses ecoreClass="S2M.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//Attribute/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference S2M.ecore#//Attribute/type"/>
+    </genClasses>
+    <genClasses ecoreClass="S2M.ecore#//Rule"/>
+    <genClasses ecoreClass="S2M.ecore#//RulePosition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//RulePosition/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//RulePosition/startIndex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//RulePosition/startDelimeter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//RulePosition/endIndex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//RulePosition/endDelimeter"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference S2M.ecore#//RulePosition/attr"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,30 @@
+grammar org.yazgel.regex.s2m.S2M with org.eclipse.xtext.common.Terminals
+
+import "http://www.eclipse.org/xtext/common/JavaVMTypes" as jvmTypes
+
+generate s2M "http://www.yazgel.org/regex/s2m/S2M"
+
+Model:
+	'model' ':' name=ID ';'
+	(attributes+=Attribute*) &
+	(rules+=Rule*)
+	;
+
+Attribute:
+	'attr' name=ID '{'
+	 	'type' ':' type=[jvmTypes::JvmType|QualifiedName]  
+	 '}'
+;
+	
+Rule:
+	RulePosition
+;
+
+RulePosition:
+	'rule' name=ID '{'
+		(('start' startIndex=INT ',') | ('start' startDelimeter=STRING ','))
+		(('end' endIndex=INT ',') | ('end' endDelimeter=STRING ',') )
+		'attr' ':' attr = [Attribute|ID]
+	'}'
+;	
+QualifiedName: ID ('.' ID)* ;
