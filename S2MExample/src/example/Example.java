@@ -14,17 +14,17 @@ public class Example {
 	
 	public static void main(String[] args) {
 		String filePath = "file:/" + new File("model/deneme.s2m").getAbsolutePath();
-		String[] myStrings = { filePath, COMMAND};
+		
 		long startTime = System.currentTimeMillis();
-		S2MRunner.main(myStrings); 
-		Map<String, Object> result = S2MRunner.getResult();
+		Map<String, Object> result = (Map<String, Object>) S2MRunner.getInstance().run(filePath, COMMAND);
 		long endTime   = System.currentTimeMillis();
+		
 		long totalTime = endTime - startTime;
 		System.out.println(totalTime);
+		
 		Set<Entry<String, Object>> entrySet = result.entrySet();
 		for (Entry<String, Object> entry : entrySet) {
 			System.out.println(entry.getKey() + " => " + entry.getValue());
-		}
-		
+		} 
 	}
 }

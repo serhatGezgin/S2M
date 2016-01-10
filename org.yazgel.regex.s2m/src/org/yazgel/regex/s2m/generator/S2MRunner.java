@@ -3,83 +3,23 @@
  */
 package org.yazgel.regex.s2m.generator;
 
-import java.util.List;
-import java.util.Map;
-
-import org.eclipse.emf.common.util.URI;
-import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.emf.ecore.resource.ResourceSet;
-import org.eclipse.xtext.generator.IGenerator;
-import org.eclipse.xtext.generator.JavaIoFileSystemAccess;
-import org.eclipse.xtext.util.CancelIndicator;
-import org.eclipse.xtext.validation.CheckMode;
-import org.eclipse.xtext.validation.IResourceValidator;
-import org.eclipse.xtext.validation.Issue;
-
-import com.google.inject.Inject;
-import com.google.inject.Injector;
-import com.google.inject.Provider;
-
 public class S2MRunner {
 	
-	private static Map<String, Object> result;
+	private static S2MRunner instance = null;
 	
-	public static void main(String[] args) {
-		if (args.length==0) {
-			System.err.println("Aborting: no path to EMF resource provided!");
-			return;
-		}
-		
-		if (args.length==1) {
-			System.err.println("Aborting: no string provided for parse!");
-			return;
-		}
-		 
-		Injector injector = new org.yazgel.regex.s2m.S2MStandaloneSetup().createInjectorAndDoEMFRegistration();
-		
-		S2MRunner main = injector.getInstance(S2MRunner.class);
-		main.runGenerator(args[0], args[1]);
-	} 
-	
-	@Inject 
-	private Provider<ResourceSet> resourceSetProvider;
-	
-	@Inject
-	private IResourceValidator validator;
-	
-	@Inject
-	private IGenerator generator;
-	
-	@Inject 
-	private JavaIoFileSystemAccess fileAccess;
-
-	protected void runGenerator(String fileUri, String content) {
-		// load the resource
-		ResourceSet set = resourceSetProvider.get();
-		Resource resource = set.getResource(URI.createURI(fileUri), true);
-		
-		// validate the resource
-		List<Issue> list = validator.validate(resource, CheckMode.ALL, CancelIndicator.NullImpl);
-		if (!list.isEmpty()) {
-			for (Issue issue : list) {
-				System.err.println(issue);
-			}
-			return;
-		}
-		
-		// configure and start the generator
-		fileAccess.setOutputPath("src-gen/");
-		
-		result = new MapGenerator(content).generate(resource, fileAccess);
-		
-		System.out.println("Generation finished.");
+	private S2MRunner() {
 	}
 
-	public static Map<String, Object> getResult() {
-		return result;
-	}
-
-	public static void setResult(Map<String, Object> result) {
-		S2MRunner.result = result;
+	public static S2MRunner getInstance() {
+		if (instance == null) {
+			instance = new S2MRunner();
+		}
+		return instance;
+	 }
+	
+	public Object run(String fileUri, String content){
+		String[] myStrings = { fileUri, content};
+		Main.main(myStrings); 
+		return Main.getResult();
 	}
 }
