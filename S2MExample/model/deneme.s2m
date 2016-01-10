@@ -1,0 +1,22 @@
+model : Name;
+
+attr id {
+	type : java.lang.String
+}
+
+attr name {
+	type : java.lang.String
+}
+
+rule idRule{
+	start 0 ,
+	end 5,
+	attr : id
+}
+
+rule nameRule{
+	start 6 ,
+	end 11,
+	attr : name
+}
+

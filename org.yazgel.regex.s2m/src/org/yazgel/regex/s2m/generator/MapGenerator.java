@@ -5,7 +5,6 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.xtext.common.types.JvmType;
 import org.eclipse.xtext.generator.IFileSystemAccess;
 import org.yazgel.regex.s2m.s2M.Attribute;
 import org.yazgel.regex.s2m.s2M.Rule;
@@ -30,7 +29,6 @@ public class MapGenerator implements IGenerator<Map<String, Object>> {
 			for (Rule rule : rules) {
 				Attribute attr = rule.getAttr();
 				
-				JvmType attrType = attr.getType();
 				String attrName = attr.getName();
 				
 				int startIndex = rule.getStartIndex();
