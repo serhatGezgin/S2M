@@ -21,43 +21,48 @@ import com.google.inject.Injector;
 import com.google.inject.Provider;
 
 public class Main {
-	
+
 	private static Map<String, Object> result;
-	
+
 	public static void main(String[] args) {
-		if (args.length==0) {
+		if (args.length == 0) {
 			System.err.println("Aborting: no path to EMF resource provided!");
 			return;
 		}
-		
-		if (args.length==1) {
+
+		if (args.length == 1) {
 			System.err.println("Aborting: no string provided for parse!");
 			return;
 		}
-		 
+
+		if (args.length == 2) {
+			System.err.println("Aborting: no type provided for generation!");
+			return;
+		}
+
 		Injector injector = new org.yazgel.regex.s2m.S2MStandaloneSetup().createInjectorAndDoEMFRegistration();
-		
+
 		Main main = injector.getInstance(Main.class);
-		main.runGenerator(args[0], args[1]);
+		main.runGenerator(args[0], args[1], args[2]);
 	}
-	
-	@Inject 
+
+	@Inject
 	private Provider<ResourceSet> resourceSetProvider;
-	
+
 	@Inject
 	private IResourceValidator validator;
-	
+
 	@Inject
 	private IGenerator generator;
-	
-	@Inject 
+
+	@Inject
 	private JavaIoFileSystemAccess fileAccess;
 
-	private void runGenerator(String fileUri, String content) {
+	private void runGenerator(String metaModelFileUri, String content, String generationTypeStr) {
 		// load the resource
 		ResourceSet set = resourceSetProvider.get();
-		Resource resource = set.getResource(URI.createURI(fileUri), true);
-		
+		Resource resource = set.getResource(URI.createURI(metaModelFileUri), true);
+
 		// validate the resource
 		List<Issue> list = validator.validate(resource, CheckMode.ALL, CancelIndicator.NullImpl);
 		if (!list.isEmpty()) {
@@ -66,12 +71,21 @@ public class Main {
 			}
 			return;
 		}
-		
+
 		// configure and start the generator
 		fileAccess.setOutputPath("src-gen/");
-		
-		result = new MapGenerator(content).generate(resource, fileAccess);
-		
+
+		GenerationType generationType = GenerationType.fromString(generationTypeStr);
+
+		switch (generationType) {
+			case HASH_MAP:
+				result = new MapGenerator(content).generate(resource, fileAccess);
+				break;
+
+			default:
+				throw new UnsupportedOperationException(generationType.getValue() + " not Implemented for generation operation!");
+		}
+
 		System.out.println("Generation finished.");
 	}
 

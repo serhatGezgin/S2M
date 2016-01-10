@@ -17,8 +17,8 @@ public class S2MRunner {
 		return instance;
 	 }
 	
-	public Object run(String fileUri, String content){
-		String[] myStrings = { fileUri, content};
+	public Object run(String fileUri, String content, GenerationType type){
+		String[] myStrings = { fileUri, content, type.getValue()};
 		Main.main(myStrings); 
 		return Main.getResult();
 	}
