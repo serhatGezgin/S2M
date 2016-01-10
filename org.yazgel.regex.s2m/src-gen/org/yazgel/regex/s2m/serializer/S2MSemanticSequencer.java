@@ -18,7 +18,7 @@ import org.eclipse.xtext.serializer.sequencer.ITransientValueService;
 import org.eclipse.xtext.serializer.sequencer.ITransientValueService.ValueTransient;
 import org.yazgel.regex.s2m.s2M.Attribute;
 import org.yazgel.regex.s2m.s2M.Model;
-import org.yazgel.regex.s2m.s2M.RulePosition;
+import org.yazgel.regex.s2m.s2M.Rule;
 import org.yazgel.regex.s2m.s2M.S2MPackage;
 import org.yazgel.regex.s2m.services.S2MGrammarAccess;
 
@@ -37,8 +37,8 @@ public class S2MSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 			case S2MPackage.MODEL:
 				sequence_Model(context, (Model) semanticObject); 
 				return; 
-			case S2MPackage.RULE_POSITION:
-				sequence_RulePosition(context, (RulePosition) semanticObject); 
+			case S2MPackage.RULE:
+				sequence_Rule(context, (Rule) semanticObject); 
 				return; 
 			}
 		if (errorAcceptor != null) errorAcceptor.accept(diagnosticProvider.createInvalidContextOrTypeDiagnostic(semanticObject, context));
@@ -76,7 +76,7 @@ public class S2MSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 * Constraint:
 	 *     (name=ID (startIndex=INT | startDelimeter=STRING) (endIndex=INT | endDelimeter=STRING) attr=[Attribute|ID])
 	 */
-	protected void sequence_RulePosition(EObject context, RulePosition semanticObject) {
+	protected void sequence_Rule(EObject context, Rule semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 }

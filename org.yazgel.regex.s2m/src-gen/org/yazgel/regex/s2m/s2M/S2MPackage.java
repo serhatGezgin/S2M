@@ -150,32 +150,13 @@ public interface S2MPackage extends EPackage
   int RULE = 2;
 
   /**
-   * The number of structural features of the '<em>Rule</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int RULE_FEATURE_COUNT = 0;
-
-  /**
-   * The meta object id for the '{@link org.yazgel.regex.s2m.s2M.impl.RulePositionImpl <em>Rule Position</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see org.yazgel.regex.s2m.s2M.impl.RulePositionImpl
-   * @see org.yazgel.regex.s2m.s2M.impl.S2MPackageImpl#getRulePosition()
-   * @generated
-   */
-  int RULE_POSITION = 3;
-
-  /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int RULE_POSITION__NAME = RULE_FEATURE_COUNT + 0;
+  int RULE__NAME = 0;
 
   /**
    * The feature id for the '<em><b>Start Index</b></em>' attribute.
@@ -184,7 +165,7 @@ public interface S2MPackage extends EPackage
    * @generated
    * @ordered
    */
-  int RULE_POSITION__START_INDEX = RULE_FEATURE_COUNT + 1;
+  int RULE__START_INDEX = 1;
 
   /**
    * The feature id for the '<em><b>Start Delimeter</b></em>' attribute.
@@ -193,7 +174,7 @@ public interface S2MPackage extends EPackage
    * @generated
    * @ordered
    */
-  int RULE_POSITION__START_DELIMETER = RULE_FEATURE_COUNT + 2;
+  int RULE__START_DELIMETER = 2;
 
   /**
    * The feature id for the '<em><b>End Index</b></em>' attribute.
@@ -202,7 +183,7 @@ public interface S2MPackage extends EPackage
    * @generated
    * @ordered
    */
-  int RULE_POSITION__END_INDEX = RULE_FEATURE_COUNT + 3;
+  int RULE__END_INDEX = 3;
 
   /**
    * The feature id for the '<em><b>End Delimeter</b></em>' attribute.
@@ -211,7 +192,7 @@ public interface S2MPackage extends EPackage
    * @generated
    * @ordered
    */
-  int RULE_POSITION__END_DELIMETER = RULE_FEATURE_COUNT + 4;
+  int RULE__END_DELIMETER = 4;
 
   /**
    * The feature id for the '<em><b>Attr</b></em>' reference.
@@ -220,16 +201,16 @@ public interface S2MPackage extends EPackage
    * @generated
    * @ordered
    */
-  int RULE_POSITION__ATTR = RULE_FEATURE_COUNT + 5;
+  int RULE__ATTR = 5;
 
   /**
-   * The number of structural features of the '<em>Rule Position</em>' class.
+   * The number of structural features of the '<em>Rule</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int RULE_POSITION_FEATURE_COUNT = RULE_FEATURE_COUNT + 6;
+  int RULE_FEATURE_COUNT = 6;
 
 
   /**
@@ -318,80 +299,70 @@ public interface S2MPackage extends EPackage
   EClass getRule();
 
   /**
-   * Returns the meta object for class '{@link org.yazgel.regex.s2m.s2M.RulePosition <em>Rule Position</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Rule Position</em>'.
-   * @see org.yazgel.regex.s2m.s2M.RulePosition
-   * @generated
-   */
-  EClass getRulePosition();
-
-  /**
-   * Returns the meta object for the attribute '{@link org.yazgel.regex.s2m.s2M.RulePosition#getName <em>Name</em>}'.
+   * Returns the meta object for the attribute '{@link org.yazgel.regex.s2m.s2M.Rule#getName <em>Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Name</em>'.
-   * @see org.yazgel.regex.s2m.s2M.RulePosition#getName()
-   * @see #getRulePosition()
+   * @see org.yazgel.regex.s2m.s2M.Rule#getName()
+   * @see #getRule()
    * @generated
    */
-  EAttribute getRulePosition_Name();
+  EAttribute getRule_Name();
 
   /**
-   * Returns the meta object for the attribute '{@link org.yazgel.regex.s2m.s2M.RulePosition#getStartIndex <em>Start Index</em>}'.
+   * Returns the meta object for the attribute '{@link org.yazgel.regex.s2m.s2M.Rule#getStartIndex <em>Start Index</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Start Index</em>'.
-   * @see org.yazgel.regex.s2m.s2M.RulePosition#getStartIndex()
-   * @see #getRulePosition()
+   * @see org.yazgel.regex.s2m.s2M.Rule#getStartIndex()
+   * @see #getRule()
    * @generated
    */
-  EAttribute getRulePosition_StartIndex();
+  EAttribute getRule_StartIndex();
 
   /**
-   * Returns the meta object for the attribute '{@link org.yazgel.regex.s2m.s2M.RulePosition#getStartDelimeter <em>Start Delimeter</em>}'.
+   * Returns the meta object for the attribute '{@link org.yazgel.regex.s2m.s2M.Rule#getStartDelimeter <em>Start Delimeter</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Start Delimeter</em>'.
-   * @see org.yazgel.regex.s2m.s2M.RulePosition#getStartDelimeter()
-   * @see #getRulePosition()
+   * @see org.yazgel.regex.s2m.s2M.Rule#getStartDelimeter()
+   * @see #getRule()
    * @generated
    */
-  EAttribute getRulePosition_StartDelimeter();
+  EAttribute getRule_StartDelimeter();
 
   /**
-   * Returns the meta object for the attribute '{@link org.yazgel.regex.s2m.s2M.RulePosition#getEndIndex <em>End Index</em>}'.
+   * Returns the meta object for the attribute '{@link org.yazgel.regex.s2m.s2M.Rule#getEndIndex <em>End Index</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>End Index</em>'.
-   * @see org.yazgel.regex.s2m.s2M.RulePosition#getEndIndex()
-   * @see #getRulePosition()
+   * @see org.yazgel.regex.s2m.s2M.Rule#getEndIndex()
+   * @see #getRule()
    * @generated
    */
-  EAttribute getRulePosition_EndIndex();
+  EAttribute getRule_EndIndex();
 
   /**
-   * Returns the meta object for the attribute '{@link org.yazgel.regex.s2m.s2M.RulePosition#getEndDelimeter <em>End Delimeter</em>}'.
+   * Returns the meta object for the attribute '{@link org.yazgel.regex.s2m.s2M.Rule#getEndDelimeter <em>End Delimeter</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>End Delimeter</em>'.
-   * @see org.yazgel.regex.s2m.s2M.RulePosition#getEndDelimeter()
-   * @see #getRulePosition()
+   * @see org.yazgel.regex.s2m.s2M.Rule#getEndDelimeter()
+   * @see #getRule()
    * @generated
    */
-  EAttribute getRulePosition_EndDelimeter();
+  EAttribute getRule_EndDelimeter();
 
   /**
-   * Returns the meta object for the reference '{@link org.yazgel.regex.s2m.s2M.RulePosition#getAttr <em>Attr</em>}'.
+   * Returns the meta object for the reference '{@link org.yazgel.regex.s2m.s2M.Rule#getAttr <em>Attr</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the reference '<em>Attr</em>'.
-   * @see org.yazgel.regex.s2m.s2M.RulePosition#getAttr()
-   * @see #getRulePosition()
+   * @see org.yazgel.regex.s2m.s2M.Rule#getAttr()
+   * @see #getRule()
    * @generated
    */
-  EReference getRulePosition_Attr();
+  EReference getRule_Attr();
 
   /**
    * Returns the factory that creates the instances of the model.
@@ -487,22 +458,12 @@ public interface S2MPackage extends EPackage
     EClass RULE = eINSTANCE.getRule();
 
     /**
-     * The meta object literal for the '{@link org.yazgel.regex.s2m.s2M.impl.RulePositionImpl <em>Rule Position</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see org.yazgel.regex.s2m.s2M.impl.RulePositionImpl
-     * @see org.yazgel.regex.s2m.s2M.impl.S2MPackageImpl#getRulePosition()
-     * @generated
-     */
-    EClass RULE_POSITION = eINSTANCE.getRulePosition();
-
-    /**
      * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute RULE_POSITION__NAME = eINSTANCE.getRulePosition_Name();
+    EAttribute RULE__NAME = eINSTANCE.getRule_Name();
 
     /**
      * The meta object literal for the '<em><b>Start Index</b></em>' attribute feature.
@@ -510,7 +471,7 @@ public interface S2MPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute RULE_POSITION__START_INDEX = eINSTANCE.getRulePosition_StartIndex();
+    EAttribute RULE__START_INDEX = eINSTANCE.getRule_StartIndex();
 
     /**
      * The meta object literal for the '<em><b>Start Delimeter</b></em>' attribute feature.
@@ -518,7 +479,7 @@ public interface S2MPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute RULE_POSITION__START_DELIMETER = eINSTANCE.getRulePosition_StartDelimeter();
+    EAttribute RULE__START_DELIMETER = eINSTANCE.getRule_StartDelimeter();
 
     /**
      * The meta object literal for the '<em><b>End Index</b></em>' attribute feature.
@@ -526,7 +487,7 @@ public interface S2MPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute RULE_POSITION__END_INDEX = eINSTANCE.getRulePosition_EndIndex();
+    EAttribute RULE__END_INDEX = eINSTANCE.getRule_EndIndex();
 
     /**
      * The meta object literal for the '<em><b>End Delimeter</b></em>' attribute feature.
@@ -534,7 +495,7 @@ public interface S2MPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute RULE_POSITION__END_DELIMETER = eINSTANCE.getRulePosition_EndDelimeter();
+    EAttribute RULE__END_DELIMETER = eINSTANCE.getRule_EndDelimeter();
 
     /**
      * The meta object literal for the '<em><b>Attr</b></em>' reference feature.
@@ -542,7 +503,7 @@ public interface S2MPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference RULE_POSITION__ATTR = eINSTANCE.getRulePosition_Attr();
+    EReference RULE__ATTR = eINSTANCE.getRule_Attr();
 
   }
 

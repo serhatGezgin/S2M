@@ -621,87 +621,8 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRule"
-    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:278:1: ruleRule returns [EObject current=null] : this_RulePosition_0= ruleRulePosition ;
+    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:278:1: ruleRule returns [EObject current=null] : (otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ',' ) | (otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ',' ) ) ( (otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ',' ) | (otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ',' ) ) otherlv_15= 'attr' otherlv_16= ':' ( (otherlv_17= RULE_ID ) ) otherlv_18= '}' ) ;
     public final EObject ruleRule() throws RecognitionException {
-        EObject current = null;
-
-        EObject this_RulePosition_0 = null;
-
-
-         enterRule(); 
-            
-        try {
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:281:28: (this_RulePosition_0= ruleRulePosition )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:283:5: this_RulePosition_0= ruleRulePosition
-            {
-             
-                    newCompositeNode(grammarAccess.getRuleAccess().getRulePositionParserRuleCall()); 
-                
-            pushFollow(FOLLOW_ruleRulePosition_in_ruleRule625);
-            this_RulePosition_0=ruleRulePosition();
-
-            state._fsp--;
-
-             
-                    current = this_RulePosition_0; 
-                    afterParserOrEnumRuleCall();
-                
-
-            }
-
-             leaveRule(); 
-        }
-         
-            catch (RecognitionException re) { 
-                recover(input,re); 
-                appendSkippedTokens();
-            } 
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "ruleRule"
-
-
-    // $ANTLR start "entryRuleRulePosition"
-    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:299:1: entryRuleRulePosition returns [EObject current=null] : iv_ruleRulePosition= ruleRulePosition EOF ;
-    public final EObject entryRuleRulePosition() throws RecognitionException {
-        EObject current = null;
-
-        EObject iv_ruleRulePosition = null;
-
-
-        try {
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:300:2: (iv_ruleRulePosition= ruleRulePosition EOF )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:301:2: iv_ruleRulePosition= ruleRulePosition EOF
-            {
-             newCompositeNode(grammarAccess.getRulePositionRule()); 
-            pushFollow(FOLLOW_ruleRulePosition_in_entryRuleRulePosition659);
-            iv_ruleRulePosition=ruleRulePosition();
-
-            state._fsp--;
-
-             current =iv_ruleRulePosition; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleRulePosition669); 
-
-            }
-
-        }
-         
-            catch (RecognitionException re) { 
-                recover(input,re); 
-                appendSkippedTokens();
-            } 
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "entryRuleRulePosition"
-
-
-    // $ANTLR start "ruleRulePosition"
-    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:308:1: ruleRulePosition returns [EObject current=null] : (otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ',' ) | (otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ',' ) ) ( (otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ',' ) | (otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ',' ) ) otherlv_15= 'attr' otherlv_16= ':' ( (otherlv_17= RULE_ID ) ) otherlv_18= '}' ) ;
-    public final EObject ruleRulePosition() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
@@ -727,29 +648,29 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:311:28: ( (otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ',' ) | (otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ',' ) ) ( (otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ',' ) | (otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ',' ) ) otherlv_15= 'attr' otherlv_16= ':' ( (otherlv_17= RULE_ID ) ) otherlv_18= '}' ) )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:312:1: (otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ',' ) | (otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ',' ) ) ( (otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ',' ) | (otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ',' ) ) otherlv_15= 'attr' otherlv_16= ':' ( (otherlv_17= RULE_ID ) ) otherlv_18= '}' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:281:28: ( (otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ',' ) | (otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ',' ) ) ( (otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ',' ) | (otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ',' ) ) otherlv_15= 'attr' otherlv_16= ':' ( (otherlv_17= RULE_ID ) ) otherlv_18= '}' ) )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:282:1: (otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ',' ) | (otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ',' ) ) ( (otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ',' ) | (otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ',' ) ) otherlv_15= 'attr' otherlv_16= ':' ( (otherlv_17= RULE_ID ) ) otherlv_18= '}' )
             {
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:312:1: (otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ',' ) | (otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ',' ) ) ( (otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ',' ) | (otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ',' ) ) otherlv_15= 'attr' otherlv_16= ':' ( (otherlv_17= RULE_ID ) ) otherlv_18= '}' )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:312:3: otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ',' ) | (otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ',' ) ) ( (otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ',' ) | (otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ',' ) ) otherlv_15= 'attr' otherlv_16= ':' ( (otherlv_17= RULE_ID ) ) otherlv_18= '}'
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:282:1: (otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ',' ) | (otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ',' ) ) ( (otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ',' ) | (otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ',' ) ) otherlv_15= 'attr' otherlv_16= ':' ( (otherlv_17= RULE_ID ) ) otherlv_18= '}' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:282:3: otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ',' ) | (otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ',' ) ) ( (otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ',' ) | (otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ',' ) ) otherlv_15= 'attr' otherlv_16= ':' ( (otherlv_17= RULE_ID ) ) otherlv_18= '}'
             {
-            otherlv_0=(Token)match(input,18,FOLLOW_18_in_ruleRulePosition706); 
+            otherlv_0=(Token)match(input,18,FOLLOW_18_in_ruleRule616); 
 
-                	newLeafNode(otherlv_0, grammarAccess.getRulePositionAccess().getRuleKeyword_0());
+                	newLeafNode(otherlv_0, grammarAccess.getRuleAccess().getRuleKeyword_0());
                 
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:316:1: ( (lv_name_1_0= RULE_ID ) )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:317:1: (lv_name_1_0= RULE_ID )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:286:1: ( (lv_name_1_0= RULE_ID ) )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:287:1: (lv_name_1_0= RULE_ID )
             {
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:317:1: (lv_name_1_0= RULE_ID )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:318:3: lv_name_1_0= RULE_ID
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:287:1: (lv_name_1_0= RULE_ID )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:288:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRulePosition723); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRule633); 
 
-            			newLeafNode(lv_name_1_0, grammarAccess.getRulePositionAccess().getNameIDTerminalRuleCall_1_0()); 
+            			newLeafNode(lv_name_1_0, grammarAccess.getRuleAccess().getNameIDTerminalRuleCall_1_0()); 
             		
 
             	        if (current==null) {
-            	            current = createModelElement(grammarAccess.getRulePositionRule());
+            	            current = createModelElement(grammarAccess.getRuleRule());
             	        }
                    		setWithLastConsumed(
                    			current, 
@@ -763,11 +684,11 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,15,FOLLOW_15_in_ruleRulePosition740); 
+            otherlv_2=(Token)match(input,15,FOLLOW_15_in_ruleRule650); 
 
-                	newLeafNode(otherlv_2, grammarAccess.getRulePositionAccess().getLeftCurlyBracketKeyword_2());
+                	newLeafNode(otherlv_2, grammarAccess.getRuleAccess().getLeftCurlyBracketKeyword_2());
                 
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:338:1: ( (otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ',' ) | (otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ',' ) )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:308:1: ( (otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ',' ) | (otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ',' ) )
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -795,28 +716,28 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
             }
             switch (alt4) {
                 case 1 :
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:338:2: (otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ',' )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:308:2: (otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ',' )
                     {
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:338:2: (otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ',' )
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:338:4: otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ','
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:308:2: (otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ',' )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:308:4: otherlv_3= 'start' ( (lv_startIndex_4_0= RULE_INT ) ) otherlv_5= ','
                     {
-                    otherlv_3=(Token)match(input,19,FOLLOW_19_in_ruleRulePosition754); 
+                    otherlv_3=(Token)match(input,19,FOLLOW_19_in_ruleRule664); 
 
-                        	newLeafNode(otherlv_3, grammarAccess.getRulePositionAccess().getStartKeyword_3_0_0());
+                        	newLeafNode(otherlv_3, grammarAccess.getRuleAccess().getStartKeyword_3_0_0());
                         
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:342:1: ( (lv_startIndex_4_0= RULE_INT ) )
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:343:1: (lv_startIndex_4_0= RULE_INT )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:312:1: ( (lv_startIndex_4_0= RULE_INT ) )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:313:1: (lv_startIndex_4_0= RULE_INT )
                     {
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:343:1: (lv_startIndex_4_0= RULE_INT )
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:344:3: lv_startIndex_4_0= RULE_INT
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:313:1: (lv_startIndex_4_0= RULE_INT )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:314:3: lv_startIndex_4_0= RULE_INT
                     {
-                    lv_startIndex_4_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleRulePosition771); 
+                    lv_startIndex_4_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleRule681); 
 
-                    			newLeafNode(lv_startIndex_4_0, grammarAccess.getRulePositionAccess().getStartIndexINTTerminalRuleCall_3_0_1_0()); 
+                    			newLeafNode(lv_startIndex_4_0, grammarAccess.getRuleAccess().getStartIndexINTTerminalRuleCall_3_0_1_0()); 
                     		
 
                     	        if (current==null) {
-                    	            current = createModelElement(grammarAccess.getRulePositionRule());
+                    	            current = createModelElement(grammarAccess.getRuleRule());
                     	        }
                            		setWithLastConsumed(
                            			current, 
@@ -830,9 +751,9 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_5=(Token)match(input,20,FOLLOW_20_in_ruleRulePosition788); 
+                    otherlv_5=(Token)match(input,20,FOLLOW_20_in_ruleRule698); 
 
-                        	newLeafNode(otherlv_5, grammarAccess.getRulePositionAccess().getCommaKeyword_3_0_2());
+                        	newLeafNode(otherlv_5, grammarAccess.getRuleAccess().getCommaKeyword_3_0_2());
                         
 
                     }
@@ -841,28 +762,28 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:365:6: (otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ',' )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:335:6: (otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ',' )
                     {
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:365:6: (otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ',' )
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:365:8: otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ','
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:335:6: (otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ',' )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:335:8: otherlv_6= 'start' ( (lv_startDelimeter_7_0= RULE_STRING ) ) otherlv_8= ','
                     {
-                    otherlv_6=(Token)match(input,19,FOLLOW_19_in_ruleRulePosition808); 
+                    otherlv_6=(Token)match(input,19,FOLLOW_19_in_ruleRule718); 
 
-                        	newLeafNode(otherlv_6, grammarAccess.getRulePositionAccess().getStartKeyword_3_1_0());
+                        	newLeafNode(otherlv_6, grammarAccess.getRuleAccess().getStartKeyword_3_1_0());
                         
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:369:1: ( (lv_startDelimeter_7_0= RULE_STRING ) )
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:370:1: (lv_startDelimeter_7_0= RULE_STRING )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:339:1: ( (lv_startDelimeter_7_0= RULE_STRING ) )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:340:1: (lv_startDelimeter_7_0= RULE_STRING )
                     {
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:370:1: (lv_startDelimeter_7_0= RULE_STRING )
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:371:3: lv_startDelimeter_7_0= RULE_STRING
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:340:1: (lv_startDelimeter_7_0= RULE_STRING )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:341:3: lv_startDelimeter_7_0= RULE_STRING
                     {
-                    lv_startDelimeter_7_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleRulePosition825); 
+                    lv_startDelimeter_7_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleRule735); 
 
-                    			newLeafNode(lv_startDelimeter_7_0, grammarAccess.getRulePositionAccess().getStartDelimeterSTRINGTerminalRuleCall_3_1_1_0()); 
+                    			newLeafNode(lv_startDelimeter_7_0, grammarAccess.getRuleAccess().getStartDelimeterSTRINGTerminalRuleCall_3_1_1_0()); 
                     		
 
                     	        if (current==null) {
-                    	            current = createModelElement(grammarAccess.getRulePositionRule());
+                    	            current = createModelElement(grammarAccess.getRuleRule());
                     	        }
                            		setWithLastConsumed(
                            			current, 
@@ -876,9 +797,9 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_8=(Token)match(input,20,FOLLOW_20_in_ruleRulePosition842); 
+                    otherlv_8=(Token)match(input,20,FOLLOW_20_in_ruleRule752); 
 
-                        	newLeafNode(otherlv_8, grammarAccess.getRulePositionAccess().getCommaKeyword_3_1_2());
+                        	newLeafNode(otherlv_8, grammarAccess.getRuleAccess().getCommaKeyword_3_1_2());
                         
 
                     }
@@ -889,7 +810,7 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:391:3: ( (otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ',' ) | (otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ',' ) )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:361:3: ( (otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ',' ) | (otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ',' ) )
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -917,28 +838,28 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
             }
             switch (alt5) {
                 case 1 :
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:391:4: (otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ',' )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:361:4: (otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ',' )
                     {
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:391:4: (otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ',' )
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:391:6: otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ','
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:361:4: (otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ',' )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:361:6: otherlv_9= 'end' ( (lv_endIndex_10_0= RULE_INT ) ) otherlv_11= ','
                     {
-                    otherlv_9=(Token)match(input,21,FOLLOW_21_in_ruleRulePosition858); 
+                    otherlv_9=(Token)match(input,21,FOLLOW_21_in_ruleRule768); 
 
-                        	newLeafNode(otherlv_9, grammarAccess.getRulePositionAccess().getEndKeyword_4_0_0());
+                        	newLeafNode(otherlv_9, grammarAccess.getRuleAccess().getEndKeyword_4_0_0());
                         
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:395:1: ( (lv_endIndex_10_0= RULE_INT ) )
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:396:1: (lv_endIndex_10_0= RULE_INT )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:365:1: ( (lv_endIndex_10_0= RULE_INT ) )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:366:1: (lv_endIndex_10_0= RULE_INT )
                     {
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:396:1: (lv_endIndex_10_0= RULE_INT )
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:397:3: lv_endIndex_10_0= RULE_INT
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:366:1: (lv_endIndex_10_0= RULE_INT )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:367:3: lv_endIndex_10_0= RULE_INT
                     {
-                    lv_endIndex_10_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleRulePosition875); 
+                    lv_endIndex_10_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleRule785); 
 
-                    			newLeafNode(lv_endIndex_10_0, grammarAccess.getRulePositionAccess().getEndIndexINTTerminalRuleCall_4_0_1_0()); 
+                    			newLeafNode(lv_endIndex_10_0, grammarAccess.getRuleAccess().getEndIndexINTTerminalRuleCall_4_0_1_0()); 
                     		
 
                     	        if (current==null) {
-                    	            current = createModelElement(grammarAccess.getRulePositionRule());
+                    	            current = createModelElement(grammarAccess.getRuleRule());
                     	        }
                            		setWithLastConsumed(
                            			current, 
@@ -952,9 +873,9 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_11=(Token)match(input,20,FOLLOW_20_in_ruleRulePosition892); 
+                    otherlv_11=(Token)match(input,20,FOLLOW_20_in_ruleRule802); 
 
-                        	newLeafNode(otherlv_11, grammarAccess.getRulePositionAccess().getCommaKeyword_4_0_2());
+                        	newLeafNode(otherlv_11, grammarAccess.getRuleAccess().getCommaKeyword_4_0_2());
                         
 
                     }
@@ -963,28 +884,28 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:418:6: (otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ',' )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:388:6: (otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ',' )
                     {
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:418:6: (otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ',' )
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:418:8: otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ','
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:388:6: (otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ',' )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:388:8: otherlv_12= 'end' ( (lv_endDelimeter_13_0= RULE_STRING ) ) otherlv_14= ','
                     {
-                    otherlv_12=(Token)match(input,21,FOLLOW_21_in_ruleRulePosition912); 
+                    otherlv_12=(Token)match(input,21,FOLLOW_21_in_ruleRule822); 
 
-                        	newLeafNode(otherlv_12, grammarAccess.getRulePositionAccess().getEndKeyword_4_1_0());
+                        	newLeafNode(otherlv_12, grammarAccess.getRuleAccess().getEndKeyword_4_1_0());
                         
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:422:1: ( (lv_endDelimeter_13_0= RULE_STRING ) )
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:423:1: (lv_endDelimeter_13_0= RULE_STRING )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:392:1: ( (lv_endDelimeter_13_0= RULE_STRING ) )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:393:1: (lv_endDelimeter_13_0= RULE_STRING )
                     {
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:423:1: (lv_endDelimeter_13_0= RULE_STRING )
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:424:3: lv_endDelimeter_13_0= RULE_STRING
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:393:1: (lv_endDelimeter_13_0= RULE_STRING )
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:394:3: lv_endDelimeter_13_0= RULE_STRING
                     {
-                    lv_endDelimeter_13_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleRulePosition929); 
+                    lv_endDelimeter_13_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleRule839); 
 
-                    			newLeafNode(lv_endDelimeter_13_0, grammarAccess.getRulePositionAccess().getEndDelimeterSTRINGTerminalRuleCall_4_1_1_0()); 
+                    			newLeafNode(lv_endDelimeter_13_0, grammarAccess.getRuleAccess().getEndDelimeterSTRINGTerminalRuleCall_4_1_1_0()); 
                     		
 
                     	        if (current==null) {
-                    	            current = createModelElement(grammarAccess.getRulePositionRule());
+                    	            current = createModelElement(grammarAccess.getRuleRule());
                     	        }
                            		setWithLastConsumed(
                            			current, 
@@ -998,9 +919,9 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_14=(Token)match(input,20,FOLLOW_20_in_ruleRulePosition946); 
+                    otherlv_14=(Token)match(input,20,FOLLOW_20_in_ruleRule856); 
 
-                        	newLeafNode(otherlv_14, grammarAccess.getRulePositionAccess().getCommaKeyword_4_1_2());
+                        	newLeafNode(otherlv_14, grammarAccess.getRuleAccess().getCommaKeyword_4_1_2());
                         
 
                     }
@@ -1011,28 +932,28 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_15=(Token)match(input,14,FOLLOW_14_in_ruleRulePosition960); 
+            otherlv_15=(Token)match(input,14,FOLLOW_14_in_ruleRule870); 
 
-                	newLeafNode(otherlv_15, grammarAccess.getRulePositionAccess().getAttrKeyword_5());
+                	newLeafNode(otherlv_15, grammarAccess.getRuleAccess().getAttrKeyword_5());
                 
-            otherlv_16=(Token)match(input,12,FOLLOW_12_in_ruleRulePosition972); 
+            otherlv_16=(Token)match(input,12,FOLLOW_12_in_ruleRule882); 
 
-                	newLeafNode(otherlv_16, grammarAccess.getRulePositionAccess().getColonKeyword_6());
+                	newLeafNode(otherlv_16, grammarAccess.getRuleAccess().getColonKeyword_6());
                 
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:452:1: ( (otherlv_17= RULE_ID ) )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:453:1: (otherlv_17= RULE_ID )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:422:1: ( (otherlv_17= RULE_ID ) )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:423:1: (otherlv_17= RULE_ID )
             {
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:453:1: (otherlv_17= RULE_ID )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:454:3: otherlv_17= RULE_ID
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:423:1: (otherlv_17= RULE_ID )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:424:3: otherlv_17= RULE_ID
             {
 
             			if (current==null) {
-            	            current = createModelElement(grammarAccess.getRulePositionRule());
+            	            current = createModelElement(grammarAccess.getRuleRule());
             	        }
                     
-            otherlv_17=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRulePosition992); 
+            otherlv_17=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRule902); 
 
-            		newLeafNode(otherlv_17, grammarAccess.getRulePositionAccess().getAttrAttributeCrossReference_7_0()); 
+            		newLeafNode(otherlv_17, grammarAccess.getRuleAccess().getAttrAttributeCrossReference_7_0()); 
             	
 
             }
@@ -1040,9 +961,9 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_18=(Token)match(input,17,FOLLOW_17_in_ruleRulePosition1004); 
+            otherlv_18=(Token)match(input,17,FOLLOW_17_in_ruleRule914); 
 
-                	newLeafNode(otherlv_18, grammarAccess.getRulePositionAccess().getRightCurlyBracketKeyword_8());
+                	newLeafNode(otherlv_18, grammarAccess.getRuleAccess().getRightCurlyBracketKeyword_8());
                 
 
             }
@@ -1061,11 +982,11 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
         }
         return current;
     }
-    // $ANTLR end "ruleRulePosition"
+    // $ANTLR end "ruleRule"
 
 
     // $ANTLR start "entryRuleQualifiedName"
-    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:477:1: entryRuleQualifiedName returns [String current=null] : iv_ruleQualifiedName= ruleQualifiedName EOF ;
+    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:447:1: entryRuleQualifiedName returns [String current=null] : iv_ruleQualifiedName= ruleQualifiedName EOF ;
     public final String entryRuleQualifiedName() throws RecognitionException {
         String current = null;
 
@@ -1073,17 +994,17 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:478:2: (iv_ruleQualifiedName= ruleQualifiedName EOF )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:479:2: iv_ruleQualifiedName= ruleQualifiedName EOF
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:448:2: (iv_ruleQualifiedName= ruleQualifiedName EOF )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:449:2: iv_ruleQualifiedName= ruleQualifiedName EOF
             {
              newCompositeNode(grammarAccess.getQualifiedNameRule()); 
-            pushFollow(FOLLOW_ruleQualifiedName_in_entryRuleQualifiedName1041);
+            pushFollow(FOLLOW_ruleQualifiedName_in_entryRuleQualifiedName951);
             iv_ruleQualifiedName=ruleQualifiedName();
 
             state._fsp--;
 
              current =iv_ruleQualifiedName.getText(); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleQualifiedName1052); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleQualifiedName962); 
 
             }
 
@@ -1101,7 +1022,7 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleQualifiedName"
-    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:486:1: ruleQualifiedName returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* ) ;
+    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:456:1: ruleQualifiedName returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* ) ;
     public final AntlrDatatypeRuleToken ruleQualifiedName() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -1112,20 +1033,20 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:489:28: ( (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* ) )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:490:1: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:459:28: ( (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* ) )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:460:1: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* )
             {
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:490:1: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:490:6: this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )*
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:460:1: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:460:6: this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )*
             {
-            this_ID_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleQualifiedName1092); 
+            this_ID_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleQualifiedName1002); 
 
             		current.merge(this_ID_0);
                 
              
                 newLeafNode(this_ID_0, grammarAccess.getQualifiedNameAccess().getIDTerminalRuleCall_0()); 
                 
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:497:1: (kw= '.' this_ID_2= RULE_ID )*
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:467:1: (kw= '.' this_ID_2= RULE_ID )*
             loop6:
             do {
                 int alt6=2;
@@ -1138,14 +1059,14 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
 
                 switch (alt6) {
             	case 1 :
-            	    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:498:2: kw= '.' this_ID_2= RULE_ID
+            	    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:468:2: kw= '.' this_ID_2= RULE_ID
             	    {
-            	    kw=(Token)match(input,22,FOLLOW_22_in_ruleQualifiedName1111); 
+            	    kw=(Token)match(input,22,FOLLOW_22_in_ruleQualifiedName1021); 
 
             	            current.merge(kw);
             	            newLeafNode(kw, grammarAccess.getQualifiedNameAccess().getFullStopKeyword_1_0()); 
             	        
-            	    this_ID_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleQualifiedName1126); 
+            	    this_ID_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleQualifiedName1036); 
 
             	    		current.merge(this_ID_2);
             	        
@@ -1204,32 +1125,29 @@ public class InternalS2MParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_17_in_ruleAttribute533 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleRule_in_entryRuleRule569 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleRule579 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRulePosition_in_ruleRule625 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRulePosition_in_entryRuleRulePosition659 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleRulePosition669 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_ruleRulePosition706 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleRulePosition723 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_15_in_ruleRulePosition740 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_19_in_ruleRulePosition754 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleRulePosition771 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_20_in_ruleRulePosition788 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_19_in_ruleRulePosition808 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleRulePosition825 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_20_in_ruleRulePosition842 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_21_in_ruleRulePosition858 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleRulePosition875 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_20_in_ruleRulePosition892 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_21_in_ruleRulePosition912 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleRulePosition929 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_20_in_ruleRulePosition946 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleRulePosition960 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_12_in_ruleRulePosition972 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleRulePosition992 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleRulePosition1004 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_entryRuleQualifiedName1041 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleQualifiedName1052 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleQualifiedName1092 = new BitSet(new long[]{0x0000000000400002L});
-    public static final BitSet FOLLOW_22_in_ruleQualifiedName1111 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleQualifiedName1126 = new BitSet(new long[]{0x0000000000400002L});
+    public static final BitSet FOLLOW_18_in_ruleRule616 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleRule633 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_15_in_ruleRule650 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_19_in_ruleRule664 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleRule681 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_20_in_ruleRule698 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_19_in_ruleRule718 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleRule735 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_20_in_ruleRule752 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_21_in_ruleRule768 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleRule785 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_20_in_ruleRule802 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_21_in_ruleRule822 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleRule839 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_20_in_ruleRule856 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_ruleRule870 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_12_in_ruleRule882 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleRule902 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_17_in_ruleRule914 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_entryRuleQualifiedName951 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleQualifiedName962 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleQualifiedName1002 = new BitSet(new long[]{0x0000000000400002L});
+    public static final BitSet FOLLOW_22_in_ruleQualifiedName1021 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleQualifiedName1036 = new BitSet(new long[]{0x0000000000400002L});
 
 }

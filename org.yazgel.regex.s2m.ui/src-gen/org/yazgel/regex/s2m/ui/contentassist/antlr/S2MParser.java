@@ -37,15 +37,15 @@ public class S2MParser extends AbstractContentAssistParser {
 			nameMappings = new HashMap<AbstractElement, String>() {
 				private static final long serialVersionUID = 1L;
 				{
-					put(grammarAccess.getRulePositionAccess().getAlternatives_3(), "rule__RulePosition__Alternatives_3");
-					put(grammarAccess.getRulePositionAccess().getAlternatives_4(), "rule__RulePosition__Alternatives_4");
+					put(grammarAccess.getRuleAccess().getAlternatives_3(), "rule__Rule__Alternatives_3");
+					put(grammarAccess.getRuleAccess().getAlternatives_4(), "rule__Rule__Alternatives_4");
 					put(grammarAccess.getModelAccess().getGroup_0(), "rule__Model__Group_0__0");
 					put(grammarAccess.getAttributeAccess().getGroup(), "rule__Attribute__Group__0");
-					put(grammarAccess.getRulePositionAccess().getGroup(), "rule__RulePosition__Group__0");
-					put(grammarAccess.getRulePositionAccess().getGroup_3_0(), "rule__RulePosition__Group_3_0__0");
-					put(grammarAccess.getRulePositionAccess().getGroup_3_1(), "rule__RulePosition__Group_3_1__0");
-					put(grammarAccess.getRulePositionAccess().getGroup_4_0(), "rule__RulePosition__Group_4_0__0");
-					put(grammarAccess.getRulePositionAccess().getGroup_4_1(), "rule__RulePosition__Group_4_1__0");
+					put(grammarAccess.getRuleAccess().getGroup(), "rule__Rule__Group__0");
+					put(grammarAccess.getRuleAccess().getGroup_3_0(), "rule__Rule__Group_3_0__0");
+					put(grammarAccess.getRuleAccess().getGroup_3_1(), "rule__Rule__Group_3_1__0");
+					put(grammarAccess.getRuleAccess().getGroup_4_0(), "rule__Rule__Group_4_0__0");
+					put(grammarAccess.getRuleAccess().getGroup_4_1(), "rule__Rule__Group_4_1__0");
 					put(grammarAccess.getQualifiedNameAccess().getGroup(), "rule__QualifiedName__Group__0");
 					put(grammarAccess.getQualifiedNameAccess().getGroup_1(), "rule__QualifiedName__Group_1__0");
 					put(grammarAccess.getModelAccess().getNameAssignment_0_2(), "rule__Model__NameAssignment_0_2");
@@ -53,12 +53,12 @@ public class S2MParser extends AbstractContentAssistParser {
 					put(grammarAccess.getModelAccess().getRulesAssignment_1(), "rule__Model__RulesAssignment_1");
 					put(grammarAccess.getAttributeAccess().getNameAssignment_1(), "rule__Attribute__NameAssignment_1");
 					put(grammarAccess.getAttributeAccess().getTypeAssignment_5(), "rule__Attribute__TypeAssignment_5");
-					put(grammarAccess.getRulePositionAccess().getNameAssignment_1(), "rule__RulePosition__NameAssignment_1");
-					put(grammarAccess.getRulePositionAccess().getStartIndexAssignment_3_0_1(), "rule__RulePosition__StartIndexAssignment_3_0_1");
-					put(grammarAccess.getRulePositionAccess().getStartDelimeterAssignment_3_1_1(), "rule__RulePosition__StartDelimeterAssignment_3_1_1");
-					put(grammarAccess.getRulePositionAccess().getEndIndexAssignment_4_0_1(), "rule__RulePosition__EndIndexAssignment_4_0_1");
-					put(grammarAccess.getRulePositionAccess().getEndDelimeterAssignment_4_1_1(), "rule__RulePosition__EndDelimeterAssignment_4_1_1");
-					put(grammarAccess.getRulePositionAccess().getAttrAssignment_7(), "rule__RulePosition__AttrAssignment_7");
+					put(grammarAccess.getRuleAccess().getNameAssignment_1(), "rule__Rule__NameAssignment_1");
+					put(grammarAccess.getRuleAccess().getStartIndexAssignment_3_0_1(), "rule__Rule__StartIndexAssignment_3_0_1");
+					put(grammarAccess.getRuleAccess().getStartDelimeterAssignment_3_1_1(), "rule__Rule__StartDelimeterAssignment_3_1_1");
+					put(grammarAccess.getRuleAccess().getEndIndexAssignment_4_0_1(), "rule__Rule__EndIndexAssignment_4_0_1");
+					put(grammarAccess.getRuleAccess().getEndDelimeterAssignment_4_1_1(), "rule__Rule__EndDelimeterAssignment_4_1_1");
+					put(grammarAccess.getRuleAccess().getAttrAssignment_7(), "rule__Rule__AttrAssignment_7");
 					put(grammarAccess.getModelAccess().getUnorderedGroup(), "rule__Model__UnorderedGroup");
 				}
 			};

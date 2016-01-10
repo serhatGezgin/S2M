@@ -124,18 +124,6 @@ public class S2MGrammarAccess extends AbstractGrammarElementFinder {
 
 	public class RuleElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Rule");
-		private final RuleCall cRulePositionParserRuleCall = (RuleCall)rule.eContents().get(1);
-		
-		//Rule:
-		//	RulePosition;
-		@Override public ParserRule getRule() { return rule; }
-
-		//RulePosition
-		public RuleCall getRulePositionParserRuleCall() { return cRulePositionParserRuleCall; }
-	}
-
-	public class RulePositionElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "RulePosition");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cRuleKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -170,7 +158,7 @@ public class S2MGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cAttrAttributeIDTerminalRuleCall_7_0_1 = (RuleCall)cAttrAttributeCrossReference_7_0.eContents().get(1);
 		private final Keyword cRightCurlyBracketKeyword_8 = (Keyword)cGroup.eContents().get(8);
 		
-		//RulePosition:
+		//Rule:
 		//	"rule" name=ID "{" ("start" startIndex=INT "," | "start" startDelimeter=STRING ",") ("end" endIndex=INT "," | "end"
 		//	endDelimeter=STRING ",") "attr" ":" attr=[Attribute] "}";
 		@Override public ParserRule getRule() { return rule; }
@@ -308,7 +296,6 @@ public class S2MGrammarAccess extends AbstractGrammarElementFinder {
 	private final ModelElements pModel;
 	private final AttributeElements pAttribute;
 	private final RuleElements pRule;
-	private final RulePositionElements pRulePosition;
 	private final QualifiedNameElements pQualifiedName;
 	
 	private final Grammar grammar;
@@ -323,7 +310,6 @@ public class S2MGrammarAccess extends AbstractGrammarElementFinder {
 		this.pModel = new ModelElements();
 		this.pAttribute = new AttributeElements();
 		this.pRule = new RuleElements();
-		this.pRulePosition = new RulePositionElements();
 		this.pQualifiedName = new QualifiedNameElements();
 	}
 	
@@ -375,24 +361,14 @@ public class S2MGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Rule:
-	//	RulePosition;
+	//	"rule" name=ID "{" ("start" startIndex=INT "," | "start" startDelimeter=STRING ",") ("end" endIndex=INT "," | "end"
+	//	endDelimeter=STRING ",") "attr" ":" attr=[Attribute] "}";
 	public RuleElements getRuleAccess() {
 		return pRule;
 	}
 	
 	public ParserRule getRuleRule() {
 		return getRuleAccess().getRule();
-	}
-
-	//RulePosition:
-	//	"rule" name=ID "{" ("start" startIndex=INT "," | "start" startDelimeter=STRING ",") ("end" endIndex=INT "," | "end"
-	//	endDelimeter=STRING ",") "attr" ":" attr=[Attribute] "}";
-	public RulePositionElements getRulePositionAccess() {
-		return pRulePosition;
-	}
-	
-	public ParserRule getRulePositionRule() {
-		return getRulePositionAccess().getRule();
 	}
 
 	//QualifiedName:

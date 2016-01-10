@@ -17,14 +17,11 @@ Attribute:
 ;
 	
 Rule:
-	RulePosition
-;
-
-RulePosition:
 	'rule' name=ID '{'
 		(('start' startIndex=INT ',') | ('start' startDelimeter=STRING ','))
 		(('end' endIndex=INT ',') | ('end' endDelimeter=STRING ',') )
 		'attr' ':' attr = [Attribute|ID]
 	'}'
-;	
+;
+
 QualifiedName: ID ('.' ID)* ;

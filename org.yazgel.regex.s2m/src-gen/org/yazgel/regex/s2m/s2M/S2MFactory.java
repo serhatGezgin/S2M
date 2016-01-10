@@ -50,15 +50,6 @@ public interface S2MFactory extends EFactory
   Rule createRule();
 
   /**
-   * Returns a new object of class '<em>Rule Position</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Rule Position</em>'.
-   * @generated
-   */
-  RulePosition createRulePosition();
-
-  /**
    * Returns the package supported by this factory.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

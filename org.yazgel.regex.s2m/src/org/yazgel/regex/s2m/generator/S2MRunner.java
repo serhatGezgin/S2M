@@ -4,6 +4,7 @@
 package org.yazgel.regex.s2m.generator;
 
 import java.util.List;
+import java.util.Map;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -19,17 +20,26 @@ import com.google.inject.Inject;
 import com.google.inject.Injector;
 import com.google.inject.Provider;
 
-public class Main {
+public class S2MRunner {
+	
+	private static Map<String, Object> result;
 	
 	public static void main(String[] args) {
 		if (args.length==0) {
 			System.err.println("Aborting: no path to EMF resource provided!");
 			return;
 		}
+		
+		if (args.length==1) {
+			System.err.println("Aborting: no string provided for parse!");
+			return;
+		}
+		 
 		Injector injector = new org.yazgel.regex.s2m.S2MStandaloneSetup().createInjectorAndDoEMFRegistration();
-		Main main = injector.getInstance(Main.class);
-		main.runGenerator(args[0]);
-	}
+		
+		S2MRunner main = injector.getInstance(S2MRunner.class);
+		main.runGenerator(args[0], args[1]);
+	} 
 	
 	@Inject 
 	private Provider<ResourceSet> resourceSetProvider;
@@ -43,10 +53,10 @@ public class Main {
 	@Inject 
 	private JavaIoFileSystemAccess fileAccess;
 
-	protected void runGenerator(String string) {
+	protected void runGenerator(String fileUri, String content) {
 		// load the resource
 		ResourceSet set = resourceSetProvider.get();
-		Resource resource = set.getResource(URI.createURI(string), true);
+		Resource resource = set.getResource(URI.createURI(fileUri), true);
 		
 		// validate the resource
 		List<Issue> list = validator.validate(resource, CheckMode.ALL, CancelIndicator.NullImpl);
@@ -59,8 +69,17 @@ public class Main {
 		
 		// configure and start the generator
 		fileAccess.setOutputPath("src-gen/");
-		generator.doGenerate(resource, fileAccess);
 		
-		System.out.println("Code generation finished.");
+		result = new MapGenerator(content).generate(resource, fileAccess);
+		
+		System.out.println("Generation finished.");
+	}
+
+	public static Map<String, Object> getResult() {
+		return result;
+	}
+
+	public static void setResult(Map<String, Object> result) {
+		S2MRunner.result = result;
 	}
 }

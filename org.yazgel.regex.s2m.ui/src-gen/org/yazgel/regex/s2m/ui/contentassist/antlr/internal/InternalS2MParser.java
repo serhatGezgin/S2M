@@ -288,28 +288,34 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleRule"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:125:1: ruleRule : ( ruleRulePosition ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:125:1: ruleRule : ( ( rule__Rule__Group__0 ) ) ;
     public final void ruleRule() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:129:2: ( ( ruleRulePosition ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:130:1: ( ruleRulePosition )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:129:2: ( ( ( rule__Rule__Group__0 ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:130:1: ( ( rule__Rule__Group__0 ) )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:130:1: ( ruleRulePosition )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:131:1: ruleRulePosition
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:130:1: ( ( rule__Rule__Group__0 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:131:1: ( rule__Rule__Group__0 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRuleAccess().getRulePositionParserRuleCall()); 
+               before(grammarAccess.getRuleAccess().getGroup()); 
             }
-            pushFollow(FOLLOW_ruleRulePosition_in_ruleRule214);
-            ruleRulePosition();
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:132:1: ( rule__Rule__Group__0 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:132:2: rule__Rule__Group__0
+            {
+            pushFollow(FOLLOW_rule__Rule__Group__0_in_ruleRule214);
+            rule__Rule__Group__0();
 
             state._fsp--;
             if (state.failed) return ;
+
+            }
+
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRuleAccess().getRulePositionParserRuleCall()); 
+               after(grammarAccess.getRuleAccess().getGroup()); 
             }
 
             }
@@ -332,102 +338,17 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "ruleRule"
 
 
-    // $ANTLR start "entryRuleRulePosition"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:144:1: entryRuleRulePosition : ruleRulePosition EOF ;
-    public final void entryRuleRulePosition() throws RecognitionException {
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:145:1: ( ruleRulePosition EOF )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:146:1: ruleRulePosition EOF
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionRule()); 
-            }
-            pushFollow(FOLLOW_ruleRulePosition_in_entryRuleRulePosition240);
-            ruleRulePosition();
-
-            state._fsp--;
-            if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionRule()); 
-            }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleRulePosition247); if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleRulePosition"
-
-
-    // $ANTLR start "ruleRulePosition"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:153:1: ruleRulePosition : ( ( rule__RulePosition__Group__0 ) ) ;
-    public final void ruleRulePosition() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:157:2: ( ( ( rule__RulePosition__Group__0 ) ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:158:1: ( ( rule__RulePosition__Group__0 ) )
-            {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:158:1: ( ( rule__RulePosition__Group__0 ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:159:1: ( rule__RulePosition__Group__0 )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getGroup()); 
-            }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:160:1: ( rule__RulePosition__Group__0 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:160:2: rule__RulePosition__Group__0
-            {
-            pushFollow(FOLLOW_rule__RulePosition__Group__0_in_ruleRulePosition273);
-            rule__RulePosition__Group__0();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getGroup()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "ruleRulePosition"
-
-
     // $ANTLR start "entryRuleQualifiedName"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:172:1: entryRuleQualifiedName : ruleQualifiedName EOF ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:144:1: entryRuleQualifiedName : ruleQualifiedName EOF ;
     public final void entryRuleQualifiedName() throws RecognitionException {
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:173:1: ( ruleQualifiedName EOF )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:174:1: ruleQualifiedName EOF
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:145:1: ( ruleQualifiedName EOF )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:146:1: ruleQualifiedName EOF
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getQualifiedNameRule()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedName_in_entryRuleQualifiedName300);
+            pushFollow(FOLLOW_ruleQualifiedName_in_entryRuleQualifiedName241);
             ruleQualifiedName();
 
             state._fsp--;
@@ -435,7 +356,7 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
             if ( state.backtracking==0 ) {
                after(grammarAccess.getQualifiedNameRule()); 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleQualifiedName307); if (state.failed) return ;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleQualifiedName248); if (state.failed) return ;
 
             }
 
@@ -452,25 +373,25 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleQualifiedName"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:181:1: ruleQualifiedName : ( ( rule__QualifiedName__Group__0 ) ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:153:1: ruleQualifiedName : ( ( rule__QualifiedName__Group__0 ) ) ;
     public final void ruleQualifiedName() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:185:2: ( ( ( rule__QualifiedName__Group__0 ) ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:186:1: ( ( rule__QualifiedName__Group__0 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:157:2: ( ( ( rule__QualifiedName__Group__0 ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:158:1: ( ( rule__QualifiedName__Group__0 ) )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:186:1: ( ( rule__QualifiedName__Group__0 ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:187:1: ( rule__QualifiedName__Group__0 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:158:1: ( ( rule__QualifiedName__Group__0 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:159:1: ( rule__QualifiedName__Group__0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getQualifiedNameAccess().getGroup()); 
             }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:188:1: ( rule__QualifiedName__Group__0 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:188:2: rule__QualifiedName__Group__0
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:160:1: ( rule__QualifiedName__Group__0 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:160:2: rule__QualifiedName__Group__0
             {
-            pushFollow(FOLLOW_rule__QualifiedName__Group__0_in_ruleQualifiedName333);
+            pushFollow(FOLLOW_rule__QualifiedName__Group__0_in_ruleQualifiedName274);
             rule__QualifiedName__Group__0();
 
             state._fsp--;
@@ -502,14 +423,14 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "ruleQualifiedName"
 
 
-    // $ANTLR start "rule__RulePosition__Alternatives_3"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:200:1: rule__RulePosition__Alternatives_3 : ( ( ( rule__RulePosition__Group_3_0__0 ) ) | ( ( rule__RulePosition__Group_3_1__0 ) ) );
-    public final void rule__RulePosition__Alternatives_3() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Alternatives_3"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:172:1: rule__Rule__Alternatives_3 : ( ( ( rule__Rule__Group_3_0__0 ) ) | ( ( rule__Rule__Group_3_1__0 ) ) );
+    public final void rule__Rule__Alternatives_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:204:1: ( ( ( rule__RulePosition__Group_3_0__0 ) ) | ( ( rule__RulePosition__Group_3_1__0 ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:176:1: ( ( ( rule__Rule__Group_3_0__0 ) ) | ( ( rule__Rule__Group_3_1__0 ) ) )
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -539,19 +460,19 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
             }
             switch (alt1) {
                 case 1 :
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:205:1: ( ( rule__RulePosition__Group_3_0__0 ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:177:1: ( ( rule__Rule__Group_3_0__0 ) )
                     {
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:205:1: ( ( rule__RulePosition__Group_3_0__0 ) )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:206:1: ( rule__RulePosition__Group_3_0__0 )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:177:1: ( ( rule__Rule__Group_3_0__0 ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:178:1: ( rule__Rule__Group_3_0__0 )
                     {
                     if ( state.backtracking==0 ) {
-                       before(grammarAccess.getRulePositionAccess().getGroup_3_0()); 
+                       before(grammarAccess.getRuleAccess().getGroup_3_0()); 
                     }
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:207:1: ( rule__RulePosition__Group_3_0__0 )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:207:2: rule__RulePosition__Group_3_0__0
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:179:1: ( rule__Rule__Group_3_0__0 )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:179:2: rule__Rule__Group_3_0__0
                     {
-                    pushFollow(FOLLOW_rule__RulePosition__Group_3_0__0_in_rule__RulePosition__Alternatives_3369);
-                    rule__RulePosition__Group_3_0__0();
+                    pushFollow(FOLLOW_rule__Rule__Group_3_0__0_in_rule__Rule__Alternatives_3310);
+                    rule__Rule__Group_3_0__0();
 
                     state._fsp--;
                     if (state.failed) return ;
@@ -559,7 +480,7 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
                     }
 
                     if ( state.backtracking==0 ) {
-                       after(grammarAccess.getRulePositionAccess().getGroup_3_0()); 
+                       after(grammarAccess.getRuleAccess().getGroup_3_0()); 
                     }
 
                     }
@@ -568,19 +489,19 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:211:6: ( ( rule__RulePosition__Group_3_1__0 ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:183:6: ( ( rule__Rule__Group_3_1__0 ) )
                     {
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:211:6: ( ( rule__RulePosition__Group_3_1__0 ) )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:212:1: ( rule__RulePosition__Group_3_1__0 )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:183:6: ( ( rule__Rule__Group_3_1__0 ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:184:1: ( rule__Rule__Group_3_1__0 )
                     {
                     if ( state.backtracking==0 ) {
-                       before(grammarAccess.getRulePositionAccess().getGroup_3_1()); 
+                       before(grammarAccess.getRuleAccess().getGroup_3_1()); 
                     }
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:213:1: ( rule__RulePosition__Group_3_1__0 )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:213:2: rule__RulePosition__Group_3_1__0
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:185:1: ( rule__Rule__Group_3_1__0 )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:185:2: rule__Rule__Group_3_1__0
                     {
-                    pushFollow(FOLLOW_rule__RulePosition__Group_3_1__0_in_rule__RulePosition__Alternatives_3387);
-                    rule__RulePosition__Group_3_1__0();
+                    pushFollow(FOLLOW_rule__Rule__Group_3_1__0_in_rule__Rule__Alternatives_3328);
+                    rule__Rule__Group_3_1__0();
 
                     state._fsp--;
                     if (state.failed) return ;
@@ -588,7 +509,7 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
                     }
 
                     if ( state.backtracking==0 ) {
-                       after(grammarAccess.getRulePositionAccess().getGroup_3_1()); 
+                       after(grammarAccess.getRuleAccess().getGroup_3_1()); 
                     }
 
                     }
@@ -610,17 +531,17 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Alternatives_3"
+    // $ANTLR end "rule__Rule__Alternatives_3"
 
 
-    // $ANTLR start "rule__RulePosition__Alternatives_4"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:222:1: rule__RulePosition__Alternatives_4 : ( ( ( rule__RulePosition__Group_4_0__0 ) ) | ( ( rule__RulePosition__Group_4_1__0 ) ) );
-    public final void rule__RulePosition__Alternatives_4() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Alternatives_4"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:194:1: rule__Rule__Alternatives_4 : ( ( ( rule__Rule__Group_4_0__0 ) ) | ( ( rule__Rule__Group_4_1__0 ) ) );
+    public final void rule__Rule__Alternatives_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:226:1: ( ( ( rule__RulePosition__Group_4_0__0 ) ) | ( ( rule__RulePosition__Group_4_1__0 ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:198:1: ( ( ( rule__Rule__Group_4_0__0 ) ) | ( ( rule__Rule__Group_4_1__0 ) ) )
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -650,19 +571,19 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
             }
             switch (alt2) {
                 case 1 :
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:227:1: ( ( rule__RulePosition__Group_4_0__0 ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:199:1: ( ( rule__Rule__Group_4_0__0 ) )
                     {
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:227:1: ( ( rule__RulePosition__Group_4_0__0 ) )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:228:1: ( rule__RulePosition__Group_4_0__0 )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:199:1: ( ( rule__Rule__Group_4_0__0 ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:200:1: ( rule__Rule__Group_4_0__0 )
                     {
                     if ( state.backtracking==0 ) {
-                       before(grammarAccess.getRulePositionAccess().getGroup_4_0()); 
+                       before(grammarAccess.getRuleAccess().getGroup_4_0()); 
                     }
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:229:1: ( rule__RulePosition__Group_4_0__0 )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:229:2: rule__RulePosition__Group_4_0__0
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:201:1: ( rule__Rule__Group_4_0__0 )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:201:2: rule__Rule__Group_4_0__0
                     {
-                    pushFollow(FOLLOW_rule__RulePosition__Group_4_0__0_in_rule__RulePosition__Alternatives_4420);
-                    rule__RulePosition__Group_4_0__0();
+                    pushFollow(FOLLOW_rule__Rule__Group_4_0__0_in_rule__Rule__Alternatives_4361);
+                    rule__Rule__Group_4_0__0();
 
                     state._fsp--;
                     if (state.failed) return ;
@@ -670,7 +591,7 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
                     }
 
                     if ( state.backtracking==0 ) {
-                       after(grammarAccess.getRulePositionAccess().getGroup_4_0()); 
+                       after(grammarAccess.getRuleAccess().getGroup_4_0()); 
                     }
 
                     }
@@ -679,19 +600,19 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:233:6: ( ( rule__RulePosition__Group_4_1__0 ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:205:6: ( ( rule__Rule__Group_4_1__0 ) )
                     {
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:233:6: ( ( rule__RulePosition__Group_4_1__0 ) )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:234:1: ( rule__RulePosition__Group_4_1__0 )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:205:6: ( ( rule__Rule__Group_4_1__0 ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:206:1: ( rule__Rule__Group_4_1__0 )
                     {
                     if ( state.backtracking==0 ) {
-                       before(grammarAccess.getRulePositionAccess().getGroup_4_1()); 
+                       before(grammarAccess.getRuleAccess().getGroup_4_1()); 
                     }
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:235:1: ( rule__RulePosition__Group_4_1__0 )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:235:2: rule__RulePosition__Group_4_1__0
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:207:1: ( rule__Rule__Group_4_1__0 )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:207:2: rule__Rule__Group_4_1__0
                     {
-                    pushFollow(FOLLOW_rule__RulePosition__Group_4_1__0_in_rule__RulePosition__Alternatives_4438);
-                    rule__RulePosition__Group_4_1__0();
+                    pushFollow(FOLLOW_rule__Rule__Group_4_1__0_in_rule__Rule__Alternatives_4379);
+                    rule__Rule__Group_4_1__0();
 
                     state._fsp--;
                     if (state.failed) return ;
@@ -699,7 +620,7 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
                     }
 
                     if ( state.backtracking==0 ) {
-                       after(grammarAccess.getRulePositionAccess().getGroup_4_1()); 
+                       after(grammarAccess.getRuleAccess().getGroup_4_1()); 
                     }
 
                     }
@@ -721,25 +642,25 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Alternatives_4"
+    // $ANTLR end "rule__Rule__Alternatives_4"
 
 
     // $ANTLR start "rule__Model__Group_0__0"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:246:1: rule__Model__Group_0__0 : rule__Model__Group_0__0__Impl rule__Model__Group_0__1 ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:218:1: rule__Model__Group_0__0 : rule__Model__Group_0__0__Impl rule__Model__Group_0__1 ;
     public final void rule__Model__Group_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:250:1: ( rule__Model__Group_0__0__Impl rule__Model__Group_0__1 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:251:2: rule__Model__Group_0__0__Impl rule__Model__Group_0__1
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:222:1: ( rule__Model__Group_0__0__Impl rule__Model__Group_0__1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:223:2: rule__Model__Group_0__0__Impl rule__Model__Group_0__1
             {
-            pushFollow(FOLLOW_rule__Model__Group_0__0__Impl_in_rule__Model__Group_0__0469);
+            pushFollow(FOLLOW_rule__Model__Group_0__0__Impl_in_rule__Model__Group_0__0410);
             rule__Model__Group_0__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Model__Group_0__1_in_rule__Model__Group_0__0472);
+            pushFollow(FOLLOW_rule__Model__Group_0__1_in_rule__Model__Group_0__0413);
             rule__Model__Group_0__1();
 
             state._fsp--;
@@ -763,22 +684,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__Group_0__0__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:258:1: rule__Model__Group_0__0__Impl : ( 'model' ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:230:1: rule__Model__Group_0__0__Impl : ( 'model' ) ;
     public final void rule__Model__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:262:1: ( ( 'model' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:263:1: ( 'model' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:234:1: ( ( 'model' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:235:1: ( 'model' )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:263:1: ( 'model' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:264:1: 'model'
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:235:1: ( 'model' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:236:1: 'model'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getModelAccess().getModelKeyword_0_0()); 
             }
-            match(input,11,FOLLOW_11_in_rule__Model__Group_0__0__Impl500); if (state.failed) return ;
+            match(input,11,FOLLOW_11_in_rule__Model__Group_0__0__Impl441); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getModelAccess().getModelKeyword_0_0()); 
             }
@@ -804,21 +725,21 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__Group_0__1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:277:1: rule__Model__Group_0__1 : rule__Model__Group_0__1__Impl rule__Model__Group_0__2 ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:249:1: rule__Model__Group_0__1 : rule__Model__Group_0__1__Impl rule__Model__Group_0__2 ;
     public final void rule__Model__Group_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:281:1: ( rule__Model__Group_0__1__Impl rule__Model__Group_0__2 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:282:2: rule__Model__Group_0__1__Impl rule__Model__Group_0__2
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:253:1: ( rule__Model__Group_0__1__Impl rule__Model__Group_0__2 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:254:2: rule__Model__Group_0__1__Impl rule__Model__Group_0__2
             {
-            pushFollow(FOLLOW_rule__Model__Group_0__1__Impl_in_rule__Model__Group_0__1531);
+            pushFollow(FOLLOW_rule__Model__Group_0__1__Impl_in_rule__Model__Group_0__1472);
             rule__Model__Group_0__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Model__Group_0__2_in_rule__Model__Group_0__1534);
+            pushFollow(FOLLOW_rule__Model__Group_0__2_in_rule__Model__Group_0__1475);
             rule__Model__Group_0__2();
 
             state._fsp--;
@@ -842,22 +763,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__Group_0__1__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:289:1: rule__Model__Group_0__1__Impl : ( ':' ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:261:1: rule__Model__Group_0__1__Impl : ( ':' ) ;
     public final void rule__Model__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:293:1: ( ( ':' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:294:1: ( ':' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:265:1: ( ( ':' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:266:1: ( ':' )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:294:1: ( ':' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:295:1: ':'
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:266:1: ( ':' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:267:1: ':'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getModelAccess().getColonKeyword_0_1()); 
             }
-            match(input,12,FOLLOW_12_in_rule__Model__Group_0__1__Impl562); if (state.failed) return ;
+            match(input,12,FOLLOW_12_in_rule__Model__Group_0__1__Impl503); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getModelAccess().getColonKeyword_0_1()); 
             }
@@ -883,21 +804,21 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__Group_0__2"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:308:1: rule__Model__Group_0__2 : rule__Model__Group_0__2__Impl rule__Model__Group_0__3 ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:280:1: rule__Model__Group_0__2 : rule__Model__Group_0__2__Impl rule__Model__Group_0__3 ;
     public final void rule__Model__Group_0__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:312:1: ( rule__Model__Group_0__2__Impl rule__Model__Group_0__3 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:313:2: rule__Model__Group_0__2__Impl rule__Model__Group_0__3
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:284:1: ( rule__Model__Group_0__2__Impl rule__Model__Group_0__3 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:285:2: rule__Model__Group_0__2__Impl rule__Model__Group_0__3
             {
-            pushFollow(FOLLOW_rule__Model__Group_0__2__Impl_in_rule__Model__Group_0__2593);
+            pushFollow(FOLLOW_rule__Model__Group_0__2__Impl_in_rule__Model__Group_0__2534);
             rule__Model__Group_0__2__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Model__Group_0__3_in_rule__Model__Group_0__2596);
+            pushFollow(FOLLOW_rule__Model__Group_0__3_in_rule__Model__Group_0__2537);
             rule__Model__Group_0__3();
 
             state._fsp--;
@@ -921,25 +842,25 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__Group_0__2__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:320:1: rule__Model__Group_0__2__Impl : ( ( rule__Model__NameAssignment_0_2 ) ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:292:1: rule__Model__Group_0__2__Impl : ( ( rule__Model__NameAssignment_0_2 ) ) ;
     public final void rule__Model__Group_0__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:324:1: ( ( ( rule__Model__NameAssignment_0_2 ) ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:325:1: ( ( rule__Model__NameAssignment_0_2 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:296:1: ( ( ( rule__Model__NameAssignment_0_2 ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:297:1: ( ( rule__Model__NameAssignment_0_2 ) )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:325:1: ( ( rule__Model__NameAssignment_0_2 ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:326:1: ( rule__Model__NameAssignment_0_2 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:297:1: ( ( rule__Model__NameAssignment_0_2 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:298:1: ( rule__Model__NameAssignment_0_2 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getModelAccess().getNameAssignment_0_2()); 
             }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:327:1: ( rule__Model__NameAssignment_0_2 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:327:2: rule__Model__NameAssignment_0_2
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:299:1: ( rule__Model__NameAssignment_0_2 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:299:2: rule__Model__NameAssignment_0_2
             {
-            pushFollow(FOLLOW_rule__Model__NameAssignment_0_2_in_rule__Model__Group_0__2__Impl623);
+            pushFollow(FOLLOW_rule__Model__NameAssignment_0_2_in_rule__Model__Group_0__2__Impl564);
             rule__Model__NameAssignment_0_2();
 
             state._fsp--;
@@ -972,21 +893,21 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__Group_0__3"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:337:1: rule__Model__Group_0__3 : rule__Model__Group_0__3__Impl rule__Model__Group_0__4 ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:309:1: rule__Model__Group_0__3 : rule__Model__Group_0__3__Impl rule__Model__Group_0__4 ;
     public final void rule__Model__Group_0__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:341:1: ( rule__Model__Group_0__3__Impl rule__Model__Group_0__4 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:342:2: rule__Model__Group_0__3__Impl rule__Model__Group_0__4
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:313:1: ( rule__Model__Group_0__3__Impl rule__Model__Group_0__4 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:314:2: rule__Model__Group_0__3__Impl rule__Model__Group_0__4
             {
-            pushFollow(FOLLOW_rule__Model__Group_0__3__Impl_in_rule__Model__Group_0__3653);
+            pushFollow(FOLLOW_rule__Model__Group_0__3__Impl_in_rule__Model__Group_0__3594);
             rule__Model__Group_0__3__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Model__Group_0__4_in_rule__Model__Group_0__3656);
+            pushFollow(FOLLOW_rule__Model__Group_0__4_in_rule__Model__Group_0__3597);
             rule__Model__Group_0__4();
 
             state._fsp--;
@@ -1010,22 +931,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__Group_0__3__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:349:1: rule__Model__Group_0__3__Impl : ( ';' ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:321:1: rule__Model__Group_0__3__Impl : ( ';' ) ;
     public final void rule__Model__Group_0__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:353:1: ( ( ';' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:354:1: ( ';' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:325:1: ( ( ';' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:326:1: ( ';' )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:354:1: ( ';' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:355:1: ';'
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:326:1: ( ';' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:327:1: ';'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getModelAccess().getSemicolonKeyword_0_3()); 
             }
-            match(input,13,FOLLOW_13_in_rule__Model__Group_0__3__Impl684); if (state.failed) return ;
+            match(input,13,FOLLOW_13_in_rule__Model__Group_0__3__Impl625); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getModelAccess().getSemicolonKeyword_0_3()); 
             }
@@ -1051,16 +972,16 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__Group_0__4"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:368:1: rule__Model__Group_0__4 : rule__Model__Group_0__4__Impl ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:340:1: rule__Model__Group_0__4 : rule__Model__Group_0__4__Impl ;
     public final void rule__Model__Group_0__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:372:1: ( rule__Model__Group_0__4__Impl )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:373:2: rule__Model__Group_0__4__Impl
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:344:1: ( rule__Model__Group_0__4__Impl )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:345:2: rule__Model__Group_0__4__Impl
             {
-            pushFollow(FOLLOW_rule__Model__Group_0__4__Impl_in_rule__Model__Group_0__4715);
+            pushFollow(FOLLOW_rule__Model__Group_0__4__Impl_in_rule__Model__Group_0__4656);
             rule__Model__Group_0__4__Impl();
 
             state._fsp--;
@@ -1084,22 +1005,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__Group_0__4__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:379:1: rule__Model__Group_0__4__Impl : ( ( rule__Model__AttributesAssignment_0_4 )* ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:351:1: rule__Model__Group_0__4__Impl : ( ( rule__Model__AttributesAssignment_0_4 )* ) ;
     public final void rule__Model__Group_0__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:383:1: ( ( ( rule__Model__AttributesAssignment_0_4 )* ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:384:1: ( ( rule__Model__AttributesAssignment_0_4 )* )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:355:1: ( ( ( rule__Model__AttributesAssignment_0_4 )* ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:356:1: ( ( rule__Model__AttributesAssignment_0_4 )* )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:384:1: ( ( rule__Model__AttributesAssignment_0_4 )* )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:385:1: ( rule__Model__AttributesAssignment_0_4 )*
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:356:1: ( ( rule__Model__AttributesAssignment_0_4 )* )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:357:1: ( rule__Model__AttributesAssignment_0_4 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getModelAccess().getAttributesAssignment_0_4()); 
             }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:386:1: ( rule__Model__AttributesAssignment_0_4 )*
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:358:1: ( rule__Model__AttributesAssignment_0_4 )*
             loop3:
             do {
                 int alt3=2;
@@ -1112,9 +1033,9 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:386:2: rule__Model__AttributesAssignment_0_4
+            	    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:358:2: rule__Model__AttributesAssignment_0_4
             	    {
-            	    pushFollow(FOLLOW_rule__Model__AttributesAssignment_0_4_in_rule__Model__Group_0__4__Impl742);
+            	    pushFollow(FOLLOW_rule__Model__AttributesAssignment_0_4_in_rule__Model__Group_0__4__Impl683);
             	    rule__Model__AttributesAssignment_0_4();
 
             	    state._fsp--;
@@ -1153,21 +1074,21 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Attribute__Group__0"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:406:1: rule__Attribute__Group__0 : rule__Attribute__Group__0__Impl rule__Attribute__Group__1 ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:378:1: rule__Attribute__Group__0 : rule__Attribute__Group__0__Impl rule__Attribute__Group__1 ;
     public final void rule__Attribute__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:410:1: ( rule__Attribute__Group__0__Impl rule__Attribute__Group__1 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:411:2: rule__Attribute__Group__0__Impl rule__Attribute__Group__1
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:382:1: ( rule__Attribute__Group__0__Impl rule__Attribute__Group__1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:383:2: rule__Attribute__Group__0__Impl rule__Attribute__Group__1
             {
-            pushFollow(FOLLOW_rule__Attribute__Group__0__Impl_in_rule__Attribute__Group__0783);
+            pushFollow(FOLLOW_rule__Attribute__Group__0__Impl_in_rule__Attribute__Group__0724);
             rule__Attribute__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Attribute__Group__1_in_rule__Attribute__Group__0786);
+            pushFollow(FOLLOW_rule__Attribute__Group__1_in_rule__Attribute__Group__0727);
             rule__Attribute__Group__1();
 
             state._fsp--;
@@ -1191,22 +1112,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Attribute__Group__0__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:418:1: rule__Attribute__Group__0__Impl : ( 'attr' ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:390:1: rule__Attribute__Group__0__Impl : ( 'attr' ) ;
     public final void rule__Attribute__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:422:1: ( ( 'attr' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:423:1: ( 'attr' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:394:1: ( ( 'attr' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:395:1: ( 'attr' )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:423:1: ( 'attr' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:424:1: 'attr'
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:395:1: ( 'attr' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:396:1: 'attr'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAttributeAccess().getAttrKeyword_0()); 
             }
-            match(input,14,FOLLOW_14_in_rule__Attribute__Group__0__Impl814); if (state.failed) return ;
+            match(input,14,FOLLOW_14_in_rule__Attribute__Group__0__Impl755); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAttributeAccess().getAttrKeyword_0()); 
             }
@@ -1232,21 +1153,21 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Attribute__Group__1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:437:1: rule__Attribute__Group__1 : rule__Attribute__Group__1__Impl rule__Attribute__Group__2 ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:409:1: rule__Attribute__Group__1 : rule__Attribute__Group__1__Impl rule__Attribute__Group__2 ;
     public final void rule__Attribute__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:441:1: ( rule__Attribute__Group__1__Impl rule__Attribute__Group__2 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:442:2: rule__Attribute__Group__1__Impl rule__Attribute__Group__2
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:413:1: ( rule__Attribute__Group__1__Impl rule__Attribute__Group__2 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:414:2: rule__Attribute__Group__1__Impl rule__Attribute__Group__2
             {
-            pushFollow(FOLLOW_rule__Attribute__Group__1__Impl_in_rule__Attribute__Group__1845);
+            pushFollow(FOLLOW_rule__Attribute__Group__1__Impl_in_rule__Attribute__Group__1786);
             rule__Attribute__Group__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Attribute__Group__2_in_rule__Attribute__Group__1848);
+            pushFollow(FOLLOW_rule__Attribute__Group__2_in_rule__Attribute__Group__1789);
             rule__Attribute__Group__2();
 
             state._fsp--;
@@ -1270,25 +1191,25 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Attribute__Group__1__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:449:1: rule__Attribute__Group__1__Impl : ( ( rule__Attribute__NameAssignment_1 ) ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:421:1: rule__Attribute__Group__1__Impl : ( ( rule__Attribute__NameAssignment_1 ) ) ;
     public final void rule__Attribute__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:453:1: ( ( ( rule__Attribute__NameAssignment_1 ) ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:454:1: ( ( rule__Attribute__NameAssignment_1 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:425:1: ( ( ( rule__Attribute__NameAssignment_1 ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:426:1: ( ( rule__Attribute__NameAssignment_1 ) )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:454:1: ( ( rule__Attribute__NameAssignment_1 ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:455:1: ( rule__Attribute__NameAssignment_1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:426:1: ( ( rule__Attribute__NameAssignment_1 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:427:1: ( rule__Attribute__NameAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAttributeAccess().getNameAssignment_1()); 
             }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:456:1: ( rule__Attribute__NameAssignment_1 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:456:2: rule__Attribute__NameAssignment_1
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:428:1: ( rule__Attribute__NameAssignment_1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:428:2: rule__Attribute__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__Attribute__NameAssignment_1_in_rule__Attribute__Group__1__Impl875);
+            pushFollow(FOLLOW_rule__Attribute__NameAssignment_1_in_rule__Attribute__Group__1__Impl816);
             rule__Attribute__NameAssignment_1();
 
             state._fsp--;
@@ -1321,21 +1242,21 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Attribute__Group__2"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:466:1: rule__Attribute__Group__2 : rule__Attribute__Group__2__Impl rule__Attribute__Group__3 ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:438:1: rule__Attribute__Group__2 : rule__Attribute__Group__2__Impl rule__Attribute__Group__3 ;
     public final void rule__Attribute__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:470:1: ( rule__Attribute__Group__2__Impl rule__Attribute__Group__3 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:471:2: rule__Attribute__Group__2__Impl rule__Attribute__Group__3
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:442:1: ( rule__Attribute__Group__2__Impl rule__Attribute__Group__3 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:443:2: rule__Attribute__Group__2__Impl rule__Attribute__Group__3
             {
-            pushFollow(FOLLOW_rule__Attribute__Group__2__Impl_in_rule__Attribute__Group__2905);
+            pushFollow(FOLLOW_rule__Attribute__Group__2__Impl_in_rule__Attribute__Group__2846);
             rule__Attribute__Group__2__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Attribute__Group__3_in_rule__Attribute__Group__2908);
+            pushFollow(FOLLOW_rule__Attribute__Group__3_in_rule__Attribute__Group__2849);
             rule__Attribute__Group__3();
 
             state._fsp--;
@@ -1359,22 +1280,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Attribute__Group__2__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:478:1: rule__Attribute__Group__2__Impl : ( '{' ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:450:1: rule__Attribute__Group__2__Impl : ( '{' ) ;
     public final void rule__Attribute__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:482:1: ( ( '{' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:483:1: ( '{' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:454:1: ( ( '{' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:455:1: ( '{' )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:483:1: ( '{' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:484:1: '{'
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:455:1: ( '{' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:456:1: '{'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAttributeAccess().getLeftCurlyBracketKeyword_2()); 
             }
-            match(input,15,FOLLOW_15_in_rule__Attribute__Group__2__Impl936); if (state.failed) return ;
+            match(input,15,FOLLOW_15_in_rule__Attribute__Group__2__Impl877); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAttributeAccess().getLeftCurlyBracketKeyword_2()); 
             }
@@ -1400,21 +1321,21 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Attribute__Group__3"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:497:1: rule__Attribute__Group__3 : rule__Attribute__Group__3__Impl rule__Attribute__Group__4 ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:469:1: rule__Attribute__Group__3 : rule__Attribute__Group__3__Impl rule__Attribute__Group__4 ;
     public final void rule__Attribute__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:501:1: ( rule__Attribute__Group__3__Impl rule__Attribute__Group__4 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:502:2: rule__Attribute__Group__3__Impl rule__Attribute__Group__4
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:473:1: ( rule__Attribute__Group__3__Impl rule__Attribute__Group__4 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:474:2: rule__Attribute__Group__3__Impl rule__Attribute__Group__4
             {
-            pushFollow(FOLLOW_rule__Attribute__Group__3__Impl_in_rule__Attribute__Group__3967);
+            pushFollow(FOLLOW_rule__Attribute__Group__3__Impl_in_rule__Attribute__Group__3908);
             rule__Attribute__Group__3__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Attribute__Group__4_in_rule__Attribute__Group__3970);
+            pushFollow(FOLLOW_rule__Attribute__Group__4_in_rule__Attribute__Group__3911);
             rule__Attribute__Group__4();
 
             state._fsp--;
@@ -1438,22 +1359,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Attribute__Group__3__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:509:1: rule__Attribute__Group__3__Impl : ( 'type' ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:481:1: rule__Attribute__Group__3__Impl : ( 'type' ) ;
     public final void rule__Attribute__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:513:1: ( ( 'type' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:514:1: ( 'type' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:485:1: ( ( 'type' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:486:1: ( 'type' )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:514:1: ( 'type' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:515:1: 'type'
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:486:1: ( 'type' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:487:1: 'type'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAttributeAccess().getTypeKeyword_3()); 
             }
-            match(input,16,FOLLOW_16_in_rule__Attribute__Group__3__Impl998); if (state.failed) return ;
+            match(input,16,FOLLOW_16_in_rule__Attribute__Group__3__Impl939); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAttributeAccess().getTypeKeyword_3()); 
             }
@@ -1479,21 +1400,21 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Attribute__Group__4"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:528:1: rule__Attribute__Group__4 : rule__Attribute__Group__4__Impl rule__Attribute__Group__5 ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:500:1: rule__Attribute__Group__4 : rule__Attribute__Group__4__Impl rule__Attribute__Group__5 ;
     public final void rule__Attribute__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:532:1: ( rule__Attribute__Group__4__Impl rule__Attribute__Group__5 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:533:2: rule__Attribute__Group__4__Impl rule__Attribute__Group__5
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:504:1: ( rule__Attribute__Group__4__Impl rule__Attribute__Group__5 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:505:2: rule__Attribute__Group__4__Impl rule__Attribute__Group__5
             {
-            pushFollow(FOLLOW_rule__Attribute__Group__4__Impl_in_rule__Attribute__Group__41029);
+            pushFollow(FOLLOW_rule__Attribute__Group__4__Impl_in_rule__Attribute__Group__4970);
             rule__Attribute__Group__4__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Attribute__Group__5_in_rule__Attribute__Group__41032);
+            pushFollow(FOLLOW_rule__Attribute__Group__5_in_rule__Attribute__Group__4973);
             rule__Attribute__Group__5();
 
             state._fsp--;
@@ -1517,22 +1438,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Attribute__Group__4__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:540:1: rule__Attribute__Group__4__Impl : ( ':' ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:512:1: rule__Attribute__Group__4__Impl : ( ':' ) ;
     public final void rule__Attribute__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:544:1: ( ( ':' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:545:1: ( ':' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:516:1: ( ( ':' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:517:1: ( ':' )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:545:1: ( ':' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:546:1: ':'
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:517:1: ( ':' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:518:1: ':'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAttributeAccess().getColonKeyword_4()); 
             }
-            match(input,12,FOLLOW_12_in_rule__Attribute__Group__4__Impl1060); if (state.failed) return ;
+            match(input,12,FOLLOW_12_in_rule__Attribute__Group__4__Impl1001); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAttributeAccess().getColonKeyword_4()); 
             }
@@ -1558,21 +1479,21 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Attribute__Group__5"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:559:1: rule__Attribute__Group__5 : rule__Attribute__Group__5__Impl rule__Attribute__Group__6 ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:531:1: rule__Attribute__Group__5 : rule__Attribute__Group__5__Impl rule__Attribute__Group__6 ;
     public final void rule__Attribute__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:563:1: ( rule__Attribute__Group__5__Impl rule__Attribute__Group__6 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:564:2: rule__Attribute__Group__5__Impl rule__Attribute__Group__6
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:535:1: ( rule__Attribute__Group__5__Impl rule__Attribute__Group__6 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:536:2: rule__Attribute__Group__5__Impl rule__Attribute__Group__6
             {
-            pushFollow(FOLLOW_rule__Attribute__Group__5__Impl_in_rule__Attribute__Group__51091);
+            pushFollow(FOLLOW_rule__Attribute__Group__5__Impl_in_rule__Attribute__Group__51032);
             rule__Attribute__Group__5__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Attribute__Group__6_in_rule__Attribute__Group__51094);
+            pushFollow(FOLLOW_rule__Attribute__Group__6_in_rule__Attribute__Group__51035);
             rule__Attribute__Group__6();
 
             state._fsp--;
@@ -1596,25 +1517,25 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Attribute__Group__5__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:571:1: rule__Attribute__Group__5__Impl : ( ( rule__Attribute__TypeAssignment_5 ) ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:543:1: rule__Attribute__Group__5__Impl : ( ( rule__Attribute__TypeAssignment_5 ) ) ;
     public final void rule__Attribute__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:575:1: ( ( ( rule__Attribute__TypeAssignment_5 ) ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:576:1: ( ( rule__Attribute__TypeAssignment_5 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:547:1: ( ( ( rule__Attribute__TypeAssignment_5 ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:548:1: ( ( rule__Attribute__TypeAssignment_5 ) )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:576:1: ( ( rule__Attribute__TypeAssignment_5 ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:577:1: ( rule__Attribute__TypeAssignment_5 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:548:1: ( ( rule__Attribute__TypeAssignment_5 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:549:1: ( rule__Attribute__TypeAssignment_5 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAttributeAccess().getTypeAssignment_5()); 
             }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:578:1: ( rule__Attribute__TypeAssignment_5 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:578:2: rule__Attribute__TypeAssignment_5
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:550:1: ( rule__Attribute__TypeAssignment_5 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:550:2: rule__Attribute__TypeAssignment_5
             {
-            pushFollow(FOLLOW_rule__Attribute__TypeAssignment_5_in_rule__Attribute__Group__5__Impl1121);
+            pushFollow(FOLLOW_rule__Attribute__TypeAssignment_5_in_rule__Attribute__Group__5__Impl1062);
             rule__Attribute__TypeAssignment_5();
 
             state._fsp--;
@@ -1647,16 +1568,16 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Attribute__Group__6"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:588:1: rule__Attribute__Group__6 : rule__Attribute__Group__6__Impl ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:560:1: rule__Attribute__Group__6 : rule__Attribute__Group__6__Impl ;
     public final void rule__Attribute__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:592:1: ( rule__Attribute__Group__6__Impl )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:593:2: rule__Attribute__Group__6__Impl
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:564:1: ( rule__Attribute__Group__6__Impl )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:565:2: rule__Attribute__Group__6__Impl
             {
-            pushFollow(FOLLOW_rule__Attribute__Group__6__Impl_in_rule__Attribute__Group__61151);
+            pushFollow(FOLLOW_rule__Attribute__Group__6__Impl_in_rule__Attribute__Group__61092);
             rule__Attribute__Group__6__Impl();
 
             state._fsp--;
@@ -1680,22 +1601,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Attribute__Group__6__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:599:1: rule__Attribute__Group__6__Impl : ( '}' ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:571:1: rule__Attribute__Group__6__Impl : ( '}' ) ;
     public final void rule__Attribute__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:603:1: ( ( '}' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:604:1: ( '}' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:575:1: ( ( '}' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:576:1: ( '}' )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:604:1: ( '}' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:605:1: '}'
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:576:1: ( '}' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:577:1: '}'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAttributeAccess().getRightCurlyBracketKeyword_6()); 
             }
-            match(input,17,FOLLOW_17_in_rule__Attribute__Group__6__Impl1179); if (state.failed) return ;
+            match(input,17,FOLLOW_17_in_rule__Attribute__Group__6__Impl1120); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAttributeAccess().getRightCurlyBracketKeyword_6()); 
             }
@@ -1720,23 +1641,23 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Attribute__Group__6__Impl"
 
 
-    // $ANTLR start "rule__RulePosition__Group__0"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:632:1: rule__RulePosition__Group__0 : rule__RulePosition__Group__0__Impl rule__RulePosition__Group__1 ;
-    public final void rule__RulePosition__Group__0() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__0"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:604:1: rule__Rule__Group__0 : rule__Rule__Group__0__Impl rule__Rule__Group__1 ;
+    public final void rule__Rule__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:636:1: ( rule__RulePosition__Group__0__Impl rule__RulePosition__Group__1 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:637:2: rule__RulePosition__Group__0__Impl rule__RulePosition__Group__1
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:608:1: ( rule__Rule__Group__0__Impl rule__Rule__Group__1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:609:2: rule__Rule__Group__0__Impl rule__Rule__Group__1
             {
-            pushFollow(FOLLOW_rule__RulePosition__Group__0__Impl_in_rule__RulePosition__Group__01224);
-            rule__RulePosition__Group__0__Impl();
+            pushFollow(FOLLOW_rule__Rule__Group__0__Impl_in_rule__Rule__Group__01165);
+            rule__Rule__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__RulePosition__Group__1_in_rule__RulePosition__Group__01227);
-            rule__RulePosition__Group__1();
+            pushFollow(FOLLOW_rule__Rule__Group__1_in_rule__Rule__Group__01168);
+            rule__Rule__Group__1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -1755,117 +1676,28 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group__0"
+    // $ANTLR end "rule__Rule__Group__0"
 
 
-    // $ANTLR start "rule__RulePosition__Group__0__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:644:1: rule__RulePosition__Group__0__Impl : ( 'rule' ) ;
-    public final void rule__RulePosition__Group__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:648:1: ( ( 'rule' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:649:1: ( 'rule' )
-            {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:649:1: ( 'rule' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:650:1: 'rule'
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getRuleKeyword_0()); 
-            }
-            match(input,18,FOLLOW_18_in_rule__RulePosition__Group__0__Impl1255); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getRuleKeyword_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group__0__Impl"
-
-
-    // $ANTLR start "rule__RulePosition__Group__1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:663:1: rule__RulePosition__Group__1 : rule__RulePosition__Group__1__Impl rule__RulePosition__Group__2 ;
-    public final void rule__RulePosition__Group__1() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__0__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:616:1: rule__Rule__Group__0__Impl : ( 'rule' ) ;
+    public final void rule__Rule__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:667:1: ( rule__RulePosition__Group__1__Impl rule__RulePosition__Group__2 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:668:2: rule__RulePosition__Group__1__Impl rule__RulePosition__Group__2
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:620:1: ( ( 'rule' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:621:1: ( 'rule' )
             {
-            pushFollow(FOLLOW_rule__RulePosition__Group__1__Impl_in_rule__RulePosition__Group__11286);
-            rule__RulePosition__Group__1__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_rule__RulePosition__Group__2_in_rule__RulePosition__Group__11289);
-            rule__RulePosition__Group__2();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group__1"
-
-
-    // $ANTLR start "rule__RulePosition__Group__1__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:675:1: rule__RulePosition__Group__1__Impl : ( ( rule__RulePosition__NameAssignment_1 ) ) ;
-    public final void rule__RulePosition__Group__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:679:1: ( ( ( rule__RulePosition__NameAssignment_1 ) ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:680:1: ( ( rule__RulePosition__NameAssignment_1 ) )
-            {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:680:1: ( ( rule__RulePosition__NameAssignment_1 ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:681:1: ( rule__RulePosition__NameAssignment_1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:621:1: ( 'rule' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:622:1: 'rule'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getNameAssignment_1()); 
+               before(grammarAccess.getRuleAccess().getRuleKeyword_0()); 
             }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:682:1: ( rule__RulePosition__NameAssignment_1 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:682:2: rule__RulePosition__NameAssignment_1
-            {
-            pushFollow(FOLLOW_rule__RulePosition__NameAssignment_1_in_rule__RulePosition__Group__1__Impl1316);
-            rule__RulePosition__NameAssignment_1();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
+            match(input,18,FOLLOW_18_in_rule__Rule__Group__0__Impl1196); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getNameAssignment_1()); 
+               after(grammarAccess.getRuleAccess().getRuleKeyword_0()); 
             }
 
             }
@@ -1885,26 +1717,26 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group__1__Impl"
+    // $ANTLR end "rule__Rule__Group__0__Impl"
 
 
-    // $ANTLR start "rule__RulePosition__Group__2"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:692:1: rule__RulePosition__Group__2 : rule__RulePosition__Group__2__Impl rule__RulePosition__Group__3 ;
-    public final void rule__RulePosition__Group__2() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__1"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:635:1: rule__Rule__Group__1 : rule__Rule__Group__1__Impl rule__Rule__Group__2 ;
+    public final void rule__Rule__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:696:1: ( rule__RulePosition__Group__2__Impl rule__RulePosition__Group__3 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:697:2: rule__RulePosition__Group__2__Impl rule__RulePosition__Group__3
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:639:1: ( rule__Rule__Group__1__Impl rule__Rule__Group__2 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:640:2: rule__Rule__Group__1__Impl rule__Rule__Group__2
             {
-            pushFollow(FOLLOW_rule__RulePosition__Group__2__Impl_in_rule__RulePosition__Group__21346);
-            rule__RulePosition__Group__2__Impl();
+            pushFollow(FOLLOW_rule__Rule__Group__1__Impl_in_rule__Rule__Group__11227);
+            rule__Rule__Group__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__RulePosition__Group__3_in_rule__RulePosition__Group__21349);
-            rule__RulePosition__Group__3();
+            pushFollow(FOLLOW_rule__Rule__Group__2_in_rule__Rule__Group__11230);
+            rule__Rule__Group__2();
 
             state._fsp--;
             if (state.failed) return ;
@@ -1923,109 +1755,30 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group__2"
+    // $ANTLR end "rule__Rule__Group__1"
 
 
-    // $ANTLR start "rule__RulePosition__Group__2__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:704:1: rule__RulePosition__Group__2__Impl : ( '{' ) ;
-    public final void rule__RulePosition__Group__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:708:1: ( ( '{' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:709:1: ( '{' )
-            {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:709:1: ( '{' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:710:1: '{'
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getLeftCurlyBracketKeyword_2()); 
-            }
-            match(input,15,FOLLOW_15_in_rule__RulePosition__Group__2__Impl1377); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getLeftCurlyBracketKeyword_2()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group__2__Impl"
-
-
-    // $ANTLR start "rule__RulePosition__Group__3"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:723:1: rule__RulePosition__Group__3 : rule__RulePosition__Group__3__Impl rule__RulePosition__Group__4 ;
-    public final void rule__RulePosition__Group__3() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__1__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:647:1: rule__Rule__Group__1__Impl : ( ( rule__Rule__NameAssignment_1 ) ) ;
+    public final void rule__Rule__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:727:1: ( rule__RulePosition__Group__3__Impl rule__RulePosition__Group__4 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:728:2: rule__RulePosition__Group__3__Impl rule__RulePosition__Group__4
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:651:1: ( ( ( rule__Rule__NameAssignment_1 ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:652:1: ( ( rule__Rule__NameAssignment_1 ) )
             {
-            pushFollow(FOLLOW_rule__RulePosition__Group__3__Impl_in_rule__RulePosition__Group__31408);
-            rule__RulePosition__Group__3__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_rule__RulePosition__Group__4_in_rule__RulePosition__Group__31411);
-            rule__RulePosition__Group__4();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group__3"
-
-
-    // $ANTLR start "rule__RulePosition__Group__3__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:735:1: rule__RulePosition__Group__3__Impl : ( ( rule__RulePosition__Alternatives_3 ) ) ;
-    public final void rule__RulePosition__Group__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:739:1: ( ( ( rule__RulePosition__Alternatives_3 ) ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:740:1: ( ( rule__RulePosition__Alternatives_3 ) )
-            {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:740:1: ( ( rule__RulePosition__Alternatives_3 ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:741:1: ( rule__RulePosition__Alternatives_3 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:652:1: ( ( rule__Rule__NameAssignment_1 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:653:1: ( rule__Rule__NameAssignment_1 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getAlternatives_3()); 
+               before(grammarAccess.getRuleAccess().getNameAssignment_1()); 
             }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:742:1: ( rule__RulePosition__Alternatives_3 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:742:2: rule__RulePosition__Alternatives_3
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:654:1: ( rule__Rule__NameAssignment_1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:654:2: rule__Rule__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__RulePosition__Alternatives_3_in_rule__RulePosition__Group__3__Impl1438);
-            rule__RulePosition__Alternatives_3();
+            pushFollow(FOLLOW_rule__Rule__NameAssignment_1_in_rule__Rule__Group__1__Impl1257);
+            rule__Rule__NameAssignment_1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -2033,7 +1786,7 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getAlternatives_3()); 
+               after(grammarAccess.getRuleAccess().getNameAssignment_1()); 
             }
 
             }
@@ -2053,26 +1806,26 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group__3__Impl"
+    // $ANTLR end "rule__Rule__Group__1__Impl"
 
 
-    // $ANTLR start "rule__RulePosition__Group__4"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:752:1: rule__RulePosition__Group__4 : rule__RulePosition__Group__4__Impl rule__RulePosition__Group__5 ;
-    public final void rule__RulePosition__Group__4() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__2"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:664:1: rule__Rule__Group__2 : rule__Rule__Group__2__Impl rule__Rule__Group__3 ;
+    public final void rule__Rule__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:756:1: ( rule__RulePosition__Group__4__Impl rule__RulePosition__Group__5 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:757:2: rule__RulePosition__Group__4__Impl rule__RulePosition__Group__5
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:668:1: ( rule__Rule__Group__2__Impl rule__Rule__Group__3 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:669:2: rule__Rule__Group__2__Impl rule__Rule__Group__3
             {
-            pushFollow(FOLLOW_rule__RulePosition__Group__4__Impl_in_rule__RulePosition__Group__41468);
-            rule__RulePosition__Group__4__Impl();
+            pushFollow(FOLLOW_rule__Rule__Group__2__Impl_in_rule__Rule__Group__21287);
+            rule__Rule__Group__2__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__RulePosition__Group__5_in_rule__RulePosition__Group__41471);
-            rule__RulePosition__Group__5();
+            pushFollow(FOLLOW_rule__Rule__Group__3_in_rule__Rule__Group__21290);
+            rule__Rule__Group__3();
 
             state._fsp--;
             if (state.failed) return ;
@@ -2091,117 +1844,28 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group__4"
+    // $ANTLR end "rule__Rule__Group__2"
 
 
-    // $ANTLR start "rule__RulePosition__Group__4__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:764:1: rule__RulePosition__Group__4__Impl : ( ( rule__RulePosition__Alternatives_4 ) ) ;
-    public final void rule__RulePosition__Group__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:768:1: ( ( ( rule__RulePosition__Alternatives_4 ) ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:769:1: ( ( rule__RulePosition__Alternatives_4 ) )
-            {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:769:1: ( ( rule__RulePosition__Alternatives_4 ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:770:1: ( rule__RulePosition__Alternatives_4 )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getAlternatives_4()); 
-            }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:771:1: ( rule__RulePosition__Alternatives_4 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:771:2: rule__RulePosition__Alternatives_4
-            {
-            pushFollow(FOLLOW_rule__RulePosition__Alternatives_4_in_rule__RulePosition__Group__4__Impl1498);
-            rule__RulePosition__Alternatives_4();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getAlternatives_4()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group__4__Impl"
-
-
-    // $ANTLR start "rule__RulePosition__Group__5"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:781:1: rule__RulePosition__Group__5 : rule__RulePosition__Group__5__Impl rule__RulePosition__Group__6 ;
-    public final void rule__RulePosition__Group__5() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__2__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:676:1: rule__Rule__Group__2__Impl : ( '{' ) ;
+    public final void rule__Rule__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:785:1: ( rule__RulePosition__Group__5__Impl rule__RulePosition__Group__6 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:786:2: rule__RulePosition__Group__5__Impl rule__RulePosition__Group__6
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:680:1: ( ( '{' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:681:1: ( '{' )
             {
-            pushFollow(FOLLOW_rule__RulePosition__Group__5__Impl_in_rule__RulePosition__Group__51528);
-            rule__RulePosition__Group__5__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_rule__RulePosition__Group__6_in_rule__RulePosition__Group__51531);
-            rule__RulePosition__Group__6();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group__5"
-
-
-    // $ANTLR start "rule__RulePosition__Group__5__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:793:1: rule__RulePosition__Group__5__Impl : ( 'attr' ) ;
-    public final void rule__RulePosition__Group__5__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:797:1: ( ( 'attr' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:798:1: ( 'attr' )
-            {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:798:1: ( 'attr' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:799:1: 'attr'
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:681:1: ( '{' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:682:1: '{'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getAttrKeyword_5()); 
+               before(grammarAccess.getRuleAccess().getLeftCurlyBracketKeyword_2()); 
             }
-            match(input,14,FOLLOW_14_in_rule__RulePosition__Group__5__Impl1559); if (state.failed) return ;
+            match(input,15,FOLLOW_15_in_rule__Rule__Group__2__Impl1318); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getAttrKeyword_5()); 
+               after(grammarAccess.getRuleAccess().getLeftCurlyBracketKeyword_2()); 
             }
 
             }
@@ -2221,26 +1885,26 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group__5__Impl"
+    // $ANTLR end "rule__Rule__Group__2__Impl"
 
 
-    // $ANTLR start "rule__RulePosition__Group__6"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:812:1: rule__RulePosition__Group__6 : rule__RulePosition__Group__6__Impl rule__RulePosition__Group__7 ;
-    public final void rule__RulePosition__Group__6() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__3"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:695:1: rule__Rule__Group__3 : rule__Rule__Group__3__Impl rule__Rule__Group__4 ;
+    public final void rule__Rule__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:816:1: ( rule__RulePosition__Group__6__Impl rule__RulePosition__Group__7 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:817:2: rule__RulePosition__Group__6__Impl rule__RulePosition__Group__7
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:699:1: ( rule__Rule__Group__3__Impl rule__Rule__Group__4 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:700:2: rule__Rule__Group__3__Impl rule__Rule__Group__4
             {
-            pushFollow(FOLLOW_rule__RulePosition__Group__6__Impl_in_rule__RulePosition__Group__61590);
-            rule__RulePosition__Group__6__Impl();
+            pushFollow(FOLLOW_rule__Rule__Group__3__Impl_in_rule__Rule__Group__31349);
+            rule__Rule__Group__3__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__RulePosition__Group__7_in_rule__RulePosition__Group__61593);
-            rule__RulePosition__Group__7();
+            pushFollow(FOLLOW_rule__Rule__Group__4_in_rule__Rule__Group__31352);
+            rule__Rule__Group__4();
 
             state._fsp--;
             if (state.failed) return ;
@@ -2259,109 +1923,30 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group__6"
+    // $ANTLR end "rule__Rule__Group__3"
 
 
-    // $ANTLR start "rule__RulePosition__Group__6__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:824:1: rule__RulePosition__Group__6__Impl : ( ':' ) ;
-    public final void rule__RulePosition__Group__6__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:828:1: ( ( ':' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:829:1: ( ':' )
-            {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:829:1: ( ':' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:830:1: ':'
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getColonKeyword_6()); 
-            }
-            match(input,12,FOLLOW_12_in_rule__RulePosition__Group__6__Impl1621); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getColonKeyword_6()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group__6__Impl"
-
-
-    // $ANTLR start "rule__RulePosition__Group__7"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:843:1: rule__RulePosition__Group__7 : rule__RulePosition__Group__7__Impl rule__RulePosition__Group__8 ;
-    public final void rule__RulePosition__Group__7() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__3__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:707:1: rule__Rule__Group__3__Impl : ( ( rule__Rule__Alternatives_3 ) ) ;
+    public final void rule__Rule__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:847:1: ( rule__RulePosition__Group__7__Impl rule__RulePosition__Group__8 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:848:2: rule__RulePosition__Group__7__Impl rule__RulePosition__Group__8
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:711:1: ( ( ( rule__Rule__Alternatives_3 ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:712:1: ( ( rule__Rule__Alternatives_3 ) )
             {
-            pushFollow(FOLLOW_rule__RulePosition__Group__7__Impl_in_rule__RulePosition__Group__71652);
-            rule__RulePosition__Group__7__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_rule__RulePosition__Group__8_in_rule__RulePosition__Group__71655);
-            rule__RulePosition__Group__8();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group__7"
-
-
-    // $ANTLR start "rule__RulePosition__Group__7__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:855:1: rule__RulePosition__Group__7__Impl : ( ( rule__RulePosition__AttrAssignment_7 ) ) ;
-    public final void rule__RulePosition__Group__7__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:859:1: ( ( ( rule__RulePosition__AttrAssignment_7 ) ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:860:1: ( ( rule__RulePosition__AttrAssignment_7 ) )
-            {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:860:1: ( ( rule__RulePosition__AttrAssignment_7 ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:861:1: ( rule__RulePosition__AttrAssignment_7 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:712:1: ( ( rule__Rule__Alternatives_3 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:713:1: ( rule__Rule__Alternatives_3 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getAttrAssignment_7()); 
+               before(grammarAccess.getRuleAccess().getAlternatives_3()); 
             }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:862:1: ( rule__RulePosition__AttrAssignment_7 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:862:2: rule__RulePosition__AttrAssignment_7
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:714:1: ( rule__Rule__Alternatives_3 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:714:2: rule__Rule__Alternatives_3
             {
-            pushFollow(FOLLOW_rule__RulePosition__AttrAssignment_7_in_rule__RulePosition__Group__7__Impl1682);
-            rule__RulePosition__AttrAssignment_7();
+            pushFollow(FOLLOW_rule__Rule__Alternatives_3_in_rule__Rule__Group__3__Impl1379);
+            rule__Rule__Alternatives_3();
 
             state._fsp--;
             if (state.failed) return ;
@@ -2369,7 +1954,7 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getAttrAssignment_7()); 
+               after(grammarAccess.getRuleAccess().getAlternatives_3()); 
             }
 
             }
@@ -2389,21 +1974,26 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group__7__Impl"
+    // $ANTLR end "rule__Rule__Group__3__Impl"
 
 
-    // $ANTLR start "rule__RulePosition__Group__8"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:872:1: rule__RulePosition__Group__8 : rule__RulePosition__Group__8__Impl ;
-    public final void rule__RulePosition__Group__8() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__4"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:724:1: rule__Rule__Group__4 : rule__Rule__Group__4__Impl rule__Rule__Group__5 ;
+    public final void rule__Rule__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:876:1: ( rule__RulePosition__Group__8__Impl )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:877:2: rule__RulePosition__Group__8__Impl
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:728:1: ( rule__Rule__Group__4__Impl rule__Rule__Group__5 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:729:2: rule__Rule__Group__4__Impl rule__Rule__Group__5
             {
-            pushFollow(FOLLOW_rule__RulePosition__Group__8__Impl_in_rule__RulePosition__Group__81712);
-            rule__RulePosition__Group__8__Impl();
+            pushFollow(FOLLOW_rule__Rule__Group__4__Impl_in_rule__Rule__Group__41409);
+            rule__Rule__Group__4__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_rule__Rule__Group__5_in_rule__Rule__Group__41412);
+            rule__Rule__Group__5();
 
             state._fsp--;
             if (state.failed) return ;
@@ -2422,28 +2012,38 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group__8"
+    // $ANTLR end "rule__Rule__Group__4"
 
 
-    // $ANTLR start "rule__RulePosition__Group__8__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:883:1: rule__RulePosition__Group__8__Impl : ( '}' ) ;
-    public final void rule__RulePosition__Group__8__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__4__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:736:1: rule__Rule__Group__4__Impl : ( ( rule__Rule__Alternatives_4 ) ) ;
+    public final void rule__Rule__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:887:1: ( ( '}' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:888:1: ( '}' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:740:1: ( ( ( rule__Rule__Alternatives_4 ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:741:1: ( ( rule__Rule__Alternatives_4 ) )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:888:1: ( '}' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:889:1: '}'
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:741:1: ( ( rule__Rule__Alternatives_4 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:742:1: ( rule__Rule__Alternatives_4 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getRightCurlyBracketKeyword_8()); 
+               before(grammarAccess.getRuleAccess().getAlternatives_4()); 
             }
-            match(input,17,FOLLOW_17_in_rule__RulePosition__Group__8__Impl1740); if (state.failed) return ;
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:743:1: ( rule__Rule__Alternatives_4 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:743:2: rule__Rule__Alternatives_4
+            {
+            pushFollow(FOLLOW_rule__Rule__Alternatives_4_in_rule__Rule__Group__4__Impl1439);
+            rule__Rule__Alternatives_4();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getRightCurlyBracketKeyword_8()); 
+               after(grammarAccess.getRuleAccess().getAlternatives_4()); 
             }
 
             }
@@ -2463,105 +2063,26 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group__8__Impl"
+    // $ANTLR end "rule__Rule__Group__4__Impl"
 
 
-    // $ANTLR start "rule__RulePosition__Group_3_0__0"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:920:1: rule__RulePosition__Group_3_0__0 : rule__RulePosition__Group_3_0__0__Impl rule__RulePosition__Group_3_0__1 ;
-    public final void rule__RulePosition__Group_3_0__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:924:1: ( rule__RulePosition__Group_3_0__0__Impl rule__RulePosition__Group_3_0__1 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:925:2: rule__RulePosition__Group_3_0__0__Impl rule__RulePosition__Group_3_0__1
-            {
-            pushFollow(FOLLOW_rule__RulePosition__Group_3_0__0__Impl_in_rule__RulePosition__Group_3_0__01789);
-            rule__RulePosition__Group_3_0__0__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_rule__RulePosition__Group_3_0__1_in_rule__RulePosition__Group_3_0__01792);
-            rule__RulePosition__Group_3_0__1();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group_3_0__0"
-
-
-    // $ANTLR start "rule__RulePosition__Group_3_0__0__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:932:1: rule__RulePosition__Group_3_0__0__Impl : ( 'start' ) ;
-    public final void rule__RulePosition__Group_3_0__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__5"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:753:1: rule__Rule__Group__5 : rule__Rule__Group__5__Impl rule__Rule__Group__6 ;
+    public final void rule__Rule__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:936:1: ( ( 'start' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:937:1: ( 'start' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:757:1: ( rule__Rule__Group__5__Impl rule__Rule__Group__6 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:758:2: rule__Rule__Group__5__Impl rule__Rule__Group__6
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:937:1: ( 'start' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:938:1: 'start'
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getStartKeyword_3_0_0()); 
-            }
-            match(input,19,FOLLOW_19_in_rule__RulePosition__Group_3_0__0__Impl1820); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getStartKeyword_3_0_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group_3_0__0__Impl"
-
-
-    // $ANTLR start "rule__RulePosition__Group_3_0__1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:951:1: rule__RulePosition__Group_3_0__1 : rule__RulePosition__Group_3_0__1__Impl rule__RulePosition__Group_3_0__2 ;
-    public final void rule__RulePosition__Group_3_0__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:955:1: ( rule__RulePosition__Group_3_0__1__Impl rule__RulePosition__Group_3_0__2 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:956:2: rule__RulePosition__Group_3_0__1__Impl rule__RulePosition__Group_3_0__2
-            {
-            pushFollow(FOLLOW_rule__RulePosition__Group_3_0__1__Impl_in_rule__RulePosition__Group_3_0__11851);
-            rule__RulePosition__Group_3_0__1__Impl();
+            pushFollow(FOLLOW_rule__Rule__Group__5__Impl_in_rule__Rule__Group__51469);
+            rule__Rule__Group__5__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__RulePosition__Group_3_0__2_in_rule__RulePosition__Group_3_0__11854);
-            rule__RulePosition__Group_3_0__2();
+            pushFollow(FOLLOW_rule__Rule__Group__6_in_rule__Rule__Group__51472);
+            rule__Rule__Group__6();
 
             state._fsp--;
             if (state.failed) return ;
@@ -2580,38 +2101,28 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group_3_0__1"
+    // $ANTLR end "rule__Rule__Group__5"
 
 
-    // $ANTLR start "rule__RulePosition__Group_3_0__1__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:963:1: rule__RulePosition__Group_3_0__1__Impl : ( ( rule__RulePosition__StartIndexAssignment_3_0_1 ) ) ;
-    public final void rule__RulePosition__Group_3_0__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__5__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:765:1: rule__Rule__Group__5__Impl : ( 'attr' ) ;
+    public final void rule__Rule__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:967:1: ( ( ( rule__RulePosition__StartIndexAssignment_3_0_1 ) ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:968:1: ( ( rule__RulePosition__StartIndexAssignment_3_0_1 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:769:1: ( ( 'attr' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:770:1: ( 'attr' )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:968:1: ( ( rule__RulePosition__StartIndexAssignment_3_0_1 ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:969:1: ( rule__RulePosition__StartIndexAssignment_3_0_1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:770:1: ( 'attr' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:771:1: 'attr'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getStartIndexAssignment_3_0_1()); 
+               before(grammarAccess.getRuleAccess().getAttrKeyword_5()); 
             }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:970:1: ( rule__RulePosition__StartIndexAssignment_3_0_1 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:970:2: rule__RulePosition__StartIndexAssignment_3_0_1
-            {
-            pushFollow(FOLLOW_rule__RulePosition__StartIndexAssignment_3_0_1_in_rule__RulePosition__Group_3_0__1__Impl1881);
-            rule__RulePosition__StartIndexAssignment_3_0_1();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
+            match(input,14,FOLLOW_14_in_rule__Rule__Group__5__Impl1500); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getStartIndexAssignment_3_0_1()); 
+               after(grammarAccess.getRuleAccess().getAttrKeyword_5()); 
             }
 
             }
@@ -2631,100 +2142,26 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group_3_0__1__Impl"
+    // $ANTLR end "rule__Rule__Group__5__Impl"
 
 
-    // $ANTLR start "rule__RulePosition__Group_3_0__2"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:980:1: rule__RulePosition__Group_3_0__2 : rule__RulePosition__Group_3_0__2__Impl ;
-    public final void rule__RulePosition__Group_3_0__2() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__6"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:784:1: rule__Rule__Group__6 : rule__Rule__Group__6__Impl rule__Rule__Group__7 ;
+    public final void rule__Rule__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:984:1: ( rule__RulePosition__Group_3_0__2__Impl )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:985:2: rule__RulePosition__Group_3_0__2__Impl
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:788:1: ( rule__Rule__Group__6__Impl rule__Rule__Group__7 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:789:2: rule__Rule__Group__6__Impl rule__Rule__Group__7
             {
-            pushFollow(FOLLOW_rule__RulePosition__Group_3_0__2__Impl_in_rule__RulePosition__Group_3_0__21911);
-            rule__RulePosition__Group_3_0__2__Impl();
+            pushFollow(FOLLOW_rule__Rule__Group__6__Impl_in_rule__Rule__Group__61531);
+            rule__Rule__Group__6__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group_3_0__2"
-
-
-    // $ANTLR start "rule__RulePosition__Group_3_0__2__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:991:1: rule__RulePosition__Group_3_0__2__Impl : ( ',' ) ;
-    public final void rule__RulePosition__Group_3_0__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:995:1: ( ( ',' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:996:1: ( ',' )
-            {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:996:1: ( ',' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:997:1: ','
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getCommaKeyword_3_0_2()); 
-            }
-            match(input,20,FOLLOW_20_in_rule__RulePosition__Group_3_0__2__Impl1939); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getCommaKeyword_3_0_2()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group_3_0__2__Impl"
-
-
-    // $ANTLR start "rule__RulePosition__Group_3_1__0"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1016:1: rule__RulePosition__Group_3_1__0 : rule__RulePosition__Group_3_1__0__Impl rule__RulePosition__Group_3_1__1 ;
-    public final void rule__RulePosition__Group_3_1__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1020:1: ( rule__RulePosition__Group_3_1__0__Impl rule__RulePosition__Group_3_1__1 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1021:2: rule__RulePosition__Group_3_1__0__Impl rule__RulePosition__Group_3_1__1
-            {
-            pushFollow(FOLLOW_rule__RulePosition__Group_3_1__0__Impl_in_rule__RulePosition__Group_3_1__01976);
-            rule__RulePosition__Group_3_1__0__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_rule__RulePosition__Group_3_1__1_in_rule__RulePosition__Group_3_1__01979);
-            rule__RulePosition__Group_3_1__1();
+            pushFollow(FOLLOW_rule__Rule__Group__7_in_rule__Rule__Group__61534);
+            rule__Rule__Group__7();
 
             state._fsp--;
             if (state.failed) return ;
@@ -2743,28 +2180,28 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group_3_1__0"
+    // $ANTLR end "rule__Rule__Group__6"
 
 
-    // $ANTLR start "rule__RulePosition__Group_3_1__0__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1028:1: rule__RulePosition__Group_3_1__0__Impl : ( 'start' ) ;
-    public final void rule__RulePosition__Group_3_1__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__6__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:796:1: rule__Rule__Group__6__Impl : ( ':' ) ;
+    public final void rule__Rule__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1032:1: ( ( 'start' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1033:1: ( 'start' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:800:1: ( ( ':' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:801:1: ( ':' )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1033:1: ( 'start' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1034:1: 'start'
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:801:1: ( ':' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:802:1: ':'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getStartKeyword_3_1_0()); 
+               before(grammarAccess.getRuleAccess().getColonKeyword_6()); 
             }
-            match(input,19,FOLLOW_19_in_rule__RulePosition__Group_3_1__0__Impl2007); if (state.failed) return ;
+            match(input,12,FOLLOW_12_in_rule__Rule__Group__6__Impl1562); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getStartKeyword_3_1_0()); 
+               after(grammarAccess.getRuleAccess().getColonKeyword_6()); 
             }
 
             }
@@ -2784,110 +2221,26 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group_3_1__0__Impl"
+    // $ANTLR end "rule__Rule__Group__6__Impl"
 
 
-    // $ANTLR start "rule__RulePosition__Group_3_1__1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1047:1: rule__RulePosition__Group_3_1__1 : rule__RulePosition__Group_3_1__1__Impl rule__RulePosition__Group_3_1__2 ;
-    public final void rule__RulePosition__Group_3_1__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1051:1: ( rule__RulePosition__Group_3_1__1__Impl rule__RulePosition__Group_3_1__2 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1052:2: rule__RulePosition__Group_3_1__1__Impl rule__RulePosition__Group_3_1__2
-            {
-            pushFollow(FOLLOW_rule__RulePosition__Group_3_1__1__Impl_in_rule__RulePosition__Group_3_1__12038);
-            rule__RulePosition__Group_3_1__1__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_rule__RulePosition__Group_3_1__2_in_rule__RulePosition__Group_3_1__12041);
-            rule__RulePosition__Group_3_1__2();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group_3_1__1"
-
-
-    // $ANTLR start "rule__RulePosition__Group_3_1__1__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1059:1: rule__RulePosition__Group_3_1__1__Impl : ( ( rule__RulePosition__StartDelimeterAssignment_3_1_1 ) ) ;
-    public final void rule__RulePosition__Group_3_1__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__7"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:815:1: rule__Rule__Group__7 : rule__Rule__Group__7__Impl rule__Rule__Group__8 ;
+    public final void rule__Rule__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1063:1: ( ( ( rule__RulePosition__StartDelimeterAssignment_3_1_1 ) ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1064:1: ( ( rule__RulePosition__StartDelimeterAssignment_3_1_1 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:819:1: ( rule__Rule__Group__7__Impl rule__Rule__Group__8 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:820:2: rule__Rule__Group__7__Impl rule__Rule__Group__8
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1064:1: ( ( rule__RulePosition__StartDelimeterAssignment_3_1_1 ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1065:1: ( rule__RulePosition__StartDelimeterAssignment_3_1_1 )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getStartDelimeterAssignment_3_1_1()); 
-            }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1066:1: ( rule__RulePosition__StartDelimeterAssignment_3_1_1 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1066:2: rule__RulePosition__StartDelimeterAssignment_3_1_1
-            {
-            pushFollow(FOLLOW_rule__RulePosition__StartDelimeterAssignment_3_1_1_in_rule__RulePosition__Group_3_1__1__Impl2068);
-            rule__RulePosition__StartDelimeterAssignment_3_1_1();
+            pushFollow(FOLLOW_rule__Rule__Group__7__Impl_in_rule__Rule__Group__71593);
+            rule__Rule__Group__7__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getStartDelimeterAssignment_3_1_1()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group_3_1__1__Impl"
-
-
-    // $ANTLR start "rule__RulePosition__Group_3_1__2"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1076:1: rule__RulePosition__Group_3_1__2 : rule__RulePosition__Group_3_1__2__Impl ;
-    public final void rule__RulePosition__Group_3_1__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1080:1: ( rule__RulePosition__Group_3_1__2__Impl )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1081:2: rule__RulePosition__Group_3_1__2__Impl
-            {
-            pushFollow(FOLLOW_rule__RulePosition__Group_3_1__2__Impl_in_rule__RulePosition__Group_3_1__22098);
-            rule__RulePosition__Group_3_1__2__Impl();
+            pushFollow(FOLLOW_rule__Rule__Group__8_in_rule__Rule__Group__71596);
+            rule__Rule__Group__8();
 
             state._fsp--;
             if (state.failed) return ;
@@ -2906,28 +2259,38 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group_3_1__2"
+    // $ANTLR end "rule__Rule__Group__7"
 
 
-    // $ANTLR start "rule__RulePosition__Group_3_1__2__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1087:1: rule__RulePosition__Group_3_1__2__Impl : ( ',' ) ;
-    public final void rule__RulePosition__Group_3_1__2__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__7__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:827:1: rule__Rule__Group__7__Impl : ( ( rule__Rule__AttrAssignment_7 ) ) ;
+    public final void rule__Rule__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1091:1: ( ( ',' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1092:1: ( ',' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:831:1: ( ( ( rule__Rule__AttrAssignment_7 ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:832:1: ( ( rule__Rule__AttrAssignment_7 ) )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1092:1: ( ',' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1093:1: ','
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:832:1: ( ( rule__Rule__AttrAssignment_7 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:833:1: ( rule__Rule__AttrAssignment_7 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getCommaKeyword_3_1_2()); 
+               before(grammarAccess.getRuleAccess().getAttrAssignment_7()); 
             }
-            match(input,20,FOLLOW_20_in_rule__RulePosition__Group_3_1__2__Impl2126); if (state.failed) return ;
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:834:1: ( rule__Rule__AttrAssignment_7 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:834:2: rule__Rule__AttrAssignment_7
+            {
+            pushFollow(FOLLOW_rule__Rule__AttrAssignment_7_in_rule__Rule__Group__7__Impl1623);
+            rule__Rule__AttrAssignment_7();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getCommaKeyword_3_1_2()); 
+               after(grammarAccess.getRuleAccess().getAttrAssignment_7()); 
             }
 
             }
@@ -2947,105 +2310,21 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group_3_1__2__Impl"
+    // $ANTLR end "rule__Rule__Group__7__Impl"
 
 
-    // $ANTLR start "rule__RulePosition__Group_4_0__0"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1112:1: rule__RulePosition__Group_4_0__0 : rule__RulePosition__Group_4_0__0__Impl rule__RulePosition__Group_4_0__1 ;
-    public final void rule__RulePosition__Group_4_0__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1116:1: ( rule__RulePosition__Group_4_0__0__Impl rule__RulePosition__Group_4_0__1 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1117:2: rule__RulePosition__Group_4_0__0__Impl rule__RulePosition__Group_4_0__1
-            {
-            pushFollow(FOLLOW_rule__RulePosition__Group_4_0__0__Impl_in_rule__RulePosition__Group_4_0__02163);
-            rule__RulePosition__Group_4_0__0__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_rule__RulePosition__Group_4_0__1_in_rule__RulePosition__Group_4_0__02166);
-            rule__RulePosition__Group_4_0__1();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group_4_0__0"
-
-
-    // $ANTLR start "rule__RulePosition__Group_4_0__0__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1124:1: rule__RulePosition__Group_4_0__0__Impl : ( 'end' ) ;
-    public final void rule__RulePosition__Group_4_0__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__8"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:844:1: rule__Rule__Group__8 : rule__Rule__Group__8__Impl ;
+    public final void rule__Rule__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1128:1: ( ( 'end' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1129:1: ( 'end' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:848:1: ( rule__Rule__Group__8__Impl )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:849:2: rule__Rule__Group__8__Impl
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1129:1: ( 'end' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1130:1: 'end'
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getEndKeyword_4_0_0()); 
-            }
-            match(input,21,FOLLOW_21_in_rule__RulePosition__Group_4_0__0__Impl2194); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getEndKeyword_4_0_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group_4_0__0__Impl"
-
-
-    // $ANTLR start "rule__RulePosition__Group_4_0__1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1143:1: rule__RulePosition__Group_4_0__1 : rule__RulePosition__Group_4_0__1__Impl rule__RulePosition__Group_4_0__2 ;
-    public final void rule__RulePosition__Group_4_0__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1147:1: ( rule__RulePosition__Group_4_0__1__Impl rule__RulePosition__Group_4_0__2 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1148:2: rule__RulePosition__Group_4_0__1__Impl rule__RulePosition__Group_4_0__2
-            {
-            pushFollow(FOLLOW_rule__RulePosition__Group_4_0__1__Impl_in_rule__RulePosition__Group_4_0__12225);
-            rule__RulePosition__Group_4_0__1__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_rule__RulePosition__Group_4_0__2_in_rule__RulePosition__Group_4_0__12228);
-            rule__RulePosition__Group_4_0__2();
+            pushFollow(FOLLOW_rule__Rule__Group__8__Impl_in_rule__Rule__Group__81653);
+            rule__Rule__Group__8__Impl();
 
             state._fsp--;
             if (state.failed) return ;
@@ -3064,38 +2343,28 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group_4_0__1"
+    // $ANTLR end "rule__Rule__Group__8"
 
 
-    // $ANTLR start "rule__RulePosition__Group_4_0__1__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1155:1: rule__RulePosition__Group_4_0__1__Impl : ( ( rule__RulePosition__EndIndexAssignment_4_0_1 ) ) ;
-    public final void rule__RulePosition__Group_4_0__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group__8__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:855:1: rule__Rule__Group__8__Impl : ( '}' ) ;
+    public final void rule__Rule__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1159:1: ( ( ( rule__RulePosition__EndIndexAssignment_4_0_1 ) ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1160:1: ( ( rule__RulePosition__EndIndexAssignment_4_0_1 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:859:1: ( ( '}' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:860:1: ( '}' )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1160:1: ( ( rule__RulePosition__EndIndexAssignment_4_0_1 ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1161:1: ( rule__RulePosition__EndIndexAssignment_4_0_1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:860:1: ( '}' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:861:1: '}'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getEndIndexAssignment_4_0_1()); 
+               before(grammarAccess.getRuleAccess().getRightCurlyBracketKeyword_8()); 
             }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1162:1: ( rule__RulePosition__EndIndexAssignment_4_0_1 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1162:2: rule__RulePosition__EndIndexAssignment_4_0_1
-            {
-            pushFollow(FOLLOW_rule__RulePosition__EndIndexAssignment_4_0_1_in_rule__RulePosition__Group_4_0__1__Impl2255);
-            rule__RulePosition__EndIndexAssignment_4_0_1();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
+            match(input,17,FOLLOW_17_in_rule__Rule__Group__8__Impl1681); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getEndIndexAssignment_4_0_1()); 
+               after(grammarAccess.getRuleAccess().getRightCurlyBracketKeyword_8()); 
             }
 
             }
@@ -3115,100 +2384,26 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group_4_0__1__Impl"
+    // $ANTLR end "rule__Rule__Group__8__Impl"
 
 
-    // $ANTLR start "rule__RulePosition__Group_4_0__2"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1172:1: rule__RulePosition__Group_4_0__2 : rule__RulePosition__Group_4_0__2__Impl ;
-    public final void rule__RulePosition__Group_4_0__2() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group_3_0__0"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:892:1: rule__Rule__Group_3_0__0 : rule__Rule__Group_3_0__0__Impl rule__Rule__Group_3_0__1 ;
+    public final void rule__Rule__Group_3_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1176:1: ( rule__RulePosition__Group_4_0__2__Impl )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1177:2: rule__RulePosition__Group_4_0__2__Impl
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:896:1: ( rule__Rule__Group_3_0__0__Impl rule__Rule__Group_3_0__1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:897:2: rule__Rule__Group_3_0__0__Impl rule__Rule__Group_3_0__1
             {
-            pushFollow(FOLLOW_rule__RulePosition__Group_4_0__2__Impl_in_rule__RulePosition__Group_4_0__22285);
-            rule__RulePosition__Group_4_0__2__Impl();
+            pushFollow(FOLLOW_rule__Rule__Group_3_0__0__Impl_in_rule__Rule__Group_3_0__01730);
+            rule__Rule__Group_3_0__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group_4_0__2"
-
-
-    // $ANTLR start "rule__RulePosition__Group_4_0__2__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1183:1: rule__RulePosition__Group_4_0__2__Impl : ( ',' ) ;
-    public final void rule__RulePosition__Group_4_0__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1187:1: ( ( ',' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1188:1: ( ',' )
-            {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1188:1: ( ',' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1189:1: ','
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getCommaKeyword_4_0_2()); 
-            }
-            match(input,20,FOLLOW_20_in_rule__RulePosition__Group_4_0__2__Impl2313); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getCommaKeyword_4_0_2()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group_4_0__2__Impl"
-
-
-    // $ANTLR start "rule__RulePosition__Group_4_1__0"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1208:1: rule__RulePosition__Group_4_1__0 : rule__RulePosition__Group_4_1__0__Impl rule__RulePosition__Group_4_1__1 ;
-    public final void rule__RulePosition__Group_4_1__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1212:1: ( rule__RulePosition__Group_4_1__0__Impl rule__RulePosition__Group_4_1__1 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1213:2: rule__RulePosition__Group_4_1__0__Impl rule__RulePosition__Group_4_1__1
-            {
-            pushFollow(FOLLOW_rule__RulePosition__Group_4_1__0__Impl_in_rule__RulePosition__Group_4_1__02350);
-            rule__RulePosition__Group_4_1__0__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_rule__RulePosition__Group_4_1__1_in_rule__RulePosition__Group_4_1__02353);
-            rule__RulePosition__Group_4_1__1();
+            pushFollow(FOLLOW_rule__Rule__Group_3_0__1_in_rule__Rule__Group_3_0__01733);
+            rule__Rule__Group_3_0__1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -3227,28 +2422,28 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group_4_1__0"
+    // $ANTLR end "rule__Rule__Group_3_0__0"
 
 
-    // $ANTLR start "rule__RulePosition__Group_4_1__0__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1220:1: rule__RulePosition__Group_4_1__0__Impl : ( 'end' ) ;
-    public final void rule__RulePosition__Group_4_1__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group_3_0__0__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:904:1: rule__Rule__Group_3_0__0__Impl : ( 'start' ) ;
+    public final void rule__Rule__Group_3_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1224:1: ( ( 'end' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1225:1: ( 'end' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:908:1: ( ( 'start' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:909:1: ( 'start' )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1225:1: ( 'end' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1226:1: 'end'
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:909:1: ( 'start' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:910:1: 'start'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getEndKeyword_4_1_0()); 
+               before(grammarAccess.getRuleAccess().getStartKeyword_3_0_0()); 
             }
-            match(input,21,FOLLOW_21_in_rule__RulePosition__Group_4_1__0__Impl2381); if (state.failed) return ;
+            match(input,19,FOLLOW_19_in_rule__Rule__Group_3_0__0__Impl1761); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getEndKeyword_4_1_0()); 
+               after(grammarAccess.getRuleAccess().getStartKeyword_3_0_0()); 
             }
 
             }
@@ -3268,110 +2463,26 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group_4_1__0__Impl"
+    // $ANTLR end "rule__Rule__Group_3_0__0__Impl"
 
 
-    // $ANTLR start "rule__RulePosition__Group_4_1__1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1239:1: rule__RulePosition__Group_4_1__1 : rule__RulePosition__Group_4_1__1__Impl rule__RulePosition__Group_4_1__2 ;
-    public final void rule__RulePosition__Group_4_1__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1243:1: ( rule__RulePosition__Group_4_1__1__Impl rule__RulePosition__Group_4_1__2 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1244:2: rule__RulePosition__Group_4_1__1__Impl rule__RulePosition__Group_4_1__2
-            {
-            pushFollow(FOLLOW_rule__RulePosition__Group_4_1__1__Impl_in_rule__RulePosition__Group_4_1__12412);
-            rule__RulePosition__Group_4_1__1__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_rule__RulePosition__Group_4_1__2_in_rule__RulePosition__Group_4_1__12415);
-            rule__RulePosition__Group_4_1__2();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group_4_1__1"
-
-
-    // $ANTLR start "rule__RulePosition__Group_4_1__1__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1251:1: rule__RulePosition__Group_4_1__1__Impl : ( ( rule__RulePosition__EndDelimeterAssignment_4_1_1 ) ) ;
-    public final void rule__RulePosition__Group_4_1__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group_3_0__1"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:923:1: rule__Rule__Group_3_0__1 : rule__Rule__Group_3_0__1__Impl rule__Rule__Group_3_0__2 ;
+    public final void rule__Rule__Group_3_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1255:1: ( ( ( rule__RulePosition__EndDelimeterAssignment_4_1_1 ) ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1256:1: ( ( rule__RulePosition__EndDelimeterAssignment_4_1_1 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:927:1: ( rule__Rule__Group_3_0__1__Impl rule__Rule__Group_3_0__2 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:928:2: rule__Rule__Group_3_0__1__Impl rule__Rule__Group_3_0__2
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1256:1: ( ( rule__RulePosition__EndDelimeterAssignment_4_1_1 ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1257:1: ( rule__RulePosition__EndDelimeterAssignment_4_1_1 )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getEndDelimeterAssignment_4_1_1()); 
-            }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1258:1: ( rule__RulePosition__EndDelimeterAssignment_4_1_1 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1258:2: rule__RulePosition__EndDelimeterAssignment_4_1_1
-            {
-            pushFollow(FOLLOW_rule__RulePosition__EndDelimeterAssignment_4_1_1_in_rule__RulePosition__Group_4_1__1__Impl2442);
-            rule__RulePosition__EndDelimeterAssignment_4_1_1();
+            pushFollow(FOLLOW_rule__Rule__Group_3_0__1__Impl_in_rule__Rule__Group_3_0__11792);
+            rule__Rule__Group_3_0__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getEndDelimeterAssignment_4_1_1()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RulePosition__Group_4_1__1__Impl"
-
-
-    // $ANTLR start "rule__RulePosition__Group_4_1__2"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1268:1: rule__RulePosition__Group_4_1__2 : rule__RulePosition__Group_4_1__2__Impl ;
-    public final void rule__RulePosition__Group_4_1__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1272:1: ( rule__RulePosition__Group_4_1__2__Impl )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1273:2: rule__RulePosition__Group_4_1__2__Impl
-            {
-            pushFollow(FOLLOW_rule__RulePosition__Group_4_1__2__Impl_in_rule__RulePosition__Group_4_1__22472);
-            rule__RulePosition__Group_4_1__2__Impl();
+            pushFollow(FOLLOW_rule__Rule__Group_3_0__2_in_rule__Rule__Group_3_0__11795);
+            rule__Rule__Group_3_0__2();
 
             state._fsp--;
             if (state.failed) return ;
@@ -3390,28 +2501,38 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group_4_1__2"
+    // $ANTLR end "rule__Rule__Group_3_0__1"
 
 
-    // $ANTLR start "rule__RulePosition__Group_4_1__2__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1279:1: rule__RulePosition__Group_4_1__2__Impl : ( ',' ) ;
-    public final void rule__RulePosition__Group_4_1__2__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Rule__Group_3_0__1__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:935:1: rule__Rule__Group_3_0__1__Impl : ( ( rule__Rule__StartIndexAssignment_3_0_1 ) ) ;
+    public final void rule__Rule__Group_3_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1283:1: ( ( ',' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1284:1: ( ',' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:939:1: ( ( ( rule__Rule__StartIndexAssignment_3_0_1 ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:940:1: ( ( rule__Rule__StartIndexAssignment_3_0_1 ) )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1284:1: ( ',' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1285:1: ','
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:940:1: ( ( rule__Rule__StartIndexAssignment_3_0_1 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:941:1: ( rule__Rule__StartIndexAssignment_3_0_1 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getCommaKeyword_4_1_2()); 
+               before(grammarAccess.getRuleAccess().getStartIndexAssignment_3_0_1()); 
             }
-            match(input,20,FOLLOW_20_in_rule__RulePosition__Group_4_1__2__Impl2500); if (state.failed) return ;
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:942:1: ( rule__Rule__StartIndexAssignment_3_0_1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:942:2: rule__Rule__StartIndexAssignment_3_0_1
+            {
+            pushFollow(FOLLOW_rule__Rule__StartIndexAssignment_3_0_1_in_rule__Rule__Group_3_0__1__Impl1822);
+            rule__Rule__StartIndexAssignment_3_0_1();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getCommaKeyword_4_1_2()); 
+               after(grammarAccess.getRuleAccess().getStartIndexAssignment_3_0_1()); 
             }
 
             }
@@ -3431,25 +2552,825 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__Group_4_1__2__Impl"
+    // $ANTLR end "rule__Rule__Group_3_0__1__Impl"
+
+
+    // $ANTLR start "rule__Rule__Group_3_0__2"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:952:1: rule__Rule__Group_3_0__2 : rule__Rule__Group_3_0__2__Impl ;
+    public final void rule__Rule__Group_3_0__2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:956:1: ( rule__Rule__Group_3_0__2__Impl )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:957:2: rule__Rule__Group_3_0__2__Impl
+            {
+            pushFollow(FOLLOW_rule__Rule__Group_3_0__2__Impl_in_rule__Rule__Group_3_0__21852);
+            rule__Rule__Group_3_0__2__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_3_0__2"
+
+
+    // $ANTLR start "rule__Rule__Group_3_0__2__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:963:1: rule__Rule__Group_3_0__2__Impl : ( ',' ) ;
+    public final void rule__Rule__Group_3_0__2__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:967:1: ( ( ',' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:968:1: ( ',' )
+            {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:968:1: ( ',' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:969:1: ','
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getRuleAccess().getCommaKeyword_3_0_2()); 
+            }
+            match(input,20,FOLLOW_20_in_rule__Rule__Group_3_0__2__Impl1880); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getRuleAccess().getCommaKeyword_3_0_2()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_3_0__2__Impl"
+
+
+    // $ANTLR start "rule__Rule__Group_3_1__0"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:988:1: rule__Rule__Group_3_1__0 : rule__Rule__Group_3_1__0__Impl rule__Rule__Group_3_1__1 ;
+    public final void rule__Rule__Group_3_1__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:992:1: ( rule__Rule__Group_3_1__0__Impl rule__Rule__Group_3_1__1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:993:2: rule__Rule__Group_3_1__0__Impl rule__Rule__Group_3_1__1
+            {
+            pushFollow(FOLLOW_rule__Rule__Group_3_1__0__Impl_in_rule__Rule__Group_3_1__01917);
+            rule__Rule__Group_3_1__0__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_rule__Rule__Group_3_1__1_in_rule__Rule__Group_3_1__01920);
+            rule__Rule__Group_3_1__1();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_3_1__0"
+
+
+    // $ANTLR start "rule__Rule__Group_3_1__0__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1000:1: rule__Rule__Group_3_1__0__Impl : ( 'start' ) ;
+    public final void rule__Rule__Group_3_1__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1004:1: ( ( 'start' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1005:1: ( 'start' )
+            {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1005:1: ( 'start' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1006:1: 'start'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getRuleAccess().getStartKeyword_3_1_0()); 
+            }
+            match(input,19,FOLLOW_19_in_rule__Rule__Group_3_1__0__Impl1948); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getRuleAccess().getStartKeyword_3_1_0()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_3_1__0__Impl"
+
+
+    // $ANTLR start "rule__Rule__Group_3_1__1"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1019:1: rule__Rule__Group_3_1__1 : rule__Rule__Group_3_1__1__Impl rule__Rule__Group_3_1__2 ;
+    public final void rule__Rule__Group_3_1__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1023:1: ( rule__Rule__Group_3_1__1__Impl rule__Rule__Group_3_1__2 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1024:2: rule__Rule__Group_3_1__1__Impl rule__Rule__Group_3_1__2
+            {
+            pushFollow(FOLLOW_rule__Rule__Group_3_1__1__Impl_in_rule__Rule__Group_3_1__11979);
+            rule__Rule__Group_3_1__1__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_rule__Rule__Group_3_1__2_in_rule__Rule__Group_3_1__11982);
+            rule__Rule__Group_3_1__2();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_3_1__1"
+
+
+    // $ANTLR start "rule__Rule__Group_3_1__1__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1031:1: rule__Rule__Group_3_1__1__Impl : ( ( rule__Rule__StartDelimeterAssignment_3_1_1 ) ) ;
+    public final void rule__Rule__Group_3_1__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1035:1: ( ( ( rule__Rule__StartDelimeterAssignment_3_1_1 ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1036:1: ( ( rule__Rule__StartDelimeterAssignment_3_1_1 ) )
+            {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1036:1: ( ( rule__Rule__StartDelimeterAssignment_3_1_1 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1037:1: ( rule__Rule__StartDelimeterAssignment_3_1_1 )
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getRuleAccess().getStartDelimeterAssignment_3_1_1()); 
+            }
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1038:1: ( rule__Rule__StartDelimeterAssignment_3_1_1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1038:2: rule__Rule__StartDelimeterAssignment_3_1_1
+            {
+            pushFollow(FOLLOW_rule__Rule__StartDelimeterAssignment_3_1_1_in_rule__Rule__Group_3_1__1__Impl2009);
+            rule__Rule__StartDelimeterAssignment_3_1_1();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getRuleAccess().getStartDelimeterAssignment_3_1_1()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_3_1__1__Impl"
+
+
+    // $ANTLR start "rule__Rule__Group_3_1__2"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1048:1: rule__Rule__Group_3_1__2 : rule__Rule__Group_3_1__2__Impl ;
+    public final void rule__Rule__Group_3_1__2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1052:1: ( rule__Rule__Group_3_1__2__Impl )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1053:2: rule__Rule__Group_3_1__2__Impl
+            {
+            pushFollow(FOLLOW_rule__Rule__Group_3_1__2__Impl_in_rule__Rule__Group_3_1__22039);
+            rule__Rule__Group_3_1__2__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_3_1__2"
+
+
+    // $ANTLR start "rule__Rule__Group_3_1__2__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1059:1: rule__Rule__Group_3_1__2__Impl : ( ',' ) ;
+    public final void rule__Rule__Group_3_1__2__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1063:1: ( ( ',' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1064:1: ( ',' )
+            {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1064:1: ( ',' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1065:1: ','
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getRuleAccess().getCommaKeyword_3_1_2()); 
+            }
+            match(input,20,FOLLOW_20_in_rule__Rule__Group_3_1__2__Impl2067); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getRuleAccess().getCommaKeyword_3_1_2()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_3_1__2__Impl"
+
+
+    // $ANTLR start "rule__Rule__Group_4_0__0"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1084:1: rule__Rule__Group_4_0__0 : rule__Rule__Group_4_0__0__Impl rule__Rule__Group_4_0__1 ;
+    public final void rule__Rule__Group_4_0__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1088:1: ( rule__Rule__Group_4_0__0__Impl rule__Rule__Group_4_0__1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1089:2: rule__Rule__Group_4_0__0__Impl rule__Rule__Group_4_0__1
+            {
+            pushFollow(FOLLOW_rule__Rule__Group_4_0__0__Impl_in_rule__Rule__Group_4_0__02104);
+            rule__Rule__Group_4_0__0__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_rule__Rule__Group_4_0__1_in_rule__Rule__Group_4_0__02107);
+            rule__Rule__Group_4_0__1();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_4_0__0"
+
+
+    // $ANTLR start "rule__Rule__Group_4_0__0__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1096:1: rule__Rule__Group_4_0__0__Impl : ( 'end' ) ;
+    public final void rule__Rule__Group_4_0__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1100:1: ( ( 'end' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1101:1: ( 'end' )
+            {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1101:1: ( 'end' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1102:1: 'end'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getRuleAccess().getEndKeyword_4_0_0()); 
+            }
+            match(input,21,FOLLOW_21_in_rule__Rule__Group_4_0__0__Impl2135); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getRuleAccess().getEndKeyword_4_0_0()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_4_0__0__Impl"
+
+
+    // $ANTLR start "rule__Rule__Group_4_0__1"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1115:1: rule__Rule__Group_4_0__1 : rule__Rule__Group_4_0__1__Impl rule__Rule__Group_4_0__2 ;
+    public final void rule__Rule__Group_4_0__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1119:1: ( rule__Rule__Group_4_0__1__Impl rule__Rule__Group_4_0__2 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1120:2: rule__Rule__Group_4_0__1__Impl rule__Rule__Group_4_0__2
+            {
+            pushFollow(FOLLOW_rule__Rule__Group_4_0__1__Impl_in_rule__Rule__Group_4_0__12166);
+            rule__Rule__Group_4_0__1__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_rule__Rule__Group_4_0__2_in_rule__Rule__Group_4_0__12169);
+            rule__Rule__Group_4_0__2();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_4_0__1"
+
+
+    // $ANTLR start "rule__Rule__Group_4_0__1__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1127:1: rule__Rule__Group_4_0__1__Impl : ( ( rule__Rule__EndIndexAssignment_4_0_1 ) ) ;
+    public final void rule__Rule__Group_4_0__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1131:1: ( ( ( rule__Rule__EndIndexAssignment_4_0_1 ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1132:1: ( ( rule__Rule__EndIndexAssignment_4_0_1 ) )
+            {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1132:1: ( ( rule__Rule__EndIndexAssignment_4_0_1 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1133:1: ( rule__Rule__EndIndexAssignment_4_0_1 )
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getRuleAccess().getEndIndexAssignment_4_0_1()); 
+            }
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1134:1: ( rule__Rule__EndIndexAssignment_4_0_1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1134:2: rule__Rule__EndIndexAssignment_4_0_1
+            {
+            pushFollow(FOLLOW_rule__Rule__EndIndexAssignment_4_0_1_in_rule__Rule__Group_4_0__1__Impl2196);
+            rule__Rule__EndIndexAssignment_4_0_1();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getRuleAccess().getEndIndexAssignment_4_0_1()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_4_0__1__Impl"
+
+
+    // $ANTLR start "rule__Rule__Group_4_0__2"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1144:1: rule__Rule__Group_4_0__2 : rule__Rule__Group_4_0__2__Impl ;
+    public final void rule__Rule__Group_4_0__2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1148:1: ( rule__Rule__Group_4_0__2__Impl )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1149:2: rule__Rule__Group_4_0__2__Impl
+            {
+            pushFollow(FOLLOW_rule__Rule__Group_4_0__2__Impl_in_rule__Rule__Group_4_0__22226);
+            rule__Rule__Group_4_0__2__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_4_0__2"
+
+
+    // $ANTLR start "rule__Rule__Group_4_0__2__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1155:1: rule__Rule__Group_4_0__2__Impl : ( ',' ) ;
+    public final void rule__Rule__Group_4_0__2__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1159:1: ( ( ',' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1160:1: ( ',' )
+            {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1160:1: ( ',' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1161:1: ','
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getRuleAccess().getCommaKeyword_4_0_2()); 
+            }
+            match(input,20,FOLLOW_20_in_rule__Rule__Group_4_0__2__Impl2254); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getRuleAccess().getCommaKeyword_4_0_2()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_4_0__2__Impl"
+
+
+    // $ANTLR start "rule__Rule__Group_4_1__0"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1180:1: rule__Rule__Group_4_1__0 : rule__Rule__Group_4_1__0__Impl rule__Rule__Group_4_1__1 ;
+    public final void rule__Rule__Group_4_1__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1184:1: ( rule__Rule__Group_4_1__0__Impl rule__Rule__Group_4_1__1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1185:2: rule__Rule__Group_4_1__0__Impl rule__Rule__Group_4_1__1
+            {
+            pushFollow(FOLLOW_rule__Rule__Group_4_1__0__Impl_in_rule__Rule__Group_4_1__02291);
+            rule__Rule__Group_4_1__0__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_rule__Rule__Group_4_1__1_in_rule__Rule__Group_4_1__02294);
+            rule__Rule__Group_4_1__1();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_4_1__0"
+
+
+    // $ANTLR start "rule__Rule__Group_4_1__0__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1192:1: rule__Rule__Group_4_1__0__Impl : ( 'end' ) ;
+    public final void rule__Rule__Group_4_1__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1196:1: ( ( 'end' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1197:1: ( 'end' )
+            {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1197:1: ( 'end' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1198:1: 'end'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getRuleAccess().getEndKeyword_4_1_0()); 
+            }
+            match(input,21,FOLLOW_21_in_rule__Rule__Group_4_1__0__Impl2322); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getRuleAccess().getEndKeyword_4_1_0()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_4_1__0__Impl"
+
+
+    // $ANTLR start "rule__Rule__Group_4_1__1"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1211:1: rule__Rule__Group_4_1__1 : rule__Rule__Group_4_1__1__Impl rule__Rule__Group_4_1__2 ;
+    public final void rule__Rule__Group_4_1__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1215:1: ( rule__Rule__Group_4_1__1__Impl rule__Rule__Group_4_1__2 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1216:2: rule__Rule__Group_4_1__1__Impl rule__Rule__Group_4_1__2
+            {
+            pushFollow(FOLLOW_rule__Rule__Group_4_1__1__Impl_in_rule__Rule__Group_4_1__12353);
+            rule__Rule__Group_4_1__1__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_rule__Rule__Group_4_1__2_in_rule__Rule__Group_4_1__12356);
+            rule__Rule__Group_4_1__2();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_4_1__1"
+
+
+    // $ANTLR start "rule__Rule__Group_4_1__1__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1223:1: rule__Rule__Group_4_1__1__Impl : ( ( rule__Rule__EndDelimeterAssignment_4_1_1 ) ) ;
+    public final void rule__Rule__Group_4_1__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1227:1: ( ( ( rule__Rule__EndDelimeterAssignment_4_1_1 ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1228:1: ( ( rule__Rule__EndDelimeterAssignment_4_1_1 ) )
+            {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1228:1: ( ( rule__Rule__EndDelimeterAssignment_4_1_1 ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1229:1: ( rule__Rule__EndDelimeterAssignment_4_1_1 )
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getRuleAccess().getEndDelimeterAssignment_4_1_1()); 
+            }
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1230:1: ( rule__Rule__EndDelimeterAssignment_4_1_1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1230:2: rule__Rule__EndDelimeterAssignment_4_1_1
+            {
+            pushFollow(FOLLOW_rule__Rule__EndDelimeterAssignment_4_1_1_in_rule__Rule__Group_4_1__1__Impl2383);
+            rule__Rule__EndDelimeterAssignment_4_1_1();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getRuleAccess().getEndDelimeterAssignment_4_1_1()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_4_1__1__Impl"
+
+
+    // $ANTLR start "rule__Rule__Group_4_1__2"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1240:1: rule__Rule__Group_4_1__2 : rule__Rule__Group_4_1__2__Impl ;
+    public final void rule__Rule__Group_4_1__2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1244:1: ( rule__Rule__Group_4_1__2__Impl )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1245:2: rule__Rule__Group_4_1__2__Impl
+            {
+            pushFollow(FOLLOW_rule__Rule__Group_4_1__2__Impl_in_rule__Rule__Group_4_1__22413);
+            rule__Rule__Group_4_1__2__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_4_1__2"
+
+
+    // $ANTLR start "rule__Rule__Group_4_1__2__Impl"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1251:1: rule__Rule__Group_4_1__2__Impl : ( ',' ) ;
+    public final void rule__Rule__Group_4_1__2__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1255:1: ( ( ',' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1256:1: ( ',' )
+            {
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1256:1: ( ',' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1257:1: ','
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getRuleAccess().getCommaKeyword_4_1_2()); 
+            }
+            match(input,20,FOLLOW_20_in_rule__Rule__Group_4_1__2__Impl2441); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getRuleAccess().getCommaKeyword_4_1_2()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Rule__Group_4_1__2__Impl"
 
 
     // $ANTLR start "rule__QualifiedName__Group__0"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1304:1: rule__QualifiedName__Group__0 : rule__QualifiedName__Group__0__Impl rule__QualifiedName__Group__1 ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1276:1: rule__QualifiedName__Group__0 : rule__QualifiedName__Group__0__Impl rule__QualifiedName__Group__1 ;
     public final void rule__QualifiedName__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1308:1: ( rule__QualifiedName__Group__0__Impl rule__QualifiedName__Group__1 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1309:2: rule__QualifiedName__Group__0__Impl rule__QualifiedName__Group__1
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1280:1: ( rule__QualifiedName__Group__0__Impl rule__QualifiedName__Group__1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1281:2: rule__QualifiedName__Group__0__Impl rule__QualifiedName__Group__1
             {
-            pushFollow(FOLLOW_rule__QualifiedName__Group__0__Impl_in_rule__QualifiedName__Group__02537);
+            pushFollow(FOLLOW_rule__QualifiedName__Group__0__Impl_in_rule__QualifiedName__Group__02478);
             rule__QualifiedName__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__QualifiedName__Group__1_in_rule__QualifiedName__Group__02540);
+            pushFollow(FOLLOW_rule__QualifiedName__Group__1_in_rule__QualifiedName__Group__02481);
             rule__QualifiedName__Group__1();
 
             state._fsp--;
@@ -3473,22 +3394,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__QualifiedName__Group__0__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1316:1: rule__QualifiedName__Group__0__Impl : ( RULE_ID ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1288:1: rule__QualifiedName__Group__0__Impl : ( RULE_ID ) ;
     public final void rule__QualifiedName__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1320:1: ( ( RULE_ID ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1321:1: ( RULE_ID )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1292:1: ( ( RULE_ID ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1293:1: ( RULE_ID )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1321:1: ( RULE_ID )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1322:1: RULE_ID
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1293:1: ( RULE_ID )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1294:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getQualifiedNameAccess().getIDTerminalRuleCall_0()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__QualifiedName__Group__0__Impl2567); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__QualifiedName__Group__0__Impl2508); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getQualifiedNameAccess().getIDTerminalRuleCall_0()); 
             }
@@ -3514,16 +3435,16 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__QualifiedName__Group__1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1333:1: rule__QualifiedName__Group__1 : rule__QualifiedName__Group__1__Impl ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1305:1: rule__QualifiedName__Group__1 : rule__QualifiedName__Group__1__Impl ;
     public final void rule__QualifiedName__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1337:1: ( rule__QualifiedName__Group__1__Impl )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1338:2: rule__QualifiedName__Group__1__Impl
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1309:1: ( rule__QualifiedName__Group__1__Impl )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1310:2: rule__QualifiedName__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__QualifiedName__Group__1__Impl_in_rule__QualifiedName__Group__12596);
+            pushFollow(FOLLOW_rule__QualifiedName__Group__1__Impl_in_rule__QualifiedName__Group__12537);
             rule__QualifiedName__Group__1__Impl();
 
             state._fsp--;
@@ -3547,22 +3468,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__QualifiedName__Group__1__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1344:1: rule__QualifiedName__Group__1__Impl : ( ( rule__QualifiedName__Group_1__0 )* ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1316:1: rule__QualifiedName__Group__1__Impl : ( ( rule__QualifiedName__Group_1__0 )* ) ;
     public final void rule__QualifiedName__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1348:1: ( ( ( rule__QualifiedName__Group_1__0 )* ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1349:1: ( ( rule__QualifiedName__Group_1__0 )* )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1320:1: ( ( ( rule__QualifiedName__Group_1__0 )* ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1321:1: ( ( rule__QualifiedName__Group_1__0 )* )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1349:1: ( ( rule__QualifiedName__Group_1__0 )* )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1350:1: ( rule__QualifiedName__Group_1__0 )*
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1321:1: ( ( rule__QualifiedName__Group_1__0 )* )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1322:1: ( rule__QualifiedName__Group_1__0 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getQualifiedNameAccess().getGroup_1()); 
             }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1351:1: ( rule__QualifiedName__Group_1__0 )*
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1323:1: ( rule__QualifiedName__Group_1__0 )*
             loop4:
             do {
                 int alt4=2;
@@ -3575,9 +3496,9 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
                 switch (alt4) {
             	case 1 :
-            	    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1351:2: rule__QualifiedName__Group_1__0
+            	    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1323:2: rule__QualifiedName__Group_1__0
             	    {
-            	    pushFollow(FOLLOW_rule__QualifiedName__Group_1__0_in_rule__QualifiedName__Group__1__Impl2623);
+            	    pushFollow(FOLLOW_rule__QualifiedName__Group_1__0_in_rule__QualifiedName__Group__1__Impl2564);
             	    rule__QualifiedName__Group_1__0();
 
             	    state._fsp--;
@@ -3616,21 +3537,21 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__QualifiedName__Group_1__0"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1365:1: rule__QualifiedName__Group_1__0 : rule__QualifiedName__Group_1__0__Impl rule__QualifiedName__Group_1__1 ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1337:1: rule__QualifiedName__Group_1__0 : rule__QualifiedName__Group_1__0__Impl rule__QualifiedName__Group_1__1 ;
     public final void rule__QualifiedName__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1369:1: ( rule__QualifiedName__Group_1__0__Impl rule__QualifiedName__Group_1__1 )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1370:2: rule__QualifiedName__Group_1__0__Impl rule__QualifiedName__Group_1__1
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1341:1: ( rule__QualifiedName__Group_1__0__Impl rule__QualifiedName__Group_1__1 )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1342:2: rule__QualifiedName__Group_1__0__Impl rule__QualifiedName__Group_1__1
             {
-            pushFollow(FOLLOW_rule__QualifiedName__Group_1__0__Impl_in_rule__QualifiedName__Group_1__02658);
+            pushFollow(FOLLOW_rule__QualifiedName__Group_1__0__Impl_in_rule__QualifiedName__Group_1__02599);
             rule__QualifiedName__Group_1__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__QualifiedName__Group_1__1_in_rule__QualifiedName__Group_1__02661);
+            pushFollow(FOLLOW_rule__QualifiedName__Group_1__1_in_rule__QualifiedName__Group_1__02602);
             rule__QualifiedName__Group_1__1();
 
             state._fsp--;
@@ -3654,22 +3575,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__QualifiedName__Group_1__0__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1377:1: rule__QualifiedName__Group_1__0__Impl : ( '.' ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1349:1: rule__QualifiedName__Group_1__0__Impl : ( '.' ) ;
     public final void rule__QualifiedName__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1381:1: ( ( '.' ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1382:1: ( '.' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1353:1: ( ( '.' ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1354:1: ( '.' )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1382:1: ( '.' )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1383:1: '.'
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1354:1: ( '.' )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1355:1: '.'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getQualifiedNameAccess().getFullStopKeyword_1_0()); 
             }
-            match(input,22,FOLLOW_22_in_rule__QualifiedName__Group_1__0__Impl2689); if (state.failed) return ;
+            match(input,22,FOLLOW_22_in_rule__QualifiedName__Group_1__0__Impl2630); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getQualifiedNameAccess().getFullStopKeyword_1_0()); 
             }
@@ -3695,16 +3616,16 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__QualifiedName__Group_1__1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1396:1: rule__QualifiedName__Group_1__1 : rule__QualifiedName__Group_1__1__Impl ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1368:1: rule__QualifiedName__Group_1__1 : rule__QualifiedName__Group_1__1__Impl ;
     public final void rule__QualifiedName__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1400:1: ( rule__QualifiedName__Group_1__1__Impl )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1401:2: rule__QualifiedName__Group_1__1__Impl
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1372:1: ( rule__QualifiedName__Group_1__1__Impl )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1373:2: rule__QualifiedName__Group_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__QualifiedName__Group_1__1__Impl_in_rule__QualifiedName__Group_1__12720);
+            pushFollow(FOLLOW_rule__QualifiedName__Group_1__1__Impl_in_rule__QualifiedName__Group_1__12661);
             rule__QualifiedName__Group_1__1__Impl();
 
             state._fsp--;
@@ -3728,22 +3649,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__QualifiedName__Group_1__1__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1407:1: rule__QualifiedName__Group_1__1__Impl : ( RULE_ID ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1379:1: rule__QualifiedName__Group_1__1__Impl : ( RULE_ID ) ;
     public final void rule__QualifiedName__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1411:1: ( ( RULE_ID ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1412:1: ( RULE_ID )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1383:1: ( ( RULE_ID ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1384:1: ( RULE_ID )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1412:1: ( RULE_ID )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1413:1: RULE_ID
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1384:1: ( RULE_ID )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1385:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getQualifiedNameAccess().getIDTerminalRuleCall_1_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__QualifiedName__Group_1__1__Impl2747); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__QualifiedName__Group_1__1__Impl2688); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getQualifiedNameAccess().getIDTerminalRuleCall_1_1()); 
             }
@@ -3769,17 +3690,17 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__UnorderedGroup"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1429:1: rule__Model__UnorderedGroup : rule__Model__UnorderedGroup__0 {...}?;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1401:1: rule__Model__UnorderedGroup : rule__Model__UnorderedGroup__0 {...}?;
     public final void rule__Model__UnorderedGroup() throws RecognitionException {
 
             	int stackSize = keepStackSize();
         		getUnorderedGroupHelper().enter(grammarAccess.getModelAccess().getUnorderedGroup());
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1434:1: ( rule__Model__UnorderedGroup__0 {...}?)
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1435:2: rule__Model__UnorderedGroup__0 {...}?
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1406:1: ( rule__Model__UnorderedGroup__0 {...}?)
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1407:2: rule__Model__UnorderedGroup__0 {...}?
             {
-            pushFollow(FOLLOW_rule__Model__UnorderedGroup__0_in_rule__Model__UnorderedGroup2781);
+            pushFollow(FOLLOW_rule__Model__UnorderedGroup__0_in_rule__Model__UnorderedGroup2722);
             rule__Model__UnorderedGroup__0();
 
             state._fsp--;
@@ -3808,17 +3729,17 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__UnorderedGroup__Impl"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1446:1: rule__Model__UnorderedGroup__Impl : ( ({...}? => ( ( ( rule__Model__Group_0__0 ) ) ) ) | ({...}? => ( ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) ) ) ) ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1418:1: rule__Model__UnorderedGroup__Impl : ( ({...}? => ( ( ( rule__Model__Group_0__0 ) ) ) ) | ({...}? => ( ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) ) ) ) ) ;
     public final void rule__Model__UnorderedGroup__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         		boolean selected = false;
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1451:1: ( ( ({...}? => ( ( ( rule__Model__Group_0__0 ) ) ) ) | ({...}? => ( ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) ) ) ) ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1452:3: ( ({...}? => ( ( ( rule__Model__Group_0__0 ) ) ) ) | ({...}? => ( ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) ) ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1423:1: ( ( ({...}? => ( ( ( rule__Model__Group_0__0 ) ) ) ) | ({...}? => ( ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) ) ) ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1424:3: ( ({...}? => ( ( ( rule__Model__Group_0__0 ) ) ) ) | ({...}? => ( ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) ) ) ) )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1452:3: ( ({...}? => ( ( ( rule__Model__Group_0__0 ) ) ) ) | ({...}? => ( ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) ) ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1424:3: ( ({...}? => ( ( ( rule__Model__Group_0__0 ) ) ) ) | ({...}? => ( ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) ) ) ) )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -3837,30 +3758,30 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
             }
             switch (alt6) {
                 case 1 :
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1454:4: ({...}? => ( ( ( rule__Model__Group_0__0 ) ) ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1426:4: ({...}? => ( ( ( rule__Model__Group_0__0 ) ) ) )
                     {
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1454:4: ({...}? => ( ( ( rule__Model__Group_0__0 ) ) ) )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1455:5: {...}? => ( ( ( rule__Model__Group_0__0 ) ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1426:4: ({...}? => ( ( ( rule__Model__Group_0__0 ) ) ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1427:5: {...}? => ( ( ( rule__Model__Group_0__0 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getModelAccess().getUnorderedGroup(), 0) ) {
                         if (state.backtracking>0) {state.failed=true; return ;}
                         throw new FailedPredicateException(input, "rule__Model__UnorderedGroup__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getModelAccess().getUnorderedGroup(), 0)");
                     }
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1455:100: ( ( ( rule__Model__Group_0__0 ) ) )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1456:6: ( ( rule__Model__Group_0__0 ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1427:100: ( ( ( rule__Model__Group_0__0 ) ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1428:6: ( ( rule__Model__Group_0__0 ) )
                     {
                     getUnorderedGroupHelper().select(grammarAccess.getModelAccess().getUnorderedGroup(), 0);
                     selected = true;
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1462:6: ( ( rule__Model__Group_0__0 ) )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1464:7: ( rule__Model__Group_0__0 )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1434:6: ( ( rule__Model__Group_0__0 ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1436:7: ( rule__Model__Group_0__0 )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getModelAccess().getGroup_0()); 
                     }
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1465:7: ( rule__Model__Group_0__0 )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1465:8: rule__Model__Group_0__0
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1437:7: ( rule__Model__Group_0__0 )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1437:8: rule__Model__Group_0__0
                     {
-                    pushFollow(FOLLOW_rule__Model__Group_0__0_in_rule__Model__UnorderedGroup__Impl2870);
+                    pushFollow(FOLLOW_rule__Model__Group_0__0_in_rule__Model__UnorderedGroup__Impl2811);
                     rule__Model__Group_0__0();
 
                     state._fsp--;
@@ -3884,33 +3805,33 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1471:4: ({...}? => ( ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) ) ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1443:4: ({...}? => ( ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) ) ) )
                     {
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1471:4: ({...}? => ( ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) ) ) )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1472:5: {...}? => ( ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1443:4: ({...}? => ( ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) ) ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1444:5: {...}? => ( ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getModelAccess().getUnorderedGroup(), 1) ) {
                         if (state.backtracking>0) {state.failed=true; return ;}
                         throw new FailedPredicateException(input, "rule__Model__UnorderedGroup__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getModelAccess().getUnorderedGroup(), 1)");
                     }
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1472:100: ( ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) ) )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1473:6: ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1444:100: ( ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1445:6: ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) )
                     {
                     getUnorderedGroupHelper().select(grammarAccess.getModelAccess().getUnorderedGroup(), 1);
                     selected = true;
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1479:6: ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1480:6: ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1451:6: ( ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1452:6: ( ( rule__Model__RulesAssignment_1 ) ) ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* )
                     {
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1480:6: ( ( rule__Model__RulesAssignment_1 ) )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1481:7: ( rule__Model__RulesAssignment_1 )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1452:6: ( ( rule__Model__RulesAssignment_1 ) )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1453:7: ( rule__Model__RulesAssignment_1 )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getModelAccess().getRulesAssignment_1()); 
                     }
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1482:7: ( rule__Model__RulesAssignment_1 )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1482:8: rule__Model__RulesAssignment_1
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1454:7: ( rule__Model__RulesAssignment_1 )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1454:8: rule__Model__RulesAssignment_1
                     {
-                    pushFollow(FOLLOW_rule__Model__RulesAssignment_1_in_rule__Model__UnorderedGroup__Impl2962);
+                    pushFollow(FOLLOW_rule__Model__RulesAssignment_1_in_rule__Model__UnorderedGroup__Impl2903);
                     rule__Model__RulesAssignment_1();
 
                     state._fsp--;
@@ -3924,22 +3845,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
                     }
 
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1485:6: ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* )
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1486:7: ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )*
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1457:6: ( ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )* )
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1458:7: ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )*
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getModelAccess().getRulesAssignment_1()); 
                     }
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1487:7: ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )*
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1459:7: ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )*
                     loop5:
                     do {
                         int alt5=2;
                         alt5 = dfa5.predict(input);
                         switch (alt5) {
                     	case 1 :
-                    	    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1487:8: ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1
+                    	    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1459:8: ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1
                     	    {
-                    	    pushFollow(FOLLOW_rule__Model__RulesAssignment_1_in_rule__Model__UnorderedGroup__Impl3006);
+                    	    pushFollow(FOLLOW_rule__Model__RulesAssignment_1_in_rule__Model__UnorderedGroup__Impl2947);
                     	    rule__Model__RulesAssignment_1();
 
                     	    state._fsp--;
@@ -3995,21 +3916,21 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__UnorderedGroup__0"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1502:1: rule__Model__UnorderedGroup__0 : rule__Model__UnorderedGroup__Impl ( rule__Model__UnorderedGroup__1 )? ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1474:1: rule__Model__UnorderedGroup__0 : rule__Model__UnorderedGroup__Impl ( rule__Model__UnorderedGroup__1 )? ;
     public final void rule__Model__UnorderedGroup__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1506:1: ( rule__Model__UnorderedGroup__Impl ( rule__Model__UnorderedGroup__1 )? )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1507:2: rule__Model__UnorderedGroup__Impl ( rule__Model__UnorderedGroup__1 )?
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1478:1: ( rule__Model__UnorderedGroup__Impl ( rule__Model__UnorderedGroup__1 )? )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1479:2: rule__Model__UnorderedGroup__Impl ( rule__Model__UnorderedGroup__1 )?
             {
-            pushFollow(FOLLOW_rule__Model__UnorderedGroup__Impl_in_rule__Model__UnorderedGroup__03072);
+            pushFollow(FOLLOW_rule__Model__UnorderedGroup__Impl_in_rule__Model__UnorderedGroup__03013);
             rule__Model__UnorderedGroup__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1508:2: ( rule__Model__UnorderedGroup__1 )?
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1480:2: ( rule__Model__UnorderedGroup__1 )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -4021,9 +3942,9 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
             }
             switch (alt7) {
                 case 1 :
-                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1508:2: rule__Model__UnorderedGroup__1
+                    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1480:2: rule__Model__UnorderedGroup__1
                     {
-                    pushFollow(FOLLOW_rule__Model__UnorderedGroup__1_in_rule__Model__UnorderedGroup__03075);
+                    pushFollow(FOLLOW_rule__Model__UnorderedGroup__1_in_rule__Model__UnorderedGroup__03016);
                     rule__Model__UnorderedGroup__1();
 
                     state._fsp--;
@@ -4053,16 +3974,16 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__UnorderedGroup__1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1515:1: rule__Model__UnorderedGroup__1 : rule__Model__UnorderedGroup__Impl ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1487:1: rule__Model__UnorderedGroup__1 : rule__Model__UnorderedGroup__Impl ;
     public final void rule__Model__UnorderedGroup__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1519:1: ( rule__Model__UnorderedGroup__Impl )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1520:2: rule__Model__UnorderedGroup__Impl
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1491:1: ( rule__Model__UnorderedGroup__Impl )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1492:2: rule__Model__UnorderedGroup__Impl
             {
-            pushFollow(FOLLOW_rule__Model__UnorderedGroup__Impl_in_rule__Model__UnorderedGroup__13100);
+            pushFollow(FOLLOW_rule__Model__UnorderedGroup__Impl_in_rule__Model__UnorderedGroup__13041);
             rule__Model__UnorderedGroup__Impl();
 
             state._fsp--;
@@ -4086,22 +4007,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__NameAssignment_0_2"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1531:1: rule__Model__NameAssignment_0_2 : ( RULE_ID ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1503:1: rule__Model__NameAssignment_0_2 : ( RULE_ID ) ;
     public final void rule__Model__NameAssignment_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1535:1: ( ( RULE_ID ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1536:1: ( RULE_ID )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1507:1: ( ( RULE_ID ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1508:1: ( RULE_ID )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1536:1: ( RULE_ID )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1537:1: RULE_ID
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1508:1: ( RULE_ID )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1509:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getModelAccess().getNameIDTerminalRuleCall_0_2_0()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Model__NameAssignment_0_23132); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Model__NameAssignment_0_23073); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getModelAccess().getNameIDTerminalRuleCall_0_2_0()); 
             }
@@ -4127,22 +4048,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__AttributesAssignment_0_4"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1546:1: rule__Model__AttributesAssignment_0_4 : ( ruleAttribute ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1518:1: rule__Model__AttributesAssignment_0_4 : ( ruleAttribute ) ;
     public final void rule__Model__AttributesAssignment_0_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1550:1: ( ( ruleAttribute ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1551:1: ( ruleAttribute )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1522:1: ( ( ruleAttribute ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1523:1: ( ruleAttribute )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1551:1: ( ruleAttribute )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1552:1: ruleAttribute
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1523:1: ( ruleAttribute )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1524:1: ruleAttribute
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getModelAccess().getAttributesAttributeParserRuleCall_0_4_0()); 
             }
-            pushFollow(FOLLOW_ruleAttribute_in_rule__Model__AttributesAssignment_0_43163);
+            pushFollow(FOLLOW_ruleAttribute_in_rule__Model__AttributesAssignment_0_43104);
             ruleAttribute();
 
             state._fsp--;
@@ -4172,22 +4093,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__RulesAssignment_1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1561:1: rule__Model__RulesAssignment_1 : ( ruleRule ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1533:1: rule__Model__RulesAssignment_1 : ( ruleRule ) ;
     public final void rule__Model__RulesAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1565:1: ( ( ruleRule ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1566:1: ( ruleRule )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1537:1: ( ( ruleRule ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1538:1: ( ruleRule )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1566:1: ( ruleRule )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1567:1: ruleRule
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1538:1: ( ruleRule )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1539:1: ruleRule
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getModelAccess().getRulesRuleParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleRule_in_rule__Model__RulesAssignment_13194);
+            pushFollow(FOLLOW_ruleRule_in_rule__Model__RulesAssignment_13135);
             ruleRule();
 
             state._fsp--;
@@ -4217,22 +4138,22 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Attribute__NameAssignment_1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1576:1: rule__Attribute__NameAssignment_1 : ( RULE_ID ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1548:1: rule__Attribute__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Attribute__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1580:1: ( ( RULE_ID ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1581:1: ( RULE_ID )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1552:1: ( ( RULE_ID ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1553:1: ( RULE_ID )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1581:1: ( RULE_ID )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1582:1: RULE_ID
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1553:1: ( RULE_ID )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1554:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAttributeAccess().getNameIDTerminalRuleCall_1_0()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Attribute__NameAssignment_13225); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Attribute__NameAssignment_13166); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAttributeAccess().getNameIDTerminalRuleCall_1_0()); 
             }
@@ -4258,28 +4179,28 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Attribute__TypeAssignment_5"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1591:1: rule__Attribute__TypeAssignment_5 : ( ( ruleQualifiedName ) ) ;
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1563:1: rule__Attribute__TypeAssignment_5 : ( ( ruleQualifiedName ) ) ;
     public final void rule__Attribute__TypeAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1595:1: ( ( ( ruleQualifiedName ) ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1596:1: ( ( ruleQualifiedName ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1567:1: ( ( ( ruleQualifiedName ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1568:1: ( ( ruleQualifiedName ) )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1596:1: ( ( ruleQualifiedName ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1597:1: ( ruleQualifiedName )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1568:1: ( ( ruleQualifiedName ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1569:1: ( ruleQualifiedName )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAttributeAccess().getTypeJvmTypeCrossReference_5_0()); 
             }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1598:1: ( ruleQualifiedName )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1599:1: ruleQualifiedName
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1570:1: ( ruleQualifiedName )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1571:1: ruleQualifiedName
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAttributeAccess().getTypeJvmTypeQualifiedNameParserRuleCall_5_0_1()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedName_in_rule__Attribute__TypeAssignment_53260);
+            pushFollow(FOLLOW_ruleQualifiedName_in_rule__Attribute__TypeAssignment_53201);
             ruleQualifiedName();
 
             state._fsp--;
@@ -4314,25 +4235,25 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Attribute__TypeAssignment_5"
 
 
-    // $ANTLR start "rule__RulePosition__NameAssignment_1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1610:1: rule__RulePosition__NameAssignment_1 : ( RULE_ID ) ;
-    public final void rule__RulePosition__NameAssignment_1() throws RecognitionException {
+    // $ANTLR start "rule__Rule__NameAssignment_1"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1582:1: rule__Rule__NameAssignment_1 : ( RULE_ID ) ;
+    public final void rule__Rule__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1614:1: ( ( RULE_ID ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1615:1: ( RULE_ID )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1586:1: ( ( RULE_ID ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1587:1: ( RULE_ID )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1615:1: ( RULE_ID )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1616:1: RULE_ID
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1587:1: ( RULE_ID )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1588:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getNameIDTerminalRuleCall_1_0()); 
+               before(grammarAccess.getRuleAccess().getNameIDTerminalRuleCall_1_0()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__RulePosition__NameAssignment_13295); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Rule__NameAssignment_13236); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getNameIDTerminalRuleCall_1_0()); 
+               after(grammarAccess.getRuleAccess().getNameIDTerminalRuleCall_1_0()); 
             }
 
             }
@@ -4352,28 +4273,28 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__NameAssignment_1"
+    // $ANTLR end "rule__Rule__NameAssignment_1"
 
 
-    // $ANTLR start "rule__RulePosition__StartIndexAssignment_3_0_1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1625:1: rule__RulePosition__StartIndexAssignment_3_0_1 : ( RULE_INT ) ;
-    public final void rule__RulePosition__StartIndexAssignment_3_0_1() throws RecognitionException {
+    // $ANTLR start "rule__Rule__StartIndexAssignment_3_0_1"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1597:1: rule__Rule__StartIndexAssignment_3_0_1 : ( RULE_INT ) ;
+    public final void rule__Rule__StartIndexAssignment_3_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1629:1: ( ( RULE_INT ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1630:1: ( RULE_INT )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1601:1: ( ( RULE_INT ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1602:1: ( RULE_INT )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1630:1: ( RULE_INT )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1631:1: RULE_INT
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1602:1: ( RULE_INT )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1603:1: RULE_INT
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getStartIndexINTTerminalRuleCall_3_0_1_0()); 
+               before(grammarAccess.getRuleAccess().getStartIndexINTTerminalRuleCall_3_0_1_0()); 
             }
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__RulePosition__StartIndexAssignment_3_0_13326); if (state.failed) return ;
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Rule__StartIndexAssignment_3_0_13267); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getStartIndexINTTerminalRuleCall_3_0_1_0()); 
+               after(grammarAccess.getRuleAccess().getStartIndexINTTerminalRuleCall_3_0_1_0()); 
             }
 
             }
@@ -4393,28 +4314,28 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__StartIndexAssignment_3_0_1"
+    // $ANTLR end "rule__Rule__StartIndexAssignment_3_0_1"
 
 
-    // $ANTLR start "rule__RulePosition__StartDelimeterAssignment_3_1_1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1640:1: rule__RulePosition__StartDelimeterAssignment_3_1_1 : ( RULE_STRING ) ;
-    public final void rule__RulePosition__StartDelimeterAssignment_3_1_1() throws RecognitionException {
+    // $ANTLR start "rule__Rule__StartDelimeterAssignment_3_1_1"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1612:1: rule__Rule__StartDelimeterAssignment_3_1_1 : ( RULE_STRING ) ;
+    public final void rule__Rule__StartDelimeterAssignment_3_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1644:1: ( ( RULE_STRING ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1645:1: ( RULE_STRING )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1616:1: ( ( RULE_STRING ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1617:1: ( RULE_STRING )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1645:1: ( RULE_STRING )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1646:1: RULE_STRING
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1617:1: ( RULE_STRING )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1618:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getStartDelimeterSTRINGTerminalRuleCall_3_1_1_0()); 
+               before(grammarAccess.getRuleAccess().getStartDelimeterSTRINGTerminalRuleCall_3_1_1_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__RulePosition__StartDelimeterAssignment_3_1_13357); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Rule__StartDelimeterAssignment_3_1_13298); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getStartDelimeterSTRINGTerminalRuleCall_3_1_1_0()); 
+               after(grammarAccess.getRuleAccess().getStartDelimeterSTRINGTerminalRuleCall_3_1_1_0()); 
             }
 
             }
@@ -4434,28 +4355,28 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__StartDelimeterAssignment_3_1_1"
+    // $ANTLR end "rule__Rule__StartDelimeterAssignment_3_1_1"
 
 
-    // $ANTLR start "rule__RulePosition__EndIndexAssignment_4_0_1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1655:1: rule__RulePosition__EndIndexAssignment_4_0_1 : ( RULE_INT ) ;
-    public final void rule__RulePosition__EndIndexAssignment_4_0_1() throws RecognitionException {
+    // $ANTLR start "rule__Rule__EndIndexAssignment_4_0_1"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1627:1: rule__Rule__EndIndexAssignment_4_0_1 : ( RULE_INT ) ;
+    public final void rule__Rule__EndIndexAssignment_4_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1659:1: ( ( RULE_INT ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1660:1: ( RULE_INT )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1631:1: ( ( RULE_INT ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1632:1: ( RULE_INT )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1660:1: ( RULE_INT )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1661:1: RULE_INT
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1632:1: ( RULE_INT )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1633:1: RULE_INT
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getEndIndexINTTerminalRuleCall_4_0_1_0()); 
+               before(grammarAccess.getRuleAccess().getEndIndexINTTerminalRuleCall_4_0_1_0()); 
             }
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__RulePosition__EndIndexAssignment_4_0_13388); if (state.failed) return ;
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Rule__EndIndexAssignment_4_0_13329); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getEndIndexINTTerminalRuleCall_4_0_1_0()); 
+               after(grammarAccess.getRuleAccess().getEndIndexINTTerminalRuleCall_4_0_1_0()); 
             }
 
             }
@@ -4475,28 +4396,28 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__EndIndexAssignment_4_0_1"
+    // $ANTLR end "rule__Rule__EndIndexAssignment_4_0_1"
 
 
-    // $ANTLR start "rule__RulePosition__EndDelimeterAssignment_4_1_1"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1670:1: rule__RulePosition__EndDelimeterAssignment_4_1_1 : ( RULE_STRING ) ;
-    public final void rule__RulePosition__EndDelimeterAssignment_4_1_1() throws RecognitionException {
+    // $ANTLR start "rule__Rule__EndDelimeterAssignment_4_1_1"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1642:1: rule__Rule__EndDelimeterAssignment_4_1_1 : ( RULE_STRING ) ;
+    public final void rule__Rule__EndDelimeterAssignment_4_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1674:1: ( ( RULE_STRING ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1675:1: ( RULE_STRING )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1646:1: ( ( RULE_STRING ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1647:1: ( RULE_STRING )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1675:1: ( RULE_STRING )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1676:1: RULE_STRING
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1647:1: ( RULE_STRING )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1648:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getEndDelimeterSTRINGTerminalRuleCall_4_1_1_0()); 
+               before(grammarAccess.getRuleAccess().getEndDelimeterSTRINGTerminalRuleCall_4_1_1_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__RulePosition__EndDelimeterAssignment_4_1_13419); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Rule__EndDelimeterAssignment_4_1_13360); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getEndDelimeterSTRINGTerminalRuleCall_4_1_1_0()); 
+               after(grammarAccess.getRuleAccess().getEndDelimeterSTRINGTerminalRuleCall_4_1_1_0()); 
             }
 
             }
@@ -4516,40 +4437,40 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__EndDelimeterAssignment_4_1_1"
+    // $ANTLR end "rule__Rule__EndDelimeterAssignment_4_1_1"
 
 
-    // $ANTLR start "rule__RulePosition__AttrAssignment_7"
-    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1685:1: rule__RulePosition__AttrAssignment_7 : ( ( RULE_ID ) ) ;
-    public final void rule__RulePosition__AttrAssignment_7() throws RecognitionException {
+    // $ANTLR start "rule__Rule__AttrAssignment_7"
+    // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1657:1: rule__Rule__AttrAssignment_7 : ( ( RULE_ID ) ) ;
+    public final void rule__Rule__AttrAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1689:1: ( ( ( RULE_ID ) ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1690:1: ( ( RULE_ID ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1661:1: ( ( ( RULE_ID ) ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1662:1: ( ( RULE_ID ) )
             {
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1690:1: ( ( RULE_ID ) )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1691:1: ( RULE_ID )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1662:1: ( ( RULE_ID ) )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1663:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getAttrAttributeCrossReference_7_0()); 
+               before(grammarAccess.getRuleAccess().getAttrAttributeCrossReference_7_0()); 
             }
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1692:1: ( RULE_ID )
-            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1693:1: RULE_ID
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1664:1: ( RULE_ID )
+            // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1665:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getRulePositionAccess().getAttrAttributeIDTerminalRuleCall_7_0_1()); 
+               before(grammarAccess.getRuleAccess().getAttrAttributeIDTerminalRuleCall_7_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__RulePosition__AttrAssignment_73454); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Rule__AttrAssignment_73395); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getAttrAttributeIDTerminalRuleCall_7_0_1()); 
+               after(grammarAccess.getRuleAccess().getAttrAttributeIDTerminalRuleCall_7_0_1()); 
             }
 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getRulePositionAccess().getAttrAttributeCrossReference_7_0()); 
+               after(grammarAccess.getRuleAccess().getAttrAttributeCrossReference_7_0()); 
             }
 
             }
@@ -4569,14 +4490,14 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RulePosition__AttrAssignment_7"
+    // $ANTLR end "rule__Rule__AttrAssignment_7"
 
     // $ANTLR start synpred1_InternalS2M
     public final void synpred1_InternalS2M_fragment() throws RecognitionException {   
-        // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1487:8: ( rule__Model__RulesAssignment_1 )
-        // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1487:9: rule__Model__RulesAssignment_1
+        // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1459:8: ( rule__Model__RulesAssignment_1 )
+        // ../org.yazgel.regex.s2m.ui/src-gen/org/yazgel/regex/s2m/ui/contentassist/antlr/internal/InternalS2M.g:1459:9: rule__Model__RulesAssignment_1
         {
-        pushFollow(FOLLOW_rule__Model__RulesAssignment_1_in_synpred1_InternalS2M3003);
+        pushFollow(FOLLOW_rule__Model__RulesAssignment_1_in_synpred1_InternalS2M2944);
         rule__Model__RulesAssignment_1();
 
         state._fsp--;
@@ -4625,7 +4546,7 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
             "\1\3",
             "\1\4",
             "\1\5",
-            "\1\6\1\7",
+            "\1\7\1\6",
             "\1\10",
             "\1\11",
             "\1\12",
@@ -4672,7 +4593,7 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
             this.transition = DFA5_transition;
         }
         public String getDescription() {
-            return "()* loopback of 1487:7: ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )*";
+            return "()* loopback of 1459:7: ( ( rule__Model__RulesAssignment_1 )=> rule__Model__RulesAssignment_1 )*";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -4711,137 +4632,134 @@ public class InternalS2MParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__Attribute__Group__0_in_ruleAttribute154 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleRule_in_entryRuleRule181 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleRule188 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRulePosition_in_ruleRule214 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRulePosition_in_entryRuleRulePosition240 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleRulePosition247 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__0_in_ruleRulePosition273 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_entryRuleQualifiedName300 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleQualifiedName307 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__QualifiedName__Group__0_in_ruleQualifiedName333 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_3_0__0_in_rule__RulePosition__Alternatives_3369 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_3_1__0_in_rule__RulePosition__Alternatives_3387 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_4_0__0_in_rule__RulePosition__Alternatives_4420 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_4_1__0_in_rule__RulePosition__Alternatives_4438 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__Group_0__0__Impl_in_rule__Model__Group_0__0469 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_rule__Model__Group_0__1_in_rule__Model__Group_0__0472 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_11_in_rule__Model__Group_0__0__Impl500 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__Group_0__1__Impl_in_rule__Model__Group_0__1531 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Model__Group_0__2_in_rule__Model__Group_0__1534 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_12_in_rule__Model__Group_0__1__Impl562 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__Group_0__2__Impl_in_rule__Model__Group_0__2593 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__Model__Group_0__3_in_rule__Model__Group_0__2596 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__NameAssignment_0_2_in_rule__Model__Group_0__2__Impl623 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__Group_0__3__Impl_in_rule__Model__Group_0__3653 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_rule__Model__Group_0__4_in_rule__Model__Group_0__3656 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__Model__Group_0__3__Impl684 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__Group_0__4__Impl_in_rule__Model__Group_0__4715 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__AttributesAssignment_0_4_in_rule__Model__Group_0__4__Impl742 = new BitSet(new long[]{0x0000000000004002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__0__Impl_in_rule__Attribute__Group__0783 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__1_in_rule__Attribute__Group__0786 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__Attribute__Group__0__Impl814 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__1__Impl_in_rule__Attribute__Group__1845 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__2_in_rule__Attribute__Group__1848 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__NameAssignment_1_in_rule__Attribute__Group__1__Impl875 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__2__Impl_in_rule__Attribute__Group__2905 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__3_in_rule__Attribute__Group__2908 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__Attribute__Group__2__Impl936 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__3__Impl_in_rule__Attribute__Group__3967 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__4_in_rule__Attribute__Group__3970 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__Attribute__Group__3__Impl998 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__4__Impl_in_rule__Attribute__Group__41029 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__5_in_rule__Attribute__Group__41032 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_12_in_rule__Attribute__Group__4__Impl1060 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__5__Impl_in_rule__Attribute__Group__51091 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__6_in_rule__Attribute__Group__51094 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__TypeAssignment_5_in_rule__Attribute__Group__5__Impl1121 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__6__Impl_in_rule__Attribute__Group__61151 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__Attribute__Group__6__Impl1179 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__0__Impl_in_rule__RulePosition__Group__01224 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__1_in_rule__RulePosition__Group__01227 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__RulePosition__Group__0__Impl1255 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__1__Impl_in_rule__RulePosition__Group__11286 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__2_in_rule__RulePosition__Group__11289 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__NameAssignment_1_in_rule__RulePosition__Group__1__Impl1316 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__2__Impl_in_rule__RulePosition__Group__21346 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__3_in_rule__RulePosition__Group__21349 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__RulePosition__Group__2__Impl1377 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__3__Impl_in_rule__RulePosition__Group__31408 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__4_in_rule__RulePosition__Group__31411 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Alternatives_3_in_rule__RulePosition__Group__3__Impl1438 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__4__Impl_in_rule__RulePosition__Group__41468 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__5_in_rule__RulePosition__Group__41471 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Alternatives_4_in_rule__RulePosition__Group__4__Impl1498 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__5__Impl_in_rule__RulePosition__Group__51528 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__6_in_rule__RulePosition__Group__51531 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__RulePosition__Group__5__Impl1559 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__6__Impl_in_rule__RulePosition__Group__61590 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__7_in_rule__RulePosition__Group__61593 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_12_in_rule__RulePosition__Group__6__Impl1621 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__7__Impl_in_rule__RulePosition__Group__71652 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__8_in_rule__RulePosition__Group__71655 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__AttrAssignment_7_in_rule__RulePosition__Group__7__Impl1682 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group__8__Impl_in_rule__RulePosition__Group__81712 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__RulePosition__Group__8__Impl1740 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_3_0__0__Impl_in_rule__RulePosition__Group_3_0__01789 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_3_0__1_in_rule__RulePosition__Group_3_0__01792 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__RulePosition__Group_3_0__0__Impl1820 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_3_0__1__Impl_in_rule__RulePosition__Group_3_0__11851 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_3_0__2_in_rule__RulePosition__Group_3_0__11854 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__StartIndexAssignment_3_0_1_in_rule__RulePosition__Group_3_0__1__Impl1881 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_3_0__2__Impl_in_rule__RulePosition__Group_3_0__21911 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__RulePosition__Group_3_0__2__Impl1939 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_3_1__0__Impl_in_rule__RulePosition__Group_3_1__01976 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_3_1__1_in_rule__RulePosition__Group_3_1__01979 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__RulePosition__Group_3_1__0__Impl2007 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_3_1__1__Impl_in_rule__RulePosition__Group_3_1__12038 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_3_1__2_in_rule__RulePosition__Group_3_1__12041 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__StartDelimeterAssignment_3_1_1_in_rule__RulePosition__Group_3_1__1__Impl2068 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_3_1__2__Impl_in_rule__RulePosition__Group_3_1__22098 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__RulePosition__Group_3_1__2__Impl2126 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_4_0__0__Impl_in_rule__RulePosition__Group_4_0__02163 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_4_0__1_in_rule__RulePosition__Group_4_0__02166 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__RulePosition__Group_4_0__0__Impl2194 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_4_0__1__Impl_in_rule__RulePosition__Group_4_0__12225 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_4_0__2_in_rule__RulePosition__Group_4_0__12228 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__EndIndexAssignment_4_0_1_in_rule__RulePosition__Group_4_0__1__Impl2255 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_4_0__2__Impl_in_rule__RulePosition__Group_4_0__22285 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__RulePosition__Group_4_0__2__Impl2313 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_4_1__0__Impl_in_rule__RulePosition__Group_4_1__02350 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_4_1__1_in_rule__RulePosition__Group_4_1__02353 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__RulePosition__Group_4_1__0__Impl2381 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_4_1__1__Impl_in_rule__RulePosition__Group_4_1__12412 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_4_1__2_in_rule__RulePosition__Group_4_1__12415 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__EndDelimeterAssignment_4_1_1_in_rule__RulePosition__Group_4_1__1__Impl2442 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RulePosition__Group_4_1__2__Impl_in_rule__RulePosition__Group_4_1__22472 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__RulePosition__Group_4_1__2__Impl2500 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__QualifiedName__Group__0__Impl_in_rule__QualifiedName__Group__02537 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_rule__QualifiedName__Group__1_in_rule__QualifiedName__Group__02540 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__QualifiedName__Group__0__Impl2567 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__QualifiedName__Group__1__Impl_in_rule__QualifiedName__Group__12596 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__QualifiedName__Group_1__0_in_rule__QualifiedName__Group__1__Impl2623 = new BitSet(new long[]{0x0000000000400002L});
-    public static final BitSet FOLLOW_rule__QualifiedName__Group_1__0__Impl_in_rule__QualifiedName__Group_1__02658 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__QualifiedName__Group_1__1_in_rule__QualifiedName__Group_1__02661 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__QualifiedName__Group_1__0__Impl2689 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__QualifiedName__Group_1__1__Impl_in_rule__QualifiedName__Group_1__12720 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__QualifiedName__Group_1__1__Impl2747 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__UnorderedGroup__0_in_rule__Model__UnorderedGroup2781 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__Group_0__0_in_rule__Model__UnorderedGroup__Impl2870 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__RulesAssignment_1_in_rule__Model__UnorderedGroup__Impl2962 = new BitSet(new long[]{0x0000000000040002L});
-    public static final BitSet FOLLOW_rule__Model__RulesAssignment_1_in_rule__Model__UnorderedGroup__Impl3006 = new BitSet(new long[]{0x0000000000040002L});
-    public static final BitSet FOLLOW_rule__Model__UnorderedGroup__Impl_in_rule__Model__UnorderedGroup__03072 = new BitSet(new long[]{0x0000000000040802L});
-    public static final BitSet FOLLOW_rule__Model__UnorderedGroup__1_in_rule__Model__UnorderedGroup__03075 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__UnorderedGroup__Impl_in_rule__Model__UnorderedGroup__13100 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Model__NameAssignment_0_23132 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAttribute_in_rule__Model__AttributesAssignment_0_43163 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRule_in_rule__Model__RulesAssignment_13194 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Attribute__NameAssignment_13225 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__Attribute__TypeAssignment_53260 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__RulePosition__NameAssignment_13295 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__RulePosition__StartIndexAssignment_3_0_13326 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__RulePosition__StartDelimeterAssignment_3_1_13357 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__RulePosition__EndIndexAssignment_4_0_13388 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__RulePosition__EndDelimeterAssignment_4_1_13419 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__RulePosition__AttrAssignment_73454 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__RulesAssignment_1_in_synpred1_InternalS2M3003 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group__0_in_ruleRule214 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_entryRuleQualifiedName241 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleQualifiedName248 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__QualifiedName__Group__0_in_ruleQualifiedName274 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group_3_0__0_in_rule__Rule__Alternatives_3310 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group_3_1__0_in_rule__Rule__Alternatives_3328 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group_4_0__0_in_rule__Rule__Alternatives_4361 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group_4_1__0_in_rule__Rule__Alternatives_4379 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__Group_0__0__Impl_in_rule__Model__Group_0__0410 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_rule__Model__Group_0__1_in_rule__Model__Group_0__0413 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_11_in_rule__Model__Group_0__0__Impl441 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__Group_0__1__Impl_in_rule__Model__Group_0__1472 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Model__Group_0__2_in_rule__Model__Group_0__1475 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_12_in_rule__Model__Group_0__1__Impl503 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__Group_0__2__Impl_in_rule__Model__Group_0__2534 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_rule__Model__Group_0__3_in_rule__Model__Group_0__2537 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__NameAssignment_0_2_in_rule__Model__Group_0__2__Impl564 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__Group_0__3__Impl_in_rule__Model__Group_0__3594 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_rule__Model__Group_0__4_in_rule__Model__Group_0__3597 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__Model__Group_0__3__Impl625 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__Group_0__4__Impl_in_rule__Model__Group_0__4656 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__AttributesAssignment_0_4_in_rule__Model__Group_0__4__Impl683 = new BitSet(new long[]{0x0000000000004002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__0__Impl_in_rule__Attribute__Group__0724 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__1_in_rule__Attribute__Group__0727 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_rule__Attribute__Group__0__Impl755 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__1__Impl_in_rule__Attribute__Group__1786 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__2_in_rule__Attribute__Group__1789 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__NameAssignment_1_in_rule__Attribute__Group__1__Impl816 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__2__Impl_in_rule__Attribute__Group__2846 = new BitSet(new long[]{0x0000000000010000L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__3_in_rule__Attribute__Group__2849 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_rule__Attribute__Group__2__Impl877 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__3__Impl_in_rule__Attribute__Group__3908 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__4_in_rule__Attribute__Group__3911 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_rule__Attribute__Group__3__Impl939 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__4__Impl_in_rule__Attribute__Group__4970 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__5_in_rule__Attribute__Group__4973 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_12_in_rule__Attribute__Group__4__Impl1001 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__5__Impl_in_rule__Attribute__Group__51032 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__6_in_rule__Attribute__Group__51035 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__TypeAssignment_5_in_rule__Attribute__Group__5__Impl1062 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__6__Impl_in_rule__Attribute__Group__61092 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__Attribute__Group__6__Impl1120 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group__0__Impl_in_rule__Rule__Group__01165 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Rule__Group__1_in_rule__Rule__Group__01168 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__Rule__Group__0__Impl1196 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group__1__Impl_in_rule__Rule__Group__11227 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_rule__Rule__Group__2_in_rule__Rule__Group__11230 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__NameAssignment_1_in_rule__Rule__Group__1__Impl1257 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group__2__Impl_in_rule__Rule__Group__21287 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_rule__Rule__Group__3_in_rule__Rule__Group__21290 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_rule__Rule__Group__2__Impl1318 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group__3__Impl_in_rule__Rule__Group__31349 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_rule__Rule__Group__4_in_rule__Rule__Group__31352 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Alternatives_3_in_rule__Rule__Group__3__Impl1379 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group__4__Impl_in_rule__Rule__Group__41409 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_rule__Rule__Group__5_in_rule__Rule__Group__41412 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Alternatives_4_in_rule__Rule__Group__4__Impl1439 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group__5__Impl_in_rule__Rule__Group__51469 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_rule__Rule__Group__6_in_rule__Rule__Group__51472 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_rule__Rule__Group__5__Impl1500 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group__6__Impl_in_rule__Rule__Group__61531 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Rule__Group__7_in_rule__Rule__Group__61534 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_12_in_rule__Rule__Group__6__Impl1562 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group__7__Impl_in_rule__Rule__Group__71593 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__Rule__Group__8_in_rule__Rule__Group__71596 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__AttrAssignment_7_in_rule__Rule__Group__7__Impl1623 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group__8__Impl_in_rule__Rule__Group__81653 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__Rule__Group__8__Impl1681 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group_3_0__0__Impl_in_rule__Rule__Group_3_0__01730 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__Rule__Group_3_0__1_in_rule__Rule__Group_3_0__01733 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__Rule__Group_3_0__0__Impl1761 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group_3_0__1__Impl_in_rule__Rule__Group_3_0__11792 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_rule__Rule__Group_3_0__2_in_rule__Rule__Group_3_0__11795 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__StartIndexAssignment_3_0_1_in_rule__Rule__Group_3_0__1__Impl1822 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group_3_0__2__Impl_in_rule__Rule__Group_3_0__21852 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__Rule__Group_3_0__2__Impl1880 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group_3_1__0__Impl_in_rule__Rule__Group_3_1__01917 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__Rule__Group_3_1__1_in_rule__Rule__Group_3_1__01920 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__Rule__Group_3_1__0__Impl1948 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group_3_1__1__Impl_in_rule__Rule__Group_3_1__11979 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_rule__Rule__Group_3_1__2_in_rule__Rule__Group_3_1__11982 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__StartDelimeterAssignment_3_1_1_in_rule__Rule__Group_3_1__1__Impl2009 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group_3_1__2__Impl_in_rule__Rule__Group_3_1__22039 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__Rule__Group_3_1__2__Impl2067 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group_4_0__0__Impl_in_rule__Rule__Group_4_0__02104 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__Rule__Group_4_0__1_in_rule__Rule__Group_4_0__02107 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__Rule__Group_4_0__0__Impl2135 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group_4_0__1__Impl_in_rule__Rule__Group_4_0__12166 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_rule__Rule__Group_4_0__2_in_rule__Rule__Group_4_0__12169 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__EndIndexAssignment_4_0_1_in_rule__Rule__Group_4_0__1__Impl2196 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group_4_0__2__Impl_in_rule__Rule__Group_4_0__22226 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__Rule__Group_4_0__2__Impl2254 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group_4_1__0__Impl_in_rule__Rule__Group_4_1__02291 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__Rule__Group_4_1__1_in_rule__Rule__Group_4_1__02294 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__Rule__Group_4_1__0__Impl2322 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group_4_1__1__Impl_in_rule__Rule__Group_4_1__12353 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_rule__Rule__Group_4_1__2_in_rule__Rule__Group_4_1__12356 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__EndDelimeterAssignment_4_1_1_in_rule__Rule__Group_4_1__1__Impl2383 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Rule__Group_4_1__2__Impl_in_rule__Rule__Group_4_1__22413 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__Rule__Group_4_1__2__Impl2441 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__QualifiedName__Group__0__Impl_in_rule__QualifiedName__Group__02478 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_rule__QualifiedName__Group__1_in_rule__QualifiedName__Group__02481 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__QualifiedName__Group__0__Impl2508 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__QualifiedName__Group__1__Impl_in_rule__QualifiedName__Group__12537 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__QualifiedName__Group_1__0_in_rule__QualifiedName__Group__1__Impl2564 = new BitSet(new long[]{0x0000000000400002L});
+    public static final BitSet FOLLOW_rule__QualifiedName__Group_1__0__Impl_in_rule__QualifiedName__Group_1__02599 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__QualifiedName__Group_1__1_in_rule__QualifiedName__Group_1__02602 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_rule__QualifiedName__Group_1__0__Impl2630 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__QualifiedName__Group_1__1__Impl_in_rule__QualifiedName__Group_1__12661 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__QualifiedName__Group_1__1__Impl2688 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__UnorderedGroup__0_in_rule__Model__UnorderedGroup2722 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__Group_0__0_in_rule__Model__UnorderedGroup__Impl2811 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__RulesAssignment_1_in_rule__Model__UnorderedGroup__Impl2903 = new BitSet(new long[]{0x0000000000040002L});
+    public static final BitSet FOLLOW_rule__Model__RulesAssignment_1_in_rule__Model__UnorderedGroup__Impl2947 = new BitSet(new long[]{0x0000000000040002L});
+    public static final BitSet FOLLOW_rule__Model__UnorderedGroup__Impl_in_rule__Model__UnorderedGroup__03013 = new BitSet(new long[]{0x0000000000040802L});
+    public static final BitSet FOLLOW_rule__Model__UnorderedGroup__1_in_rule__Model__UnorderedGroup__03016 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__UnorderedGroup__Impl_in_rule__Model__UnorderedGroup__13041 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Model__NameAssignment_0_23073 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAttribute_in_rule__Model__AttributesAssignment_0_43104 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleRule_in_rule__Model__RulesAssignment_13135 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Attribute__NameAssignment_13166 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__Attribute__TypeAssignment_53201 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Rule__NameAssignment_13236 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__Rule__StartIndexAssignment_3_0_13267 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Rule__StartDelimeterAssignment_3_1_13298 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__Rule__EndIndexAssignment_4_0_13329 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Rule__EndDelimeterAssignment_4_1_13360 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Rule__AttrAssignment_73395 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__RulesAssignment_1_in_synpred1_InternalS2M2944 = new BitSet(new long[]{0x0000000000000002L});
 
 }

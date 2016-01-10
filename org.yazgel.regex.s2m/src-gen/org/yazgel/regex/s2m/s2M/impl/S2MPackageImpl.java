@@ -14,7 +14,6 @@ import org.eclipse.xtext.common.types.TypesPackage;
 import org.yazgel.regex.s2m.s2M.Attribute;
 import org.yazgel.regex.s2m.s2M.Model;
 import org.yazgel.regex.s2m.s2M.Rule;
-import org.yazgel.regex.s2m.s2M.RulePosition;
 import org.yazgel.regex.s2m.s2M.S2MFactory;
 import org.yazgel.regex.s2m.s2M.S2MPackage;
 
@@ -46,13 +45,6 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
    * @generated
    */
   private EClass ruleEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass rulePositionEClass = null;
 
   /**
    * Creates an instance of the model <b>Package</b>, registered with
@@ -205,9 +197,9 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getRulePosition()
+  public EAttribute getRule_Name()
   {
-    return rulePositionEClass;
+    return (EAttribute)ruleEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -215,9 +207,9 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getRulePosition_Name()
+  public EAttribute getRule_StartIndex()
   {
-    return (EAttribute)rulePositionEClass.getEStructuralFeatures().get(0);
+    return (EAttribute)ruleEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -225,9 +217,9 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getRulePosition_StartIndex()
+  public EAttribute getRule_StartDelimeter()
   {
-    return (EAttribute)rulePositionEClass.getEStructuralFeatures().get(1);
+    return (EAttribute)ruleEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -235,9 +227,9 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getRulePosition_StartDelimeter()
+  public EAttribute getRule_EndIndex()
   {
-    return (EAttribute)rulePositionEClass.getEStructuralFeatures().get(2);
+    return (EAttribute)ruleEClass.getEStructuralFeatures().get(3);
   }
 
   /**
@@ -245,9 +237,9 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getRulePosition_EndIndex()
+  public EAttribute getRule_EndDelimeter()
   {
-    return (EAttribute)rulePositionEClass.getEStructuralFeatures().get(3);
+    return (EAttribute)ruleEClass.getEStructuralFeatures().get(4);
   }
 
   /**
@@ -255,19 +247,9 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getRulePosition_EndDelimeter()
+  public EReference getRule_Attr()
   {
-    return (EAttribute)rulePositionEClass.getEStructuralFeatures().get(4);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EReference getRulePosition_Attr()
-  {
-    return (EReference)rulePositionEClass.getEStructuralFeatures().get(5);
+    return (EReference)ruleEClass.getEStructuralFeatures().get(5);
   }
 
   /**
@@ -310,14 +292,12 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
     createEReference(attributeEClass, ATTRIBUTE__TYPE);
 
     ruleEClass = createEClass(RULE);
-
-    rulePositionEClass = createEClass(RULE_POSITION);
-    createEAttribute(rulePositionEClass, RULE_POSITION__NAME);
-    createEAttribute(rulePositionEClass, RULE_POSITION__START_INDEX);
-    createEAttribute(rulePositionEClass, RULE_POSITION__START_DELIMETER);
-    createEAttribute(rulePositionEClass, RULE_POSITION__END_INDEX);
-    createEAttribute(rulePositionEClass, RULE_POSITION__END_DELIMETER);
-    createEReference(rulePositionEClass, RULE_POSITION__ATTR);
+    createEAttribute(ruleEClass, RULE__NAME);
+    createEAttribute(ruleEClass, RULE__START_INDEX);
+    createEAttribute(ruleEClass, RULE__START_DELIMETER);
+    createEAttribute(ruleEClass, RULE__END_INDEX);
+    createEAttribute(ruleEClass, RULE__END_DELIMETER);
+    createEReference(ruleEClass, RULE__ATTR);
   }
 
   /**
@@ -352,7 +332,6 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
     // Set bounds for type parameters
 
     // Add supertypes to classes
-    rulePositionEClass.getESuperTypes().add(this.getRule());
 
     // Initialize classes and features; add operations and parameters
     initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -365,14 +344,12 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
     initEReference(getAttribute_Type(), theTypesPackage.getJvmType(), null, "type", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(ruleEClass, Rule.class, "Rule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-    initEClass(rulePositionEClass, RulePosition.class, "RulePosition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getRulePosition_Name(), ecorePackage.getEString(), "name", null, 0, 1, RulePosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getRulePosition_StartIndex(), ecorePackage.getEInt(), "startIndex", null, 0, 1, RulePosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getRulePosition_StartDelimeter(), ecorePackage.getEString(), "startDelimeter", null, 0, 1, RulePosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getRulePosition_EndIndex(), ecorePackage.getEInt(), "endIndex", null, 0, 1, RulePosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getRulePosition_EndDelimeter(), ecorePackage.getEString(), "endDelimeter", null, 0, 1, RulePosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getRulePosition_Attr(), this.getAttribute(), null, "attr", null, 0, 1, RulePosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getRule_Name(), ecorePackage.getEString(), "name", null, 0, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getRule_StartIndex(), ecorePackage.getEInt(), "startIndex", null, 0, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getRule_StartDelimeter(), ecorePackage.getEString(), "startDelimeter", null, 0, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getRule_EndIndex(), ecorePackage.getEInt(), "endIndex", null, 0, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getRule_EndDelimeter(), ecorePackage.getEString(), "endDelimeter", null, 0, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getRule_Attr(), this.getAttribute(), null, "attr", null, 0, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Create resource
     createResource(eNS_URI);

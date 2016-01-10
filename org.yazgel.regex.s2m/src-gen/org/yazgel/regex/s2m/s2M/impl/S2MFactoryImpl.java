@@ -67,7 +67,6 @@ public class S2MFactoryImpl extends EFactoryImpl implements S2MFactory
       case S2MPackage.MODEL: return createModel();
       case S2MPackage.ATTRIBUTE: return createAttribute();
       case S2MPackage.RULE: return createRule();
-      case S2MPackage.RULE_POSITION: return createRulePosition();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -104,17 +103,6 @@ public class S2MFactoryImpl extends EFactoryImpl implements S2MFactory
   {
     RuleImpl rule = new RuleImpl();
     return rule;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public RulePosition createRulePosition()
-  {
-    RulePositionImpl rulePosition = new RulePositionImpl();
-    return rulePosition;
   }
 
   /**
