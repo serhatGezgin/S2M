@@ -123,22 +123,13 @@ public interface S2MPackage extends EPackage
   int ATTRIBUTE__NAME = 0;
 
   /**
-   * The feature id for the '<em><b>Multi</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int ATTRIBUTE__MULTI = 1;
-
-  /**
    * The feature id for the '<em><b>Type</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int ATTRIBUTE__TYPE = 2;
+  int ATTRIBUTE__TYPE = 1;
 
   /**
    * The number of structural features of the '<em>Attribute</em>' class.
@@ -147,7 +138,7 @@ public interface S2MPackage extends EPackage
    * @generated
    * @ordered
    */
-  int ATTRIBUTE_FEATURE_COUNT = 3;
+  int ATTRIBUTE_FEATURE_COUNT = 2;
 
   /**
    * The meta object id for the '{@link org.yazgel.regex.s2m.s2M.impl.RuleImpl <em>Rule</em>}' class.
@@ -482,17 +473,6 @@ public interface S2MPackage extends EPackage
   EAttribute getAttribute_Name();
 
   /**
-   * Returns the meta object for the attribute '{@link org.yazgel.regex.s2m.s2M.Attribute#isMulti <em>Multi</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Multi</em>'.
-   * @see org.yazgel.regex.s2m.s2M.Attribute#isMulti()
-   * @see #getAttribute()
-   * @generated
-   */
-  EAttribute getAttribute_Multi();
-
-  /**
    * Returns the meta object for the attribute '{@link org.yazgel.regex.s2m.s2M.Attribute#getType <em>Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -747,14 +727,6 @@ public interface S2MPackage extends EPackage
      * @generated
      */
     EAttribute ATTRIBUTE__NAME = eINSTANCE.getAttribute_Name();
-
-    /**
-     * The meta object literal for the '<em><b>Multi</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute ATTRIBUTE__MULTI = eINSTANCE.getAttribute_Multi();
 
     /**
      * The meta object literal for the '<em><b>Type</b></em>' attribute feature.

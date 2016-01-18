@@ -14,7 +14,6 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link org.yazgel.regex.s2m.s2M.Attribute#getName <em>Name</em>}</li>
- *   <li>{@link org.yazgel.regex.s2m.s2M.Attribute#isMulti <em>Multi</em>}</li>
  *   <li>{@link org.yazgel.regex.s2m.s2M.Attribute#getType <em>Type</em>}</li>
  * </ul>
  *
@@ -49,32 +48,6 @@ public interface Attribute extends EObject
    * @generated
    */
   void setName(String value);
-
-  /**
-   * Returns the value of the '<em><b>Multi</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Multi</em>' attribute isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Multi</em>' attribute.
-   * @see #setMulti(boolean)
-   * @see org.yazgel.regex.s2m.s2M.S2MPackage#getAttribute_Multi()
-   * @model
-   * @generated
-   */
-  boolean isMulti();
-
-  /**
-   * Sets the value of the '{@link org.yazgel.regex.s2m.s2M.Attribute#isMulti <em>Multi</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Multi</em>' attribute.
-   * @see #isMulti()
-   * @generated
-   */
-  void setMulti(boolean value);
 
   /**
    * Returns the value of the '<em><b>Type</b></em>' attribute.

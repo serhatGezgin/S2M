@@ -58,10 +58,20 @@ public class S2MSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (name=ID multi=BOOLEAN? type=AttributeType)
+	 *     (name=ID type=AttributeType)
 	 */
 	protected void sequence_Attribute(EObject context, Attribute semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.ATTRIBUTE__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.ATTRIBUTE__NAME));
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.ATTRIBUTE__TYPE) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.ATTRIBUTE__TYPE));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getAttributeAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
+		feeder.accept(grammarAccess.getAttributeAccess().getTypeAttributeTypeEnumRuleCall_5_0(), semanticObject.getType());
+		feeder.finish();
 	}
 	
 	

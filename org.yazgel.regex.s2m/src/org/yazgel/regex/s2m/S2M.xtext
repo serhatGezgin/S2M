@@ -12,7 +12,6 @@ Model:
 
 Attribute:
 	'attr' name=ID '{'
-		('multi' multi=BOOLEAN)?
 	 	'type' ':' type=AttributeType  
 	 '}'
 ;

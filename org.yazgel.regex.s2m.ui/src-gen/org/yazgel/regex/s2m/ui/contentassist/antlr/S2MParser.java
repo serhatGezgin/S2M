@@ -41,7 +41,6 @@ public class S2MParser extends AbstractContentAssistParser {
 					put(grammarAccess.getAttributeTypeAccess().getAlternatives(), "rule__AttributeType__Alternatives");
 					put(grammarAccess.getModelAccess().getGroup_0(), "rule__Model__Group_0__0");
 					put(grammarAccess.getAttributeAccess().getGroup(), "rule__Attribute__Group__0");
-					put(grammarAccess.getAttributeAccess().getGroup_3(), "rule__Attribute__Group_3__0");
 					put(grammarAccess.getRuleIndexAccess().getGroup(), "rule__RuleIndex__Group__0");
 					put(grammarAccess.getRuleIndexAccess().getGroup_3(), "rule__RuleIndex__Group_3__0");
 					put(grammarAccess.getRuleIndexAccess().getGroup_4(), "rule__RuleIndex__Group_4__0");
@@ -58,8 +57,7 @@ public class S2MParser extends AbstractContentAssistParser {
 					put(grammarAccess.getModelAccess().getAttributesAssignment_0_4(), "rule__Model__AttributesAssignment_0_4");
 					put(grammarAccess.getModelAccess().getRulesAssignment_1(), "rule__Model__RulesAssignment_1");
 					put(grammarAccess.getAttributeAccess().getNameAssignment_1(), "rule__Attribute__NameAssignment_1");
-					put(grammarAccess.getAttributeAccess().getMultiAssignment_3_1(), "rule__Attribute__MultiAssignment_3_1");
-					put(grammarAccess.getAttributeAccess().getTypeAssignment_6(), "rule__Attribute__TypeAssignment_6");
+					put(grammarAccess.getAttributeAccess().getTypeAssignment_5(), "rule__Attribute__TypeAssignment_5");
 					put(grammarAccess.getRuleIndexAccess().getNameAssignment_1(), "rule__RuleIndex__NameAssignment_1");
 					put(grammarAccess.getRuleIndexAccess().getStartIndexAssignment_3_1(), "rule__RuleIndex__StartIndexAssignment_3_1");
 					put(grammarAccess.getRuleIndexAccess().getEndIndexAssignment_4_1(), "rule__RuleIndex__EndIndexAssignment_4_1");

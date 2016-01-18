@@ -232,57 +232,35 @@ ruleAttribute returns [EObject current=null]
     {
     	newLeafNode(otherlv_2, grammarAccess.getAttributeAccess().getLeftCurlyBracketKeyword_2());
     }
-(	otherlv_3='multi' 
+	otherlv_3='type' 
     {
-    	newLeafNode(otherlv_3, grammarAccess.getAttributeAccess().getMultiKeyword_3_0());
+    	newLeafNode(otherlv_3, grammarAccess.getAttributeAccess().getTypeKeyword_3());
     }
-(
-(
-		lv_multi_4_0=RULE_BOOLEAN
-		{
-			newLeafNode(lv_multi_4_0, grammarAccess.getAttributeAccess().getMultiBOOLEANTerminalRuleCall_3_1_0()); 
-		}
-		{
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getAttributeRule());
-	        }
-       		setWithLastConsumed(
-       			$current, 
-       			"multi",
-        		lv_multi_4_0, 
-        		"BOOLEAN");
-	    }
-
-)
-))?	otherlv_5='type' 
+	otherlv_4=':' 
     {
-    	newLeafNode(otherlv_5, grammarAccess.getAttributeAccess().getTypeKeyword_4());
-    }
-	otherlv_6=':' 
-    {
-    	newLeafNode(otherlv_6, grammarAccess.getAttributeAccess().getColonKeyword_5());
+    	newLeafNode(otherlv_4, grammarAccess.getAttributeAccess().getColonKeyword_4());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getAttributeAccess().getTypeAttributeTypeEnumRuleCall_6_0()); 
+	        newCompositeNode(grammarAccess.getAttributeAccess().getTypeAttributeTypeEnumRuleCall_5_0()); 
 	    }
-		lv_type_7_0=ruleAttributeType		{
+		lv_type_5_0=ruleAttributeType		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getAttributeRule());
 	        }
        		set(
        			$current, 
        			"type",
-        		lv_type_7_0, 
+        		lv_type_5_0, 
         		"AttributeType");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)	otherlv_8='}' 
+)	otherlv_6='}' 
     {
-    	newLeafNode(otherlv_8, grammarAccess.getAttributeAccess().getRightCurlyBracketKeyword_7());
+    	newLeafNode(otherlv_6, grammarAccess.getAttributeAccess().getRightCurlyBracketKeyword_6());
     }
 )
 ;

@@ -77,21 +77,17 @@ public class S2MGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
-		private final Keyword cMultiKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
-		private final Assignment cMultiAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
-		private final RuleCall cMultiBOOLEANTerminalRuleCall_3_1_0 = (RuleCall)cMultiAssignment_3_1.eContents().get(0);
-		private final Keyword cTypeKeyword_4 = (Keyword)cGroup.eContents().get(4);
-		private final Keyword cColonKeyword_5 = (Keyword)cGroup.eContents().get(5);
-		private final Assignment cTypeAssignment_6 = (Assignment)cGroup.eContents().get(6);
-		private final RuleCall cTypeAttributeTypeEnumRuleCall_6_0 = (RuleCall)cTypeAssignment_6.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_7 = (Keyword)cGroup.eContents().get(7);
+		private final Keyword cTypeKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		private final Keyword cColonKeyword_4 = (Keyword)cGroup.eContents().get(4);
+		private final Assignment cTypeAssignment_5 = (Assignment)cGroup.eContents().get(5);
+		private final RuleCall cTypeAttributeTypeEnumRuleCall_5_0 = (RuleCall)cTypeAssignment_5.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
 		
 		//Attribute:
-		//	"attr" name=ID "{" ("multi" multi=BOOLEAN)? "type" ":" type=AttributeType "}";
+		//	"attr" name=ID "{" "type" ":" type=AttributeType "}";
 		@Override public ParserRule getRule() { return rule; }
 
-		//"attr" name=ID "{" ("multi" multi=BOOLEAN)? "type" ":" type=AttributeType "}"
+		//"attr" name=ID "{" "type" ":" type=AttributeType "}"
 		public Group getGroup() { return cGroup; }
 
 		//"attr"
@@ -106,32 +102,20 @@ public class S2MGrammarAccess extends AbstractGrammarElementFinder {
 		//"{"
 		public Keyword getLeftCurlyBracketKeyword_2() { return cLeftCurlyBracketKeyword_2; }
 
-		//("multi" multi=BOOLEAN)?
-		public Group getGroup_3() { return cGroup_3; }
-
-		//"multi"
-		public Keyword getMultiKeyword_3_0() { return cMultiKeyword_3_0; }
-
-		//multi=BOOLEAN
-		public Assignment getMultiAssignment_3_1() { return cMultiAssignment_3_1; }
-
-		//BOOLEAN
-		public RuleCall getMultiBOOLEANTerminalRuleCall_3_1_0() { return cMultiBOOLEANTerminalRuleCall_3_1_0; }
-
 		//"type"
-		public Keyword getTypeKeyword_4() { return cTypeKeyword_4; }
+		public Keyword getTypeKeyword_3() { return cTypeKeyword_3; }
 
 		//":"
-		public Keyword getColonKeyword_5() { return cColonKeyword_5; }
+		public Keyword getColonKeyword_4() { return cColonKeyword_4; }
 
 		//type=AttributeType
-		public Assignment getTypeAssignment_6() { return cTypeAssignment_6; }
+		public Assignment getTypeAssignment_5() { return cTypeAssignment_5; }
 
 		//AttributeType
-		public RuleCall getTypeAttributeTypeEnumRuleCall_6_0() { return cTypeAttributeTypeEnumRuleCall_6_0; }
+		public RuleCall getTypeAttributeTypeEnumRuleCall_5_0() { return cTypeAttributeTypeEnumRuleCall_5_0; }
 
 		//"}"
-		public Keyword getRightCurlyBracketKeyword_7() { return cRightCurlyBracketKeyword_7; }
+		public Keyword getRightCurlyBracketKeyword_6() { return cRightCurlyBracketKeyword_6; }
 	}
 
 	public class RuleElements extends AbstractParserRuleElementFinder {
@@ -660,7 +644,7 @@ public class S2MGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Attribute:
-	//	"attr" name=ID "{" ("multi" multi=BOOLEAN)? "type" ":" type=AttributeType "}";
+	//	"attr" name=ID "{" "type" ":" type=AttributeType "}";
 	public AttributeElements getAttributeAccess() {
 		return pAttribute;
 	}

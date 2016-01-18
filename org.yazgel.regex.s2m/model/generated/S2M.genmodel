@@ -22,7 +22,6 @@
     </genClasses>
     <genClasses ecoreClass="S2M.ecore#//Attribute">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//Attribute/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//Attribute/multi"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//Attribute/type"/>
     </genClasses>
     <genClasses ecoreClass="S2M.ecore#//Rule">

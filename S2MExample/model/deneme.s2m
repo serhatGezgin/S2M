@@ -1,6 +1,7 @@
 model : Name;
 
 attr id {
+	multi true
 	type : String
 }
 

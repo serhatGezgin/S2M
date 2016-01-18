@@ -629,9 +629,11 @@ rule__Attribute__Group__3__Impl
     }
 :
 (
-{ before(grammarAccess.getAttributeAccess().getGroup_3()); }
-(rule__Attribute__Group_3__0)?
-{ after(grammarAccess.getAttributeAccess().getGroup_3()); }
+{ before(grammarAccess.getAttributeAccess().getTypeKeyword_3()); }
+
+	'type' 
+
+{ after(grammarAccess.getAttributeAccess().getTypeKeyword_3()); }
 )
 
 ;
@@ -658,11 +660,11 @@ rule__Attribute__Group__4__Impl
     }
 :
 (
-{ before(grammarAccess.getAttributeAccess().getTypeKeyword_4()); }
+{ before(grammarAccess.getAttributeAccess().getColonKeyword_4()); }
 
-	'type' 
+	':' 
 
-{ after(grammarAccess.getAttributeAccess().getTypeKeyword_4()); }
+{ after(grammarAccess.getAttributeAccess().getColonKeyword_4()); }
 )
 
 ;
@@ -689,11 +691,9 @@ rule__Attribute__Group__5__Impl
     }
 :
 (
-{ before(grammarAccess.getAttributeAccess().getColonKeyword_5()); }
-
-	':' 
-
-{ after(grammarAccess.getAttributeAccess().getColonKeyword_5()); }
+{ before(grammarAccess.getAttributeAccess().getTypeAssignment_5()); }
+(rule__Attribute__TypeAssignment_5)
+{ after(grammarAccess.getAttributeAccess().getTypeAssignment_5()); }
 )
 
 ;
@@ -708,7 +708,6 @@ rule__Attribute__Group__6
     }
 :
 	rule__Attribute__Group__6__Impl
-	rule__Attribute__Group__7
 ;
 finally {
 	restoreStackSize(stackSize);
@@ -720,39 +719,11 @@ rule__Attribute__Group__6__Impl
     }
 :
 (
-{ before(grammarAccess.getAttributeAccess().getTypeAssignment_6()); }
-(rule__Attribute__TypeAssignment_6)
-{ after(grammarAccess.getAttributeAccess().getTypeAssignment_6()); }
-)
-
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-
-rule__Attribute__Group__7
-    @init {
-		int stackSize = keepStackSize();
-    }
-:
-	rule__Attribute__Group__7__Impl
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-rule__Attribute__Group__7__Impl
-    @init {
-		int stackSize = keepStackSize();
-    }
-:
-(
-{ before(grammarAccess.getAttributeAccess().getRightCurlyBracketKeyword_7()); }
+{ before(grammarAccess.getAttributeAccess().getRightCurlyBracketKeyword_6()); }
 
 	'}' 
 
-{ after(grammarAccess.getAttributeAccess().getRightCurlyBracketKeyword_7()); }
+{ after(grammarAccess.getAttributeAccess().getRightCurlyBracketKeyword_6()); }
 )
 
 ;
@@ -769,71 +740,6 @@ finally {
 
 
 
-
-
-
-
-
-
-
-
-rule__Attribute__Group_3__0
-    @init {
-		int stackSize = keepStackSize();
-    }
-:
-	rule__Attribute__Group_3__0__Impl
-	rule__Attribute__Group_3__1
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-rule__Attribute__Group_3__0__Impl
-    @init {
-		int stackSize = keepStackSize();
-    }
-:
-(
-{ before(grammarAccess.getAttributeAccess().getMultiKeyword_3_0()); }
-
-	'multi' 
-
-{ after(grammarAccess.getAttributeAccess().getMultiKeyword_3_0()); }
-)
-
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-
-rule__Attribute__Group_3__1
-    @init {
-		int stackSize = keepStackSize();
-    }
-:
-	rule__Attribute__Group_3__1__Impl
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-rule__Attribute__Group_3__1__Impl
-    @init {
-		int stackSize = keepStackSize();
-    }
-:
-(
-{ before(grammarAccess.getAttributeAccess().getMultiAssignment_3_1()); }
-(rule__Attribute__MultiAssignment_3_1)
-{ after(grammarAccess.getAttributeAccess().getMultiAssignment_3_1()); }
-)
-
-;
-finally {
-	restoreStackSize(stackSize);
-}
 
 
 
@@ -2923,29 +2829,14 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__Attribute__MultiAssignment_3_1
+rule__Attribute__TypeAssignment_5
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getAttributeAccess().getMultiBOOLEANTerminalRuleCall_3_1_0()); }
-	RULE_BOOLEAN{ after(grammarAccess.getAttributeAccess().getMultiBOOLEANTerminalRuleCall_3_1_0()); }
-)
-
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-rule__Attribute__TypeAssignment_6
-    @init {
-		int stackSize = keepStackSize();
-    }
-:
-(
-{ before(grammarAccess.getAttributeAccess().getTypeAttributeTypeEnumRuleCall_6_0()); }
-	ruleAttributeType{ after(grammarAccess.getAttributeAccess().getTypeAttributeTypeEnumRuleCall_6_0()); }
+{ before(grammarAccess.getAttributeAccess().getTypeAttributeTypeEnumRuleCall_5_0()); }
+	ruleAttributeType{ after(grammarAccess.getAttributeAccess().getTypeAttributeTypeEnumRuleCall_5_0()); }
 )
 
 ;

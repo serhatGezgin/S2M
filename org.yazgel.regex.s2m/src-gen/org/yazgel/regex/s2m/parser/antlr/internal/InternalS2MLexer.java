@@ -12,8 +12,8 @@ import java.util.ArrayList;
 
 @SuppressWarnings("all")
 public class InternalS2MLexer extends Lexer {
-    public static final int RULE_BOOLEAN=5;
-    public static final int RULE_STRING=7;
+    public static final int RULE_BOOLEAN=7;
+    public static final int RULE_STRING=6;
     public static final int RULE_SL_COMMENT=9;
     public static final int T__19=19;
     public static final int T__15=15;
@@ -30,8 +30,7 @@ public class InternalS2MLexer extends Lexer {
     public static final int T__26=26;
     public static final int T__27=27;
     public static final int T__28=28;
-    public static final int RULE_INT=6;
-    public static final int T__29=29;
+    public static final int RULE_INT=5;
     public static final int T__22=22;
     public static final int RULE_ML_COMMENT=8;
     public static final int T__23=23;
@@ -160,10 +159,10 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:16:7: ( 'multi' )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:16:9: 'multi'
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:16:7: ( 'type' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:16:9: 'type'
             {
-            match("multi"); 
+            match("type"); 
 
 
             }
@@ -181,11 +180,10 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:17:7: ( 'type' )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:17:9: 'type'
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:17:7: ( '}' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:17:9: '}'
             {
-            match("type"); 
-
+            match('}'); 
 
             }
 
@@ -202,10 +200,11 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:18:7: ( '}' )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:18:9: '}'
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:18:7: ( 'rule' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:18:9: 'rule'
             {
-            match('}'); 
+            match("rule"); 
+
 
             }
 
@@ -222,10 +221,10 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:19:7: ( 'rule' )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:19:9: 'rule'
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:19:7: ( 'start' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:19:9: 'start'
             {
-            match("rule"); 
+            match("start"); 
 
 
             }
@@ -243,11 +242,10 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:20:7: ( 'start' )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:20:9: 'start'
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:20:7: ( ',' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:20:9: ','
             {
-            match("start"); 
-
+            match(','); 
 
             }
 
@@ -264,10 +262,11 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = T__22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:21:7: ( ',' )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:21:9: ','
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:21:7: ( 'end' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:21:9: 'end'
             {
-            match(','); 
+            match("end"); 
+
 
             }
 
@@ -284,10 +283,10 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = T__23;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:22:7: ( 'end' )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:22:9: 'end'
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:22:7: ( 'String' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:22:9: 'String'
             {
-            match("end"); 
+            match("String"); 
 
 
             }
@@ -305,10 +304,10 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = T__24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:23:7: ( 'String' )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:23:9: 'String'
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:23:7: ( 'Integer' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:23:9: 'Integer'
             {
-            match("String"); 
+            match("Integer"); 
 
 
             }
@@ -326,10 +325,10 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = T__25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:24:7: ( 'Integer' )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:24:9: 'Integer'
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:24:7: ( 'Long' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:24:9: 'Long'
             {
-            match("Integer"); 
+            match("Long"); 
 
 
             }
@@ -347,10 +346,10 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = T__26;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:25:7: ( 'Long' )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:25:9: 'Long'
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:25:7: ( 'Short' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:25:9: 'Short'
             {
-            match("Long"); 
+            match("Short"); 
 
 
             }
@@ -368,10 +367,10 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:26:7: ( 'Short' )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:26:9: 'Short'
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:26:7: ( 'Decimal' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:26:9: 'Decimal'
             {
-            match("Short"); 
+            match("Decimal"); 
 
 
             }
@@ -389,29 +388,8 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:27:7: ( 'Decimal' )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:27:9: 'Decimal'
-            {
-            match("Decimal"); 
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "T__28"
-
-    // $ANTLR start "T__29"
-    public final void mT__29() throws RecognitionException {
-        try {
-            int _type = T__29;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:28:7: ( 'Boolean' )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:28:9: 'Boolean'
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:27:7: ( 'Boolean' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:27:9: 'Boolean'
             {
             match("Boolean"); 
 
@@ -424,17 +402,17 @@ public class InternalS2MLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end "T__29"
+    // $ANTLR end "T__28"
 
     // $ANTLR start "RULE_BOOLEAN"
     public final void mRULE_BOOLEAN() throws RecognitionException {
         try {
             int _type = RULE_BOOLEAN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:893:14: ( ( 'true' | 'false' ) )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:893:16: ( 'true' | 'false' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:871:14: ( ( 'true' | 'false' ) )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:871:16: ( 'true' | 'false' )
             {
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:893:16: ( 'true' | 'false' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:871:16: ( 'true' | 'false' )
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -452,7 +430,7 @@ public class InternalS2MLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:893:17: 'true'
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:871:17: 'true'
                     {
                     match("true"); 
 
@@ -460,7 +438,7 @@ public class InternalS2MLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:893:24: 'false'
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:871:24: 'false'
                     {
                     match("false"); 
 
@@ -486,10 +464,10 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:895:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:895:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:873:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:873:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:895:11: ( '^' )?
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:873:11: ( '^' )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -498,7 +476,7 @@ public class InternalS2MLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:895:11: '^'
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:873:11: '^'
                     {
                     match('^'); 
 
@@ -516,7 +494,7 @@ public class InternalS2MLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:895:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:873:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop3:
             do {
                 int alt3=2;
@@ -565,10 +543,10 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:897:10: ( ( '0' .. '9' )+ )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:897:12: ( '0' .. '9' )+
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:875:10: ( ( '0' .. '9' )+ )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:875:12: ( '0' .. '9' )+
             {
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:897:12: ( '0' .. '9' )+
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:875:12: ( '0' .. '9' )+
             int cnt4=0;
             loop4:
             do {
@@ -582,7 +560,7 @@ public class InternalS2MLexer extends Lexer {
 
                 switch (alt4) {
             	case 1 :
-            	    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:897:13: '0' .. '9'
+            	    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:875:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -614,10 +592,10 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:899:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:899:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:877:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:877:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:899:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:877:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -635,10 +613,10 @@ public class InternalS2MLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:899:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:877:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:899:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:877:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -654,7 +632,7 @@ public class InternalS2MLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:899:21: '\\\\' .
+                    	    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:877:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -662,7 +640,7 @@ public class InternalS2MLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:899:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:877:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -687,10 +665,10 @@ public class InternalS2MLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:899:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:877:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:899:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:877:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop6:
                     do {
                         int alt6=3;
@@ -706,7 +684,7 @@ public class InternalS2MLexer extends Lexer {
 
                         switch (alt6) {
                     	case 1 :
-                    	    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:899:54: '\\\\' .
+                    	    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:877:54: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -714,7 +692,7 @@ public class InternalS2MLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:899:61: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:877:61: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -757,12 +735,12 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:901:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:901:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:879:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:879:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:901:24: ( options {greedy=false; } : . )*
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:879:24: ( options {greedy=false; } : . )*
             loop8:
             do {
                 int alt8=2;
@@ -787,7 +765,7 @@ public class InternalS2MLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:901:52: .
+            	    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:879:52: .
             	    {
             	    matchAny(); 
 
@@ -817,12 +795,12 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:903:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:903:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:881:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:881:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:903:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:881:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop9:
             do {
                 int alt9=2;
@@ -835,7 +813,7 @@ public class InternalS2MLexer extends Lexer {
 
                 switch (alt9) {
             	case 1 :
-            	    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:903:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:881:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -855,7 +833,7 @@ public class InternalS2MLexer extends Lexer {
                 }
             } while (true);
 
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:903:40: ( ( '\\r' )? '\\n' )?
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:881:40: ( ( '\\r' )? '\\n' )?
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -864,9 +842,9 @@ public class InternalS2MLexer extends Lexer {
             }
             switch (alt11) {
                 case 1 :
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:903:41: ( '\\r' )? '\\n'
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:881:41: ( '\\r' )? '\\n'
                     {
-                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:903:41: ( '\\r' )?
+                    // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:881:41: ( '\\r' )?
                     int alt10=2;
                     int LA10_0 = input.LA(1);
 
@@ -875,7 +853,7 @@ public class InternalS2MLexer extends Lexer {
                     }
                     switch (alt10) {
                         case 1 :
-                            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:903:41: '\\r'
+                            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:881:41: '\\r'
                             {
                             match('\r'); 
 
@@ -907,10 +885,10 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:905:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:905:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:883:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:883:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:905:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:883:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt12=0;
             loop12:
             do {
@@ -964,8 +942,8 @@ public class InternalS2MLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:907:16: ( . )
-            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:907:18: .
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:885:16: ( . )
+            // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:885:18: .
             {
             matchAny(); 
 
@@ -980,8 +958,8 @@ public class InternalS2MLexer extends Lexer {
     // $ANTLR end "RULE_ANY_OTHER"
 
     public void mTokens() throws RecognitionException {
-        // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:8: ( T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | RULE_BOOLEAN | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
-        int alt13=26;
+        // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:8: ( T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | RULE_BOOLEAN | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
+        int alt13=25;
         alt13 = dfa13.predict(input);
         switch (alt13) {
             case 1 :
@@ -1104,63 +1082,56 @@ public class InternalS2MLexer extends Lexer {
                 }
                 break;
             case 18 :
-                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:112: T__29
-                {
-                mT__29(); 
-
-                }
-                break;
-            case 19 :
-                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:118: RULE_BOOLEAN
+                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:112: RULE_BOOLEAN
                 {
                 mRULE_BOOLEAN(); 
 
                 }
                 break;
-            case 20 :
-                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:131: RULE_ID
+            case 19 :
+                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:125: RULE_ID
                 {
                 mRULE_ID(); 
 
                 }
                 break;
-            case 21 :
-                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:139: RULE_INT
+            case 20 :
+                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:133: RULE_INT
                 {
                 mRULE_INT(); 
 
                 }
                 break;
-            case 22 :
-                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:148: RULE_STRING
+            case 21 :
+                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:142: RULE_STRING
                 {
                 mRULE_STRING(); 
 
                 }
                 break;
-            case 23 :
-                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:160: RULE_ML_COMMENT
+            case 22 :
+                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:154: RULE_ML_COMMENT
                 {
                 mRULE_ML_COMMENT(); 
 
                 }
                 break;
-            case 24 :
-                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:176: RULE_SL_COMMENT
+            case 23 :
+                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:170: RULE_SL_COMMENT
                 {
                 mRULE_SL_COMMENT(); 
 
                 }
                 break;
-            case 25 :
-                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:192: RULE_WS
+            case 24 :
+                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:186: RULE_WS
                 {
                 mRULE_WS(); 
 
                 }
                 break;
-            case 26 :
-                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:200: RULE_ANY_OTHER
+            case 25 :
+                // ../org.yazgel.regex.s2m/src-gen/org/yazgel/regex/s2m/parser/antlr/internal/InternalS2M.g:1:194: RULE_ANY_OTHER
                 {
                 mRULE_ANY_OTHER(); 
 
@@ -1174,78 +1145,79 @@ public class InternalS2MLexer extends Lexer {
 
     protected DFA13 dfa13 = new DFA13(this);
     static final String DFA13_eotS =
-        "\1\uffff\1\34\2\uffff\1\34\1\uffff\1\34\1\uffff\2\34\1\uffff\7"+
-        "\34\1\31\2\uffff\3\31\2\uffff\2\34\3\uffff\1\34\1\uffff\2\34\1\uffff"+
-        "\2\34\1\uffff\10\34\5\uffff\7\34\1\112\11\34\1\124\1\125\1\126\1"+
-        "\127\1\34\1\uffff\3\34\1\134\3\34\1\140\1\141\4\uffff\1\142\1\34"+
-        "\1\144\1\34\1\uffff\2\34\1\126\3\uffff\1\150\1\uffff\3\34\1\uffff"+
-        "\1\154\1\155\1\156\3\uffff";
+        "\1\uffff\1\33\2\uffff\1\33\1\uffff\1\33\1\uffff\2\33\1\uffff\7"+
+        "\33\1\31\2\uffff\3\31\2\uffff\1\33\3\uffff\1\33\1\uffff\2\33\1\uffff"+
+        "\2\33\1\uffff\10\33\5\uffff\6\33\1\107\10\33\1\120\1\121\1\122\1"+
+        "\123\1\33\1\uffff\3\33\1\130\3\33\1\134\4\uffff\1\135\1\33\1\137"+
+        "\1\33\1\uffff\2\33\1\122\2\uffff\1\143\1\uffff\3\33\1\uffff\1\147"+
+        "\1\150\1\151\3\uffff";
     static final String DFA13_eofS =
-        "\157\uffff";
+        "\152\uffff";
     static final String DFA13_minS =
         "\1\0\1\157\2\uffff\1\164\1\uffff\1\162\1\uffff\1\165\1\164\1\uffff"+
         "\1\156\1\150\1\156\1\157\1\145\1\157\1\141\1\101\2\uffff\2\0\1\52"+
-        "\2\uffff\1\144\1\154\3\uffff\1\164\1\uffff\1\160\1\165\1\uffff\1"+
-        "\154\1\141\1\uffff\1\144\1\162\1\157\1\164\1\156\1\143\1\157\1\154"+
-        "\5\uffff\1\145\1\164\1\162\3\145\1\162\1\60\1\151\1\162\1\145\1"+
-        "\147\1\151\1\154\1\163\1\154\1\151\4\60\1\164\1\uffff\1\156\1\164"+
-        "\1\147\1\60\1\155\2\145\2\60\4\uffff\1\60\1\147\1\60\1\145\1\uffff"+
-        "\2\141\1\60\3\uffff\1\60\1\uffff\1\162\1\154\1\156\1\uffff\3\60"+
-        "\3\uffff";
+        "\2\uffff\1\144\3\uffff\1\164\1\uffff\1\160\1\165\1\uffff\1\154\1"+
+        "\141\1\uffff\1\144\1\162\1\157\1\164\1\156\1\143\1\157\1\154\5\uffff"+
+        "\1\145\1\162\3\145\1\162\1\60\1\151\1\162\1\145\1\147\1\151\1\154"+
+        "\1\163\1\154\4\60\1\164\1\uffff\1\156\1\164\1\147\1\60\1\155\2\145"+
+        "\1\60\4\uffff\1\60\1\147\1\60\1\145\1\uffff\2\141\1\60\2\uffff\1"+
+        "\60\1\uffff\1\162\1\154\1\156\1\uffff\3\60\3\uffff";
     static final String DFA13_maxS =
-        "\1\uffff\1\165\2\uffff\1\164\1\uffff\1\171\1\uffff\1\165\1\164"+
+        "\1\uffff\1\157\2\uffff\1\164\1\uffff\1\171\1\uffff\1\165\1\164"+
         "\1\uffff\1\156\1\164\1\156\1\157\1\145\1\157\1\141\1\172\2\uffff"+
-        "\2\uffff\1\57\2\uffff\1\144\1\154\3\uffff\1\164\1\uffff\1\160\1"+
-        "\165\1\uffff\1\154\1\141\1\uffff\1\144\1\162\1\157\1\164\1\156\1"+
-        "\143\1\157\1\154\5\uffff\1\145\1\164\1\162\3\145\1\162\1\172\1\151"+
-        "\1\162\1\145\1\147\1\151\1\154\1\163\1\154\1\151\4\172\1\164\1\uffff"+
-        "\1\156\1\164\1\147\1\172\1\155\2\145\2\172\4\uffff\1\172\1\147\1"+
-        "\172\1\145\1\uffff\2\141\1\172\3\uffff\1\172\1\uffff\1\162\1\154"+
-        "\1\156\1\uffff\3\172\3\uffff";
+        "\2\uffff\1\57\2\uffff\1\144\3\uffff\1\164\1\uffff\1\160\1\165\1"+
+        "\uffff\1\154\1\141\1\uffff\1\144\1\162\1\157\1\164\1\156\1\143\1"+
+        "\157\1\154\5\uffff\1\145\1\162\3\145\1\162\1\172\1\151\1\162\1\145"+
+        "\1\147\1\151\1\154\1\163\1\154\4\172\1\164\1\uffff\1\156\1\164\1"+
+        "\147\1\172\1\155\2\145\1\172\4\uffff\1\172\1\147\1\172\1\145\1\uffff"+
+        "\2\141\1\172\2\uffff\1\172\1\uffff\1\162\1\154\1\156\1\uffff\3\172"+
+        "\3\uffff";
     static final String DFA13_acceptS =
-        "\2\uffff\1\2\1\3\1\uffff\1\5\1\uffff\1\10\2\uffff\1\13\10\uffff"+
-        "\1\24\1\25\3\uffff\1\31\1\32\2\uffff\1\24\1\2\1\3\1\uffff\1\5\2"+
-        "\uffff\1\10\2\uffff\1\13\10\uffff\1\25\1\26\1\27\1\30\1\31\26\uffff"+
-        "\1\14\11\uffff\1\4\1\7\1\23\1\11\4\uffff\1\17\3\uffff\1\1\1\6\1"+
-        "\12\1\uffff\1\20\3\uffff\1\15\3\uffff\1\16\1\21\1\22";
+        "\2\uffff\1\2\1\3\1\uffff\1\5\1\uffff\1\7\2\uffff\1\12\10\uffff"+
+        "\1\23\1\24\3\uffff\1\30\1\31\1\uffff\1\23\1\2\1\3\1\uffff\1\5\2"+
+        "\uffff\1\7\2\uffff\1\12\10\uffff\1\24\1\25\1\26\1\27\1\30\24\uffff"+
+        "\1\13\10\uffff\1\4\1\6\1\22\1\10\4\uffff\1\16\3\uffff\1\1\1\11\1"+
+        "\uffff\1\17\3\uffff\1\14\3\uffff\1\15\1\20\1\21";
     static final String DFA13_specialS =
-        "\1\1\24\uffff\1\2\1\0\130\uffff}>";
+        "\1\0\24\uffff\1\1\1\2\123\uffff}>";
     static final String[] DFA13_transitionS = {
             "\11\31\2\30\2\31\1\30\22\31\1\30\1\31\1\25\4\31\1\26\4\31\1"+
             "\12\2\31\1\27\12\24\1\2\1\3\5\31\1\23\1\20\1\23\1\17\4\23\1"+
             "\15\2\23\1\16\6\23\1\14\7\23\3\31\1\22\1\23\1\31\1\4\3\23\1"+
             "\13\1\21\6\23\1\1\4\23\1\10\1\11\1\6\6\23\1\5\1\31\1\7\uff82"+
             "\31",
-            "\1\32\5\uffff\1\33",
+            "\1\32",
             "",
             "",
-            "\1\37",
+            "\1\36",
             "",
-            "\1\42\6\uffff\1\41",
+            "\1\41\6\uffff\1\40",
             "",
+            "\1\43",
             "\1\44",
-            "\1\45",
             "",
-            "\1\47",
-            "\1\51\13\uffff\1\50",
+            "\1\46",
+            "\1\50\13\uffff\1\47",
+            "\1\51",
             "\1\52",
             "\1\53",
             "\1\54",
             "\1\55",
-            "\1\56",
-            "\32\34\4\uffff\1\34\1\uffff\32\34",
+            "\32\33\4\uffff\1\33\1\uffff\32\33",
             "",
             "",
-            "\0\60",
-            "\0\60",
-            "\1\61\4\uffff\1\62",
+            "\0\57",
+            "\0\57",
+            "\1\60\4\uffff\1\61",
+            "",
+            "",
+            "\1\63",
+            "",
             "",
             "",
             "\1\64",
+            "",
             "\1\65",
-            "",
-            "",
-            "",
             "\1\66",
             "",
             "\1\67",
@@ -1253,76 +1225,69 @@ public class InternalS2MLexer extends Lexer {
             "",
             "\1\71",
             "\1\72",
-            "",
             "\1\73",
             "\1\74",
             "\1\75",
             "\1\76",
             "\1\77",
             "\1\100",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\101",
             "\1\102",
-            "",
-            "",
-            "",
-            "",
-            "",
             "\1\103",
             "\1\104",
             "\1\105",
             "\1\106",
-            "\1\107",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
             "\1\110",
             "\1\111",
-            "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
+            "\1\112",
             "\1\113",
             "\1\114",
             "\1\115",
             "\1\116",
             "\1\117",
-            "\1\120",
-            "\1\121",
-            "\1\122",
-            "\1\123",
-            "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
-            "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
-            "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
-            "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
-            "\1\130",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "\1\124",
             "",
+            "\1\125",
+            "\1\126",
+            "\1\127",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
             "\1\131",
             "\1\132",
             "\1\133",
-            "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
-            "\1\135",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "",
+            "",
+            "",
+            "",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
             "\1\136",
-            "\1\137",
-            "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
-            "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "\1\140",
+            "",
+            "\1\141",
+            "\1\142",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
             "",
             "",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
             "",
-            "",
-            "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
-            "\1\143",
-            "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
+            "\1\144",
             "\1\145",
-            "",
             "\1\146",
-            "\1\147",
-            "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
             "",
-            "",
-            "",
-            "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
-            "",
-            "\1\151",
-            "\1\152",
-            "\1\153",
-            "",
-            "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
-            "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
-            "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
+            "\12\33\7\uffff\32\33\4\uffff\1\33\1\uffff\32\33",
             "",
             "",
             ""
@@ -1358,23 +1323,13 @@ public class InternalS2MLexer extends Lexer {
             this.transition = DFA13_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | RULE_BOOLEAN | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
+            return "1:1: Tokens : ( T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | RULE_BOOLEAN | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA13_22 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA13_22>='\u0000' && LA13_22<='\uFFFF')) ) {s = 48;}
-
-                        else s = 25;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
                         int LA13_0 = input.LA(1);
 
                         s = -1;
@@ -1430,11 +1385,21 @@ public class InternalS2MLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 2 : 
+                    case 1 : 
                         int LA13_21 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA13_21>='\u0000' && LA13_21<='\uFFFF')) ) {s = 48;}
+                        if ( ((LA13_21>='\u0000' && LA13_21<='\uFFFF')) ) {s = 47;}
+
+                        else s = 25;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
+                        int LA13_22 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA13_22>='\u0000' && LA13_22<='\uFFFF')) ) {s = 47;}
 
                         else s = 25;
 
