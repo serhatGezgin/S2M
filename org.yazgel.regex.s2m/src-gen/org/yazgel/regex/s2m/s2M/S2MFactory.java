@@ -50,6 +50,42 @@ public interface S2MFactory extends EFactory
   Rule createRule();
 
   /**
+   * Returns a new object of class '<em>Rule Index</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Rule Index</em>'.
+   * @generated
+   */
+  RuleIndex createRuleIndex();
+
+  /**
+   * Returns a new object of class '<em>Rule Index To Keyword</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Rule Index To Keyword</em>'.
+   * @generated
+   */
+  RuleIndexToKeyword createRuleIndexToKeyword();
+
+  /**
+   * Returns a new object of class '<em>Rule Keyword</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Rule Keyword</em>'.
+   * @generated
+   */
+  RuleKeyword createRuleKeyword();
+
+  /**
+   * Returns a new object of class '<em>Rule Keyword To Index</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Rule Keyword To Index</em>'.
+   * @generated
+   */
+  RuleKeywordToIndex createRuleKeywordToIndex();
+
+  /**
    * Returns the package supported by this factory.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

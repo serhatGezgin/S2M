@@ -1,11 +1,11 @@
 model : Name;
 
 attr id {
-	type : java.lang.String
+	type : String
 }
 
 attr name {
-	type : java.lang.String
+	type : String
 }
 
 rule idRule{

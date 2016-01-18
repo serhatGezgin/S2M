@@ -14,10 +14,6 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link org.yazgel.regex.s2m.s2M.Rule#getName <em>Name</em>}</li>
- *   <li>{@link org.yazgel.regex.s2m.s2M.Rule#getStartIndex <em>Start Index</em>}</li>
- *   <li>{@link org.yazgel.regex.s2m.s2M.Rule#getStartDelimeter <em>Start Delimeter</em>}</li>
- *   <li>{@link org.yazgel.regex.s2m.s2M.Rule#getEndIndex <em>End Index</em>}</li>
- *   <li>{@link org.yazgel.regex.s2m.s2M.Rule#getEndDelimeter <em>End Delimeter</em>}</li>
  *   <li>{@link org.yazgel.regex.s2m.s2M.Rule#getAttr <em>Attr</em>}</li>
  * </ul>
  *
@@ -52,110 +48,6 @@ public interface Rule extends EObject
    * @generated
    */
   void setName(String value);
-
-  /**
-   * Returns the value of the '<em><b>Start Index</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Start Index</em>' attribute isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Start Index</em>' attribute.
-   * @see #setStartIndex(int)
-   * @see org.yazgel.regex.s2m.s2M.S2MPackage#getRule_StartIndex()
-   * @model
-   * @generated
-   */
-  int getStartIndex();
-
-  /**
-   * Sets the value of the '{@link org.yazgel.regex.s2m.s2M.Rule#getStartIndex <em>Start Index</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Start Index</em>' attribute.
-   * @see #getStartIndex()
-   * @generated
-   */
-  void setStartIndex(int value);
-
-  /**
-   * Returns the value of the '<em><b>Start Delimeter</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Start Delimeter</em>' attribute isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Start Delimeter</em>' attribute.
-   * @see #setStartDelimeter(String)
-   * @see org.yazgel.regex.s2m.s2M.S2MPackage#getRule_StartDelimeter()
-   * @model
-   * @generated
-   */
-  String getStartDelimeter();
-
-  /**
-   * Sets the value of the '{@link org.yazgel.regex.s2m.s2M.Rule#getStartDelimeter <em>Start Delimeter</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Start Delimeter</em>' attribute.
-   * @see #getStartDelimeter()
-   * @generated
-   */
-  void setStartDelimeter(String value);
-
-  /**
-   * Returns the value of the '<em><b>End Index</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>End Index</em>' attribute isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>End Index</em>' attribute.
-   * @see #setEndIndex(int)
-   * @see org.yazgel.regex.s2m.s2M.S2MPackage#getRule_EndIndex()
-   * @model
-   * @generated
-   */
-  int getEndIndex();
-
-  /**
-   * Sets the value of the '{@link org.yazgel.regex.s2m.s2M.Rule#getEndIndex <em>End Index</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>End Index</em>' attribute.
-   * @see #getEndIndex()
-   * @generated
-   */
-  void setEndIndex(int value);
-
-  /**
-   * Returns the value of the '<em><b>End Delimeter</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>End Delimeter</em>' attribute isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>End Delimeter</em>' attribute.
-   * @see #setEndDelimeter(String)
-   * @see org.yazgel.regex.s2m.s2M.S2MPackage#getRule_EndDelimeter()
-   * @model
-   * @generated
-   */
-  String getEndDelimeter();
-
-  /**
-   * Sets the value of the '{@link org.yazgel.regex.s2m.s2M.Rule#getEndDelimeter <em>End Delimeter</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>End Delimeter</em>' attribute.
-   * @see #getEndDelimeter()
-   * @generated
-   */
-  void setEndDelimeter(String value);
 
   /**
    * Returns the value of the '<em><b>Attr</b></em>' reference.

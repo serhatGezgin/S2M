@@ -90,6 +90,26 @@ public class S2MAdapterFactory extends AdapterFactoryImpl
         return createRuleAdapter();
       }
       @Override
+      public Adapter caseRuleIndex(RuleIndex object)
+      {
+        return createRuleIndexAdapter();
+      }
+      @Override
+      public Adapter caseRuleIndexToKeyword(RuleIndexToKeyword object)
+      {
+        return createRuleIndexToKeywordAdapter();
+      }
+      @Override
+      public Adapter caseRuleKeyword(RuleKeyword object)
+      {
+        return createRuleKeywordAdapter();
+      }
+      @Override
+      public Adapter caseRuleKeywordToIndex(RuleKeywordToIndex object)
+      {
+        return createRuleKeywordToIndexAdapter();
+      }
+      @Override
       public Adapter defaultCase(EObject object)
       {
         return createEObjectAdapter();
@@ -152,6 +172,66 @@ public class S2MAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createRuleAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.yazgel.regex.s2m.s2M.RuleIndex <em>Rule Index</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.yazgel.regex.s2m.s2M.RuleIndex
+   * @generated
+   */
+  public Adapter createRuleIndexAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.yazgel.regex.s2m.s2M.RuleIndexToKeyword <em>Rule Index To Keyword</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.yazgel.regex.s2m.s2M.RuleIndexToKeyword
+   * @generated
+   */
+  public Adapter createRuleIndexToKeywordAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.yazgel.regex.s2m.s2M.RuleKeyword <em>Rule Keyword</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.yazgel.regex.s2m.s2M.RuleKeyword
+   * @generated
+   */
+  public Adapter createRuleKeywordAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.yazgel.regex.s2m.s2M.RuleKeywordToIndex <em>Rule Keyword To Index</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.yazgel.regex.s2m.s2M.RuleKeywordToIndex
+   * @generated
+   */
+  public Adapter createRuleKeywordToIndexAdapter()
   {
     return null;
   }

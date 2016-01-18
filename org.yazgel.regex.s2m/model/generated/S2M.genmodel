@@ -4,9 +4,17 @@
     editorDirectory="/org.yazgel.regex.s2m.editor/src" modelPluginID="org.yazgel.regex.s2m"
     forceOverwrite="true" modelName="S2M" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     complianceLevel="6.0" copyrightFields="false" editPluginID="org.yazgel.regex.s2m.edit"
-    editorPluginID="org.yazgel.regex.s2m.editor" runtimeVersion="2.11" usedGenPackages="platform:/resource/org.eclipse.xtext.common.types/model/JavaVMTypes.genmodel#//types">
+    editorPluginID="org.yazgel.regex.s2m.editor" runtimeVersion="2.11">
   <genPackages prefix="S2M" basePackage="org.yazgel.regex.s2m" disposableProviderFactory="true"
       fileExtensions="s2m" ecorePackage="S2M.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="S2M.ecore#//AttributeType">
+      <genEnumLiterals ecoreEnumLiteral="S2M.ecore#//AttributeType/String"/>
+      <genEnumLiterals ecoreEnumLiteral="S2M.ecore#//AttributeType/Integer"/>
+      <genEnumLiterals ecoreEnumLiteral="S2M.ecore#//AttributeType/Long"/>
+      <genEnumLiterals ecoreEnumLiteral="S2M.ecore#//AttributeType/Short"/>
+      <genEnumLiterals ecoreEnumLiteral="S2M.ecore#//AttributeType/Decimal"/>
+      <genEnumLiterals ecoreEnumLiteral="S2M.ecore#//AttributeType/Boolean"/>
+    </genEnums>
     <genClasses ecoreClass="S2M.ecore#//Model">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//Model/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference S2M.ecore#//Model/attributes"/>
@@ -14,15 +22,28 @@
     </genClasses>
     <genClasses ecoreClass="S2M.ecore#//Attribute">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//Attribute/name"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference S2M.ecore#//Attribute/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//Attribute/multi"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//Attribute/type"/>
     </genClasses>
     <genClasses ecoreClass="S2M.ecore#//Rule">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//Rule/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//Rule/startIndex"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//Rule/startDelimeter"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//Rule/endIndex"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//Rule/endDelimeter"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference S2M.ecore#//Rule/attr"/>
+    </genClasses>
+    <genClasses ecoreClass="S2M.ecore#//RuleIndex">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//RuleIndex/startIndex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//RuleIndex/endIndex"/>
+    </genClasses>
+    <genClasses ecoreClass="S2M.ecore#//RuleIndexToKeyword">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//RuleIndexToKeyword/startIndex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//RuleIndexToKeyword/endDelimeter"/>
+    </genClasses>
+    <genClasses ecoreClass="S2M.ecore#//RuleKeyword">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//RuleKeyword/startDelimeter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//RuleKeyword/endDelimeter"/>
+    </genClasses>
+    <genClasses ecoreClass="S2M.ecore#//RuleKeywordToIndex">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//RuleKeywordToIndex/startDelimeter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute S2M.ecore#//RuleKeywordToIndex/endIndex"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

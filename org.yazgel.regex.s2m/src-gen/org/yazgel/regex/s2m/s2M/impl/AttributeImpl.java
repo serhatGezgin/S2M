@@ -5,14 +5,12 @@ package org.yazgel.regex.s2m.s2M.impl;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.xtext.common.types.JvmType;
-
 import org.yazgel.regex.s2m.s2M.Attribute;
+import org.yazgel.regex.s2m.s2M.AttributeType;
 import org.yazgel.regex.s2m.s2M.S2MPackage;
 
 /**
@@ -24,6 +22,7 @@ import org.yazgel.regex.s2m.s2M.S2MPackage;
  * </p>
  * <ul>
  *   <li>{@link org.yazgel.regex.s2m.s2M.impl.AttributeImpl#getName <em>Name</em>}</li>
+ *   <li>{@link org.yazgel.regex.s2m.s2M.impl.AttributeImpl#isMulti <em>Multi</em>}</li>
  *   <li>{@link org.yazgel.regex.s2m.s2M.impl.AttributeImpl#getType <em>Type</em>}</li>
  * </ul>
  *
@@ -52,14 +51,44 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getType() <em>Type</em>}' reference.
+   * The default value of the '{@link #isMulti() <em>Multi</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #isMulti()
+   * @generated
+   * @ordered
+   */
+  protected static final boolean MULTI_EDEFAULT = false;
+
+  /**
+   * The cached value of the '{@link #isMulti() <em>Multi</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #isMulti()
+   * @generated
+   * @ordered
+   */
+  protected boolean multi = MULTI_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getType() <em>Type</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getType()
    * @generated
    * @ordered
    */
-  protected JvmType type;
+  protected static final AttributeType TYPE_EDEFAULT = AttributeType.STRING;
+
+  /**
+   * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getType()
+   * @generated
+   * @ordered
+   */
+  protected AttributeType type = TYPE_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -110,18 +139,31 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
    * <!-- end-user-doc -->
    * @generated
    */
-  public JvmType getType()
+  public boolean isMulti()
   {
-    if (type != null && type.eIsProxy())
-    {
-      InternalEObject oldType = (InternalEObject)type;
-      type = (JvmType)eResolveProxy(oldType);
-      if (type != oldType)
-      {
-        if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, S2MPackage.ATTRIBUTE__TYPE, oldType, type));
-      }
-    }
+    return multi;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setMulti(boolean newMulti)
+  {
+    boolean oldMulti = multi;
+    multi = newMulti;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, S2MPackage.ATTRIBUTE__MULTI, oldMulti, multi));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public AttributeType getType()
+  {
     return type;
   }
 
@@ -130,20 +172,10 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
    * <!-- end-user-doc -->
    * @generated
    */
-  public JvmType basicGetType()
+  public void setType(AttributeType newType)
   {
-    return type;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setType(JvmType newType)
-  {
-    JvmType oldType = type;
-    type = newType;
+    AttributeType oldType = type;
+    type = newType == null ? TYPE_EDEFAULT : newType;
     if (eNotificationRequired())
       eNotify(new ENotificationImpl(this, Notification.SET, S2MPackage.ATTRIBUTE__TYPE, oldType, type));
   }
@@ -160,9 +192,10 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
     {
       case S2MPackage.ATTRIBUTE__NAME:
         return getName();
+      case S2MPackage.ATTRIBUTE__MULTI:
+        return isMulti();
       case S2MPackage.ATTRIBUTE__TYPE:
-        if (resolve) return getType();
-        return basicGetType();
+        return getType();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -180,8 +213,11 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
       case S2MPackage.ATTRIBUTE__NAME:
         setName((String)newValue);
         return;
+      case S2MPackage.ATTRIBUTE__MULTI:
+        setMulti((Boolean)newValue);
+        return;
       case S2MPackage.ATTRIBUTE__TYPE:
-        setType((JvmType)newValue);
+        setType((AttributeType)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -200,8 +236,11 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
       case S2MPackage.ATTRIBUTE__NAME:
         setName(NAME_EDEFAULT);
         return;
+      case S2MPackage.ATTRIBUTE__MULTI:
+        setMulti(MULTI_EDEFAULT);
+        return;
       case S2MPackage.ATTRIBUTE__TYPE:
-        setType((JvmType)null);
+        setType(TYPE_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -219,8 +258,10 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
     {
       case S2MPackage.ATTRIBUTE__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case S2MPackage.ATTRIBUTE__MULTI:
+        return multi != MULTI_EDEFAULT;
       case S2MPackage.ATTRIBUTE__TYPE:
-        return type != null;
+        return type != TYPE_EDEFAULT;
     }
     return super.eIsSet(featureID);
   }
@@ -238,6 +279,10 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
     StringBuffer result = new StringBuffer(super.toString());
     result.append(" (name: ");
     result.append(name);
+    result.append(", multi: ");
+    result.append(multi);
+    result.append(", type: ");
+    result.append(type);
     result.append(')');
     return result.toString();
   }

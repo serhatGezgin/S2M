@@ -93,6 +93,38 @@ public class S2MSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case S2MPackage.RULE_INDEX:
+      {
+        RuleIndex ruleIndex = (RuleIndex)theEObject;
+        T result = caseRuleIndex(ruleIndex);
+        if (result == null) result = caseRule(ruleIndex);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case S2MPackage.RULE_INDEX_TO_KEYWORD:
+      {
+        RuleIndexToKeyword ruleIndexToKeyword = (RuleIndexToKeyword)theEObject;
+        T result = caseRuleIndexToKeyword(ruleIndexToKeyword);
+        if (result == null) result = caseRule(ruleIndexToKeyword);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case S2MPackage.RULE_KEYWORD:
+      {
+        RuleKeyword ruleKeyword = (RuleKeyword)theEObject;
+        T result = caseRuleKeyword(ruleKeyword);
+        if (result == null) result = caseRule(ruleKeyword);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case S2MPackage.RULE_KEYWORD_TO_INDEX:
+      {
+        RuleKeywordToIndex ruleKeywordToIndex = (RuleKeywordToIndex)theEObject;
+        T result = caseRuleKeywordToIndex(ruleKeywordToIndex);
+        if (result == null) result = caseRule(ruleKeywordToIndex);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       default: return defaultCase(theEObject);
     }
   }
@@ -141,6 +173,70 @@ public class S2MSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseRule(Rule object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Rule Index</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Rule Index</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseRuleIndex(RuleIndex object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Rule Index To Keyword</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Rule Index To Keyword</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseRuleIndexToKeyword(RuleIndexToKeyword object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Rule Keyword</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Rule Keyword</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseRuleKeyword(RuleKeyword object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Rule Keyword To Index</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Rule Keyword To Index</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseRuleKeywordToIndex(RuleKeywordToIndex object)
   {
     return null;
   }
