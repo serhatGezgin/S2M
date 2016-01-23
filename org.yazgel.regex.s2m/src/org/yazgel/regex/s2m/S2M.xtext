@@ -1,6 +1,6 @@
 grammar org.yazgel.regex.s2m.S2M with org.eclipse.xtext.common.Terminals
 
-import "http://www.eclipse.org/xtext/common/JavaVMTypes" as jvmTypes
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
 
 generate s2M "http://www.yazgel.org/regex/s2m/S2M"
 
@@ -12,16 +12,50 @@ Model:
 
 Attribute:
 	'attr' name=ID '{'
-	 	'type' ':' type=[jvmTypes::JvmType|QualifiedName]  
+	 	'type' ':' type=AttributeType  
 	 '}'
 ;
-	
+
+enum AttributeType:
+	String | Integer | Long | Short | Decimal | Boolean
+;
+
 Rule:
+	RuleIndex | RuleKeyword | RuleIndexToKeyword | RuleKeywordToIndex
+;
+
+RuleIndex:
 	'rule' name=ID '{'
-		(('start' startIndex=INT ',') | ('start' startDelimeter=STRING ','))
-		(('end' endIndex=INT ',') | ('end' endDelimeter=STRING ',') )
+		('start' startIndex=INT ',')
+		('end' endIndex=INT ',') 
 		'attr' ':' attr = [Attribute|ID]
 	'}'
 ;
 
-QualifiedName: ID ('.' ID)* ;
+RuleIndexToKeyword:
+	'rule' name=ID '{'
+		('start' startIndex=INT ',')
+		('end' endDelimeter=STRING ',')
+		'attr' ':' attr = [Attribute|ID]
+	'}'
+;
+
+RuleKeyword:
+	'rule' name=ID '{'
+		('start' startDelimeter=STRING ',')
+		('end' endDelimeter=STRING ',') 
+		'attr' ':' attr = [Attribute|ID]
+	'}'
+;
+
+RuleKeywordToIndex:
+	'rule' name=ID '{'
+		('start' startDelimeter=STRING ',')
+		('end' endIndex=INT ',') 
+		'attr' ':' attr = [Attribute|ID]
+	'}'
+;
+
+terminal BOOLEAN returns ecore::EBoolean: 
+	'true' | 'false'
+;

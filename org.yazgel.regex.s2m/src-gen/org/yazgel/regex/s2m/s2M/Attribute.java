@@ -4,8 +4,6 @@ package org.yazgel.regex.s2m.s2M;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.eclipse.xtext.common.types.JvmType;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Attribute</b></em>'.
@@ -52,29 +50,32 @@ public interface Attribute extends EObject
   void setName(String value);
 
   /**
-   * Returns the value of the '<em><b>Type</b></em>' reference.
+   * Returns the value of the '<em><b>Type</b></em>' attribute.
+   * The literals are from the enumeration {@link org.yazgel.regex.s2m.s2M.AttributeType}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Type</em>' reference isn't clear,
+   * If the meaning of the '<em>Type</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Type</em>' reference.
-   * @see #setType(JvmType)
+   * @return the value of the '<em>Type</em>' attribute.
+   * @see org.yazgel.regex.s2m.s2M.AttributeType
+   * @see #setType(AttributeType)
    * @see org.yazgel.regex.s2m.s2M.S2MPackage#getAttribute_Type()
    * @model
    * @generated
    */
-  JvmType getType();
+  AttributeType getType();
 
   /**
-   * Sets the value of the '{@link org.yazgel.regex.s2m.s2M.Attribute#getType <em>Type</em>}' reference.
+   * Sets the value of the '{@link org.yazgel.regex.s2m.s2M.Attribute#getType <em>Type</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Type</em>' reference.
+   * @param value the new value of the '<em>Type</em>' attribute.
+   * @see org.yazgel.regex.s2m.s2M.AttributeType
    * @see #getType()
    * @generated
    */
-  void setType(JvmType value);
+  void setType(AttributeType value);
 
 } // Attribute

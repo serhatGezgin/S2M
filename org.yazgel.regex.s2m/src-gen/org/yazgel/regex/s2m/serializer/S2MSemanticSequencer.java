@@ -18,7 +18,10 @@ import org.eclipse.xtext.serializer.sequencer.ITransientValueService;
 import org.eclipse.xtext.serializer.sequencer.ITransientValueService.ValueTransient;
 import org.yazgel.regex.s2m.s2M.Attribute;
 import org.yazgel.regex.s2m.s2M.Model;
-import org.yazgel.regex.s2m.s2M.Rule;
+import org.yazgel.regex.s2m.s2M.RuleIndex;
+import org.yazgel.regex.s2m.s2M.RuleIndexToKeyword;
+import org.yazgel.regex.s2m.s2M.RuleKeyword;
+import org.yazgel.regex.s2m.s2M.RuleKeywordToIndex;
 import org.yazgel.regex.s2m.s2M.S2MPackage;
 import org.yazgel.regex.s2m.services.S2MGrammarAccess;
 
@@ -37,8 +40,17 @@ public class S2MSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 			case S2MPackage.MODEL:
 				sequence_Model(context, (Model) semanticObject); 
 				return; 
-			case S2MPackage.RULE:
-				sequence_Rule(context, (Rule) semanticObject); 
+			case S2MPackage.RULE_INDEX:
+				sequence_RuleIndex(context, (RuleIndex) semanticObject); 
+				return; 
+			case S2MPackage.RULE_INDEX_TO_KEYWORD:
+				sequence_RuleIndexToKeyword(context, (RuleIndexToKeyword) semanticObject); 
+				return; 
+			case S2MPackage.RULE_KEYWORD:
+				sequence_RuleKeyword(context, (RuleKeyword) semanticObject); 
+				return; 
+			case S2MPackage.RULE_KEYWORD_TO_INDEX:
+				sequence_RuleKeywordToIndex(context, (RuleKeywordToIndex) semanticObject); 
 				return; 
 			}
 		if (errorAcceptor != null) errorAcceptor.accept(diagnosticProvider.createInvalidContextOrTypeDiagnostic(semanticObject, context));
@@ -46,7 +58,7 @@ public class S2MSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (name=ID type=[JvmType|QualifiedName])
+	 *     (name=ID type=AttributeType)
 	 */
 	protected void sequence_Attribute(EObject context, Attribute semanticObject) {
 		if(errorAcceptor != null) {
@@ -58,7 +70,7 @@ public class S2MSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
 		feeder.accept(grammarAccess.getAttributeAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
-		feeder.accept(grammarAccess.getAttributeAccess().getTypeJvmTypeQualifiedNameParserRuleCall_5_0_1(), semanticObject.getType());
+		feeder.accept(grammarAccess.getAttributeAccess().getTypeAttributeTypeEnumRuleCall_5_0(), semanticObject.getType());
 		feeder.finish();
 	}
 	
@@ -74,9 +86,100 @@ public class S2MSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (name=ID (startIndex=INT | startDelimeter=STRING) (endIndex=INT | endDelimeter=STRING) attr=[Attribute|ID])
+	 *     (name=ID startIndex=INT endDelimeter=STRING attr=[Attribute|ID])
 	 */
-	protected void sequence_Rule(EObject context, Rule semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
+	protected void sequence_RuleIndexToKeyword(EObject context, RuleIndexToKeyword semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.RULE__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.RULE__NAME));
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.RULE__ATTR) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.RULE__ATTR));
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.RULE_INDEX_TO_KEYWORD__START_INDEX) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.RULE_INDEX_TO_KEYWORD__START_INDEX));
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.RULE_INDEX_TO_KEYWORD__END_DELIMETER) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.RULE_INDEX_TO_KEYWORD__END_DELIMETER));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getRuleIndexToKeywordAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
+		feeder.accept(grammarAccess.getRuleIndexToKeywordAccess().getStartIndexINTTerminalRuleCall_3_1_0(), semanticObject.getStartIndex());
+		feeder.accept(grammarAccess.getRuleIndexToKeywordAccess().getEndDelimeterSTRINGTerminalRuleCall_4_1_0(), semanticObject.getEndDelimeter());
+		feeder.accept(grammarAccess.getRuleIndexToKeywordAccess().getAttrAttributeIDTerminalRuleCall_7_0_1(), semanticObject.getAttr());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (name=ID startIndex=INT endIndex=INT attr=[Attribute|ID])
+	 */
+	protected void sequence_RuleIndex(EObject context, RuleIndex semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.RULE__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.RULE__NAME));
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.RULE__ATTR) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.RULE__ATTR));
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.RULE_INDEX__START_INDEX) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.RULE_INDEX__START_INDEX));
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.RULE_INDEX__END_INDEX) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.RULE_INDEX__END_INDEX));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getRuleIndexAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
+		feeder.accept(grammarAccess.getRuleIndexAccess().getStartIndexINTTerminalRuleCall_3_1_0(), semanticObject.getStartIndex());
+		feeder.accept(grammarAccess.getRuleIndexAccess().getEndIndexINTTerminalRuleCall_4_1_0(), semanticObject.getEndIndex());
+		feeder.accept(grammarAccess.getRuleIndexAccess().getAttrAttributeIDTerminalRuleCall_7_0_1(), semanticObject.getAttr());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (name=ID startDelimeter=STRING endIndex=INT attr=[Attribute|ID])
+	 */
+	protected void sequence_RuleKeywordToIndex(EObject context, RuleKeywordToIndex semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.RULE__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.RULE__NAME));
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.RULE__ATTR) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.RULE__ATTR));
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.RULE_KEYWORD_TO_INDEX__START_DELIMETER) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.RULE_KEYWORD_TO_INDEX__START_DELIMETER));
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.RULE_KEYWORD_TO_INDEX__END_INDEX) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.RULE_KEYWORD_TO_INDEX__END_INDEX));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getRuleKeywordToIndexAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
+		feeder.accept(grammarAccess.getRuleKeywordToIndexAccess().getStartDelimeterSTRINGTerminalRuleCall_3_1_0(), semanticObject.getStartDelimeter());
+		feeder.accept(grammarAccess.getRuleKeywordToIndexAccess().getEndIndexINTTerminalRuleCall_4_1_0(), semanticObject.getEndIndex());
+		feeder.accept(grammarAccess.getRuleKeywordToIndexAccess().getAttrAttributeIDTerminalRuleCall_7_0_1(), semanticObject.getAttr());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (name=ID startDelimeter=STRING endDelimeter=STRING attr=[Attribute|ID])
+	 */
+	protected void sequence_RuleKeyword(EObject context, RuleKeyword semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.RULE__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.RULE__NAME));
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.RULE__ATTR) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.RULE__ATTR));
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.RULE_KEYWORD__START_DELIMETER) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.RULE_KEYWORD__START_DELIMETER));
+			if(transientValues.isValueTransient(semanticObject, S2MPackage.Literals.RULE_KEYWORD__END_DELIMETER) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, S2MPackage.Literals.RULE_KEYWORD__END_DELIMETER));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getRuleKeywordAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
+		feeder.accept(grammarAccess.getRuleKeywordAccess().getStartDelimeterSTRINGTerminalRuleCall_3_1_0(), semanticObject.getStartDelimeter());
+		feeder.accept(grammarAccess.getRuleKeywordAccess().getEndDelimeterSTRINGTerminalRuleCall_4_1_0(), semanticObject.getEndDelimeter());
+		feeder.accept(grammarAccess.getRuleKeywordAccess().getAttrAttributeIDTerminalRuleCall_7_0_1(), semanticObject.getAttr());
+		feeder.finish();
 	}
 }

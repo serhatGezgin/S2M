@@ -4,16 +4,20 @@ package org.yazgel.regex.s2m.s2M.impl;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
-import org.eclipse.xtext.common.types.TypesPackage;
-
 import org.yazgel.regex.s2m.s2M.Attribute;
+import org.yazgel.regex.s2m.s2M.AttributeType;
 import org.yazgel.regex.s2m.s2M.Model;
 import org.yazgel.regex.s2m.s2M.Rule;
+import org.yazgel.regex.s2m.s2M.RuleIndex;
+import org.yazgel.regex.s2m.s2M.RuleIndexToKeyword;
+import org.yazgel.regex.s2m.s2M.RuleKeyword;
+import org.yazgel.regex.s2m.s2M.RuleKeywordToIndex;
 import org.yazgel.regex.s2m.s2M.S2MFactory;
 import org.yazgel.regex.s2m.s2M.S2MPackage;
 
@@ -45,6 +49,41 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
    * @generated
    */
   private EClass ruleEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass ruleIndexEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass ruleIndexToKeywordEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass ruleKeywordEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass ruleKeywordToIndexEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EEnum attributeTypeEEnum = null;
 
   /**
    * Creates an instance of the model <b>Package</b>, registered with
@@ -93,9 +132,6 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
     S2MPackageImpl theS2MPackage = (S2MPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof S2MPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new S2MPackageImpl());
 
     isInited = true;
-
-    // Initialize simple dependencies
-    TypesPackage.eINSTANCE.eClass();
 
     // Create package meta-data objects
     theS2MPackage.createPackageContents();
@@ -177,9 +213,9 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getAttribute_Type()
+  public EAttribute getAttribute_Type()
   {
-    return (EReference)attributeEClass.getEStructuralFeatures().get(1);
+    return (EAttribute)attributeEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -207,49 +243,139 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getRule_StartIndex()
-  {
-    return (EAttribute)ruleEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getRule_StartDelimeter()
-  {
-    return (EAttribute)ruleEClass.getEStructuralFeatures().get(2);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getRule_EndIndex()
-  {
-    return (EAttribute)ruleEClass.getEStructuralFeatures().get(3);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getRule_EndDelimeter()
-  {
-    return (EAttribute)ruleEClass.getEStructuralFeatures().get(4);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EReference getRule_Attr()
   {
-    return (EReference)ruleEClass.getEStructuralFeatures().get(5);
+    return (EReference)ruleEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getRuleIndex()
+  {
+    return ruleIndexEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getRuleIndex_StartIndex()
+  {
+    return (EAttribute)ruleIndexEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getRuleIndex_EndIndex()
+  {
+    return (EAttribute)ruleIndexEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getRuleIndexToKeyword()
+  {
+    return ruleIndexToKeywordEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getRuleIndexToKeyword_StartIndex()
+  {
+    return (EAttribute)ruleIndexToKeywordEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getRuleIndexToKeyword_EndDelimeter()
+  {
+    return (EAttribute)ruleIndexToKeywordEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getRuleKeyword()
+  {
+    return ruleKeywordEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getRuleKeyword_StartDelimeter()
+  {
+    return (EAttribute)ruleKeywordEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getRuleKeyword_EndDelimeter()
+  {
+    return (EAttribute)ruleKeywordEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getRuleKeywordToIndex()
+  {
+    return ruleKeywordToIndexEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getRuleKeywordToIndex_StartDelimeter()
+  {
+    return (EAttribute)ruleKeywordToIndexEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getRuleKeywordToIndex_EndIndex()
+  {
+    return (EAttribute)ruleKeywordToIndexEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EEnum getAttributeType()
+  {
+    return attributeTypeEEnum;
   }
 
   /**
@@ -289,15 +415,30 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
 
     attributeEClass = createEClass(ATTRIBUTE);
     createEAttribute(attributeEClass, ATTRIBUTE__NAME);
-    createEReference(attributeEClass, ATTRIBUTE__TYPE);
+    createEAttribute(attributeEClass, ATTRIBUTE__TYPE);
 
     ruleEClass = createEClass(RULE);
     createEAttribute(ruleEClass, RULE__NAME);
-    createEAttribute(ruleEClass, RULE__START_INDEX);
-    createEAttribute(ruleEClass, RULE__START_DELIMETER);
-    createEAttribute(ruleEClass, RULE__END_INDEX);
-    createEAttribute(ruleEClass, RULE__END_DELIMETER);
     createEReference(ruleEClass, RULE__ATTR);
+
+    ruleIndexEClass = createEClass(RULE_INDEX);
+    createEAttribute(ruleIndexEClass, RULE_INDEX__START_INDEX);
+    createEAttribute(ruleIndexEClass, RULE_INDEX__END_INDEX);
+
+    ruleIndexToKeywordEClass = createEClass(RULE_INDEX_TO_KEYWORD);
+    createEAttribute(ruleIndexToKeywordEClass, RULE_INDEX_TO_KEYWORD__START_INDEX);
+    createEAttribute(ruleIndexToKeywordEClass, RULE_INDEX_TO_KEYWORD__END_DELIMETER);
+
+    ruleKeywordEClass = createEClass(RULE_KEYWORD);
+    createEAttribute(ruleKeywordEClass, RULE_KEYWORD__START_DELIMETER);
+    createEAttribute(ruleKeywordEClass, RULE_KEYWORD__END_DELIMETER);
+
+    ruleKeywordToIndexEClass = createEClass(RULE_KEYWORD_TO_INDEX);
+    createEAttribute(ruleKeywordToIndexEClass, RULE_KEYWORD_TO_INDEX__START_DELIMETER);
+    createEAttribute(ruleKeywordToIndexEClass, RULE_KEYWORD_TO_INDEX__END_INDEX);
+
+    // Create enums
+    attributeTypeEEnum = createEEnum(ATTRIBUTE_TYPE);
   }
 
   /**
@@ -324,14 +465,15 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
     setNsPrefix(eNS_PREFIX);
     setNsURI(eNS_URI);
 
-    // Obtain other dependent packages
-    TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
-
     // Create type parameters
 
     // Set bounds for type parameters
 
     // Add supertypes to classes
+    ruleIndexEClass.getESuperTypes().add(this.getRule());
+    ruleIndexToKeywordEClass.getESuperTypes().add(this.getRule());
+    ruleKeywordEClass.getESuperTypes().add(this.getRule());
+    ruleKeywordToIndexEClass.getESuperTypes().add(this.getRule());
 
     // Initialize classes and features; add operations and parameters
     initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -341,15 +483,36 @@ public class S2MPackageImpl extends EPackageImpl implements S2MPackage
 
     initEClass(attributeEClass, Attribute.class, "Attribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getAttribute_Name(), ecorePackage.getEString(), "name", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getAttribute_Type(), theTypesPackage.getJvmType(), null, "type", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getAttribute_Type(), this.getAttributeType(), "type", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(ruleEClass, Rule.class, "Rule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getRule_Name(), ecorePackage.getEString(), "name", null, 0, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getRule_StartIndex(), ecorePackage.getEInt(), "startIndex", null, 0, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getRule_StartDelimeter(), ecorePackage.getEString(), "startDelimeter", null, 0, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getRule_EndIndex(), ecorePackage.getEInt(), "endIndex", null, 0, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getRule_EndDelimeter(), ecorePackage.getEString(), "endDelimeter", null, 0, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getRule_Attr(), this.getAttribute(), null, "attr", null, 0, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(ruleIndexEClass, RuleIndex.class, "RuleIndex", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getRuleIndex_StartIndex(), ecorePackage.getEInt(), "startIndex", null, 0, 1, RuleIndex.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getRuleIndex_EndIndex(), ecorePackage.getEInt(), "endIndex", null, 0, 1, RuleIndex.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(ruleIndexToKeywordEClass, RuleIndexToKeyword.class, "RuleIndexToKeyword", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getRuleIndexToKeyword_StartIndex(), ecorePackage.getEInt(), "startIndex", null, 0, 1, RuleIndexToKeyword.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getRuleIndexToKeyword_EndDelimeter(), ecorePackage.getEString(), "endDelimeter", null, 0, 1, RuleIndexToKeyword.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(ruleKeywordEClass, RuleKeyword.class, "RuleKeyword", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getRuleKeyword_StartDelimeter(), ecorePackage.getEString(), "startDelimeter", null, 0, 1, RuleKeyword.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getRuleKeyword_EndDelimeter(), ecorePackage.getEString(), "endDelimeter", null, 0, 1, RuleKeyword.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(ruleKeywordToIndexEClass, RuleKeywordToIndex.class, "RuleKeywordToIndex", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getRuleKeywordToIndex_StartDelimeter(), ecorePackage.getEString(), "startDelimeter", null, 0, 1, RuleKeywordToIndex.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getRuleKeywordToIndex_EndIndex(), ecorePackage.getEInt(), "endIndex", null, 0, 1, RuleKeywordToIndex.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    // Initialize enums and add enum literals
+    initEEnum(attributeTypeEEnum, AttributeType.class, "AttributeType");
+    addEEnumLiteral(attributeTypeEEnum, AttributeType.STRING);
+    addEEnumLiteral(attributeTypeEEnum, AttributeType.INTEGER);
+    addEEnumLiteral(attributeTypeEEnum, AttributeType.LONG);
+    addEEnumLiteral(attributeTypeEEnum, AttributeType.SHORT);
+    addEEnumLiteral(attributeTypeEEnum, AttributeType.DECIMAL);
+    addEEnumLiteral(attributeTypeEEnum, AttributeType.BOOLEAN);
 
     // Create resource
     createResource(eNS_URI);

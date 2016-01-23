@@ -5,67 +5,74 @@ package org.yazgel.regex.s2m.s2M.impl;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.yazgel.regex.s2m.s2M.Attribute;
-import org.yazgel.regex.s2m.s2M.Rule;
+import org.yazgel.regex.s2m.s2M.RuleIndex;
 import org.yazgel.regex.s2m.s2M.S2MPackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Rule</b></em>'.
+ * An implementation of the model object '<em><b>Rule Index</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.yazgel.regex.s2m.s2M.impl.RuleImpl#getName <em>Name</em>}</li>
- *   <li>{@link org.yazgel.regex.s2m.s2M.impl.RuleImpl#getAttr <em>Attr</em>}</li>
+ *   <li>{@link org.yazgel.regex.s2m.s2M.impl.RuleIndexImpl#getStartIndex <em>Start Index</em>}</li>
+ *   <li>{@link org.yazgel.regex.s2m.s2M.impl.RuleIndexImpl#getEndIndex <em>End Index</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class RuleImpl extends MinimalEObjectImpl.Container implements Rule
+public class RuleIndexImpl extends RuleImpl implements RuleIndex
 {
   /**
-   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * The default value of the '{@link #getStartIndex() <em>Start Index</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
+   * @see #getStartIndex()
    * @generated
    * @ordered
    */
-  protected static final String NAME_EDEFAULT = null;
+  protected static final int START_INDEX_EDEFAULT = 0;
 
   /**
-   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * The cached value of the '{@link #getStartIndex() <em>Start Index</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
+   * @see #getStartIndex()
    * @generated
    * @ordered
    */
-  protected String name = NAME_EDEFAULT;
+  protected int startIndex = START_INDEX_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getAttr() <em>Attr</em>}' reference.
+   * The default value of the '{@link #getEndIndex() <em>End Index</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAttr()
+   * @see #getEndIndex()
    * @generated
    * @ordered
    */
-  protected Attribute attr;
+  protected static final int END_INDEX_EDEFAULT = 0;
+
+  /**
+   * The cached value of the '{@link #getEndIndex() <em>End Index</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEndIndex()
+   * @generated
+   * @ordered
+   */
+  protected int endIndex = END_INDEX_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected RuleImpl()
+  protected RuleIndexImpl()
   {
     super();
   }
@@ -78,7 +85,7 @@ public class RuleImpl extends MinimalEObjectImpl.Container implements Rule
   @Override
   protected EClass eStaticClass()
   {
-    return S2MPackage.Literals.RULE;
+    return S2MPackage.Literals.RULE_INDEX;
   }
 
   /**
@@ -86,9 +93,9 @@ public class RuleImpl extends MinimalEObjectImpl.Container implements Rule
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getName()
+  public int getStartIndex()
   {
-    return name;
+    return startIndex;
   }
 
   /**
@@ -96,12 +103,12 @@ public class RuleImpl extends MinimalEObjectImpl.Container implements Rule
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setName(String newName)
+  public void setStartIndex(int newStartIndex)
   {
-    String oldName = name;
-    name = newName;
+    int oldStartIndex = startIndex;
+    startIndex = newStartIndex;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, S2MPackage.RULE__NAME, oldName, name));
+      eNotify(new ENotificationImpl(this, Notification.SET, S2MPackage.RULE_INDEX__START_INDEX, oldStartIndex, startIndex));
   }
 
   /**
@@ -109,19 +116,9 @@ public class RuleImpl extends MinimalEObjectImpl.Container implements Rule
    * <!-- end-user-doc -->
    * @generated
    */
-  public Attribute getAttr()
+  public int getEndIndex()
   {
-    if (attr != null && attr.eIsProxy())
-    {
-      InternalEObject oldAttr = (InternalEObject)attr;
-      attr = (Attribute)eResolveProxy(oldAttr);
-      if (attr != oldAttr)
-      {
-        if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, S2MPackage.RULE__ATTR, oldAttr, attr));
-      }
-    }
-    return attr;
+    return endIndex;
   }
 
   /**
@@ -129,22 +126,12 @@ public class RuleImpl extends MinimalEObjectImpl.Container implements Rule
    * <!-- end-user-doc -->
    * @generated
    */
-  public Attribute basicGetAttr()
+  public void setEndIndex(int newEndIndex)
   {
-    return attr;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setAttr(Attribute newAttr)
-  {
-    Attribute oldAttr = attr;
-    attr = newAttr;
+    int oldEndIndex = endIndex;
+    endIndex = newEndIndex;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, S2MPackage.RULE__ATTR, oldAttr, attr));
+      eNotify(new ENotificationImpl(this, Notification.SET, S2MPackage.RULE_INDEX__END_INDEX, oldEndIndex, endIndex));
   }
 
   /**
@@ -157,11 +144,10 @@ public class RuleImpl extends MinimalEObjectImpl.Container implements Rule
   {
     switch (featureID)
     {
-      case S2MPackage.RULE__NAME:
-        return getName();
-      case S2MPackage.RULE__ATTR:
-        if (resolve) return getAttr();
-        return basicGetAttr();
+      case S2MPackage.RULE_INDEX__START_INDEX:
+        return getStartIndex();
+      case S2MPackage.RULE_INDEX__END_INDEX:
+        return getEndIndex();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -176,11 +162,11 @@ public class RuleImpl extends MinimalEObjectImpl.Container implements Rule
   {
     switch (featureID)
     {
-      case S2MPackage.RULE__NAME:
-        setName((String)newValue);
+      case S2MPackage.RULE_INDEX__START_INDEX:
+        setStartIndex((Integer)newValue);
         return;
-      case S2MPackage.RULE__ATTR:
-        setAttr((Attribute)newValue);
+      case S2MPackage.RULE_INDEX__END_INDEX:
+        setEndIndex((Integer)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -196,11 +182,11 @@ public class RuleImpl extends MinimalEObjectImpl.Container implements Rule
   {
     switch (featureID)
     {
-      case S2MPackage.RULE__NAME:
-        setName(NAME_EDEFAULT);
+      case S2MPackage.RULE_INDEX__START_INDEX:
+        setStartIndex(START_INDEX_EDEFAULT);
         return;
-      case S2MPackage.RULE__ATTR:
-        setAttr((Attribute)null);
+      case S2MPackage.RULE_INDEX__END_INDEX:
+        setEndIndex(END_INDEX_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -216,10 +202,10 @@ public class RuleImpl extends MinimalEObjectImpl.Container implements Rule
   {
     switch (featureID)
     {
-      case S2MPackage.RULE__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case S2MPackage.RULE__ATTR:
-        return attr != null;
+      case S2MPackage.RULE_INDEX__START_INDEX:
+        return startIndex != START_INDEX_EDEFAULT;
+      case S2MPackage.RULE_INDEX__END_INDEX:
+        return endIndex != END_INDEX_EDEFAULT;
     }
     return super.eIsSet(featureID);
   }
@@ -235,10 +221,12 @@ public class RuleImpl extends MinimalEObjectImpl.Container implements Rule
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (name: ");
-    result.append(name);
+    result.append(" (startIndex: ");
+    result.append(startIndex);
+    result.append(", endIndex: ");
+    result.append(endIndex);
     result.append(')');
     return result.toString();
   }
 
-} //RuleImpl
+} //RuleIndexImpl

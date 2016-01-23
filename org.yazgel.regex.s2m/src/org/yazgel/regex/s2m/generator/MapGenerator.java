@@ -8,6 +8,7 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.xtext.generator.IFileSystemAccess;
 import org.yazgel.regex.s2m.s2M.Attribute;
 import org.yazgel.regex.s2m.s2M.Rule;
+import org.yazgel.regex.s2m.s2M.RuleIndex;
 import org.yazgel.regex.s2m.s2M.impl.ModelImpl;
 
 public class MapGenerator implements IGenerator<Map<String, Object>> {
@@ -31,11 +32,13 @@ public class MapGenerator implements IGenerator<Map<String, Object>> {
 				
 				String attrName = attr.getName();
 				
-				int startIndex = rule.getStartIndex();
-				int endIndex = rule.getEndIndex();
-				
-				String substring = text.substring(startIndex, endIndex + 1);
-				map.put(attrName, substring);
+				if(rule instanceof RuleIndex){
+					int startIndex = ((RuleIndex) rule).getStartIndex();
+					int endIndex = ((RuleIndex) rule).getEndIndex();
+					
+					String substring = text.substring(startIndex, endIndex + 1);
+					map.put(attrName, substring);
+				}
 			}
 			
 		} catch (Exception e) {
